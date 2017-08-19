@@ -2,7 +2,7 @@ import React from 'react';
 import { Flex, Grid } from 'grid-styled';
 import WorkTitle from './WorkTitle/WorkTitle';
 import WorkItems from './WorkItems/WorkItems';
-
+import SketchWrapper from './SketchWrapper/SketchWrapper';
 
 const Work = (props) => (
   <div>
@@ -20,6 +20,7 @@ const Work = (props) => (
                   site={'Neuberger Museum, 2017'}
                 />
 
+              <SketchWrapper size={268}/>
               </Flex>
             </Grid>
 
