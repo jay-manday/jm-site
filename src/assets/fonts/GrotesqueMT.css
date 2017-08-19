@@ -1,0 +1,23 @@
+/* Webfont: GrotesqueMT */@font-face {
+    font-family: 'GrotesqueMT';
+    src: url('GrotesqueMT.eot'); /* IE9 Compat Modes */
+    src: url('GrotesqueMT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('GrotesqueMT.woff') format('woff'), /* Modern Browsers */
+         url('GrotesqueMT.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('GrotesqueMT.svg#GrotesqueMT') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+.GrotesqueMT {
+    font-family: 'GrotesqueMT';
+    src: url('GrotesqueMT.eot'); /* IE9 Compat Modes */
+    src: url('GrotesqueMT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('GrotesqueMT.woff') format('woff'), /* Modern Browsers */
+         url('GrotesqueMT.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('GrotesqueMT.svg#GrotesqueMT') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
