@@ -9,6 +9,7 @@
     "react-dom": "^15.6.1",
     "react-p5-wrapper": "^0.0.4",
     "react-router-dom": "^4.1.2",
+    "react-youtube": "^7.4.0",
     "rebass": "^1.0.4",
     "styled-components": "^2.1.2"
   },

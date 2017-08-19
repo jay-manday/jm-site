@@ -1,7 +1,8 @@
 import React from 'react';
-import Navigation from '../Navigation';
-import WorkTitle from '../WorkTitle/WorkTitle';
-import WorkItems from '../WorkItems/WorkItems';
+import Navigation from '../../Components/Navigation';
+import WorkTitle from '../../Components/WorkTitle/WorkTitle';
+import WorkItems from '../../Components/WorkItems/WorkItems';
+import Player from '../../Components/YouTube/Player'
 import { Flex, Box, Grid } from 'grid-styled';
 import styled from 'styled-components';
 import { Text } from 'rebass';
@@ -28,11 +29,12 @@ const PaperScoreThree = () => (
                 I'm a Designer and Engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
               </AboutType>
             </Text>
+            <Box width={[1, 2/3]} pt={2}>
+              <Player/>
+            </Box>
           </Box>
 
-          <Box w={[1, 2/3, ]} p={[2, 3]} pt={2}>
 
-          </Box>
 
         </Flex>
       </Grid>

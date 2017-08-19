@@ -1,7 +1,7 @@
 import React from 'react';
-import Navigation from './Navigation';
-import About from './About';
-import Work from './Work';
+import Navigation from '../Components/Navigation';
+import About from '../Components/About';
+import Work from '../Components/Work';
 
 const Home = () => (
   <div>

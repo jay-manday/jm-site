@@ -8,7 +8,7 @@ const AboutItems = () => (
     <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
       <Text width={[1, 2/3]}>
         <AboutType>
-          I'm a Designer and Engineer researching 👩‍🔬 data and society. I like to contribute to open source projects 🚀 like p5.js, gardening 🌱 with learning gardens and teaching kids creative coding 🤹 at the Rye Arts Center.
+          I'm a Designer and Engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
         </AboutType>
       </Text>
 
