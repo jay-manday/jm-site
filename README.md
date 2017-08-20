@@ -21,3 +21,5 @@ TODOS:
   - edit typography leading
   - finish layout tweaks
   - adjust font values
+  - plug in more content
+  - set up google analytics

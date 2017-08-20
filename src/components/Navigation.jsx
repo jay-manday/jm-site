@@ -4,21 +4,18 @@ import SectionTitle from './SectionTitle/SectionTitle';
 import { Flex, Box } from 'grid-styled';
 
 const Navigation = (props) => (
-  <div>
+  <Flex wrap align='baseline' justify='space-around'>
+    <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}>
+      <NavTitle />
+    </Box>
 
-    <Flex wrap align='baseline' justify='space-around'>
-      <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}>
-        <NavTitle />
+    {props.items.map((title) =>
+      <Box w={[1/4]} p={[2,3]} pl={[2, 3]}>
+        <SectionTitle title={title} />
       </Box>
+    )}
 
-      {props.items.map((title) =>
-        <Box w={[1/4]} p={[2,3]} pl={[2, 3]}>
-          <SectionTitle title={title} />
-        </Box>
-      )}
-
-    </Flex>
-  </div>
+  </Flex>
 )
 
 export default Navigation

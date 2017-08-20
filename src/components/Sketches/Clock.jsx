@@ -1,7 +1,5 @@
 export default function Clock (p) {
-
-  let sketchSize = 268;
-
+  let sketchSize = 283.75
   // Hours
   let t = 0.05;
 
@@ -32,9 +30,9 @@ export default function Clock (p) {
 
   p.setup = function () {
 
-    p.createCanvas(sketchSize, sketchSize)
+    const canvas = p.createCanvas(sketchSize, sketchSize)
+    canvas.class('SketchWrapper');
     console.log(`created canvas`)
-
     p.stroke(255);
 
     for (let i = 0; i < 60; i ++) {
@@ -117,5 +115,9 @@ export default function Clock (p) {
       p.line(cx - sketchSize/6, cy + sketchSize/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
       p.line(cx + sketchSize/6, cy + sketchSize/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
     }
+  }
+
+  p.windowResized = function () {
+    p.resizeCanvas(sketchSize, sketchSize);
   }
 }

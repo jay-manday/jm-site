@@ -2,9 +2,7 @@ import React from 'react';
 import Main from './Main.jsx';
 
 const App = () => (
-  <div>
-    <Main />
-  </div>
+  <Main />
 )
 
 export default App;
