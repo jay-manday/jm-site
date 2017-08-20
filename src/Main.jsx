@@ -9,13 +9,10 @@ import PaperScoreThree from './Pages/Work/PaperScoreThree'
 // with /roster or /schedule. The / route will only match
 // when the pathname is exactly the string "/"
 const Main = () => (
-  <main>
-    <Switch>
-      <Route exact path='/' component={Home}/>
-      <Route exact path='/work/paper-score-three' component={PaperScoreThree} />
-
-    </Switch>
-  </main>
+  <Switch>
+    <Route exact path='/' component={Home}/>
+    <Route exact path='/work/paper-score-three' component={PaperScoreThree} />
+  </Switch>
 )
 
-export default Main
+export default Main;

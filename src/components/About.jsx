@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutTitle from './AboutTitle/AboutTitle';
+import SectionTitle from './SectionTitle/SectionTitle';
 import AboutItems from './AboutItems/AboutItems';
 import { Flex } from 'grid-styled';
 
@@ -7,7 +7,7 @@ const About = (props) => (
   <div>
     <Flex wrap>
 
-      <AboutTitle />
+      <SectionTitle title='about' />
       <AboutItems />
 
     </Flex>

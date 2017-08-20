@@ -1,6 +1,6 @@
 import React from 'react'
 import NavTitle from './NavTitle/NavTitle';
-import NavItems from './NavItems/NavItems';
+import SectionTitle from './SectionTitle/SectionTitle';
 import { Flex, Box } from 'grid-styled';
 
 const Navigation = (props) => (
@@ -11,9 +11,9 @@ const Navigation = (props) => (
         <NavTitle />
       </Box>
 
-      {props.items.map((item) =>
+      {props.items.map((title) =>
         <Box w={[1/4]} p={[2,3]} pl={[2, 3]}>
-          <NavItems item={item} />
+          <SectionTitle title={title} />
         </Box>
       )}
 

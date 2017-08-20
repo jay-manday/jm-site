@@ -1,19 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Route } from 'react-router-dom';
 import { Box } from 'grid-styled';
 import { Measure } from 'rebass';
 
-const WorkTitle = () => (
+const SectionTitle = (props) => (
 
     <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
       <Measure classID='work'>
-        <TitleStyle>work</TitleStyle>
+        <Route path={`/${props.title}`}>
+          <TitleStyle>{props.title}</TitleStyle>
+        </Route>
       </Measure>
     </Box>
 
 )
 
-export default WorkTitle;
+export default SectionTitle;
 
 const TitleStyle = styled.p`
   @media (min-width: 20em) {

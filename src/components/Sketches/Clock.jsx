@@ -1,6 +1,6 @@
 export default function Clock (p) {
 
-    let sketchSize = 268;
+  let sketchSize = 268;
 
   // Hours
   let t = 0.05;
@@ -69,7 +69,6 @@ export default function Clock (p) {
   }
 
   p.draw = function () {
-    console.log(`canvas drawing`);
     p.background(0);
 
     // hours
@@ -95,7 +94,7 @@ export default function Clock (p) {
 
     // Seconds
     // subtract HALF_PI to make them start at the top
-    let radius = p.min(sketchSize, sketchSize) / 8;
+    let radius = p.min(sketchSize, sketchSize) ;
     secondsRadius = radius * 0.18;
 
     cx = sketchSize - sketchSize/ 2;
