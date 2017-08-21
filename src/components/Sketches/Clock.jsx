@@ -1,5 +1,5 @@
-export default function Clock (p) {
-  let sketchSize = 283.75
+export default function Clock (p, props) {
+  let sketchSize = p.displayWidth
   // Hours
   let t = 0.05;
 

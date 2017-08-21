@@ -7,7 +7,7 @@ class SketchWrapper extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      ready: false,
+      ready: false
     }
   }
 
@@ -18,7 +18,9 @@ class SketchWrapper extends React.Component {
     })
   }
 
+
   render(props) {
+
     console.log(`rendered P5Wrapper`)
     return (
 
@@ -30,10 +32,12 @@ class SketchWrapper extends React.Component {
       >
 
         <StyledSketch>
+          <Box w={1}>
           <P5Wrapper
             name='SketchWrapper'
             sketch={this.props.sketch}
           />
+        </Box>
         </StyledSketch>
 
         <Box pt={3}>
