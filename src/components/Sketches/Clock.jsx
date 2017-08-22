@@ -1,22 +1,24 @@
-export default function Clock (p, props) {
-  let sketchSize = p.displayWidth
+export default function Clock (p) {
+
+  const doc = document.getElementById('canvas');
+
   // Hours
   let t = 0.05;
 
-  const x1 = (t) => { return p.sin(t / 3.14) * sketchSize/10 + p.sin(-t / 42) * 20 }
-  const y1 = (t) => { return p.cos(t / 3.14) * sketchSize/5 }
-  const x2 = (t) => { return p.sin(t / 3.14) * sketchSize/5 + p.sin(-t) * 2 }
-  const y2 = (t) => { return p.cos(t / 3.14) * sketchSize/10 + p.cos(t / 24) + 2 }
+  const x1 = (t) => { return p.sin(t / 3.14) * doc.clientWidth/10 + p.sin(-t / 42) * 20 }
+  const y1 = (t) => { return p.cos(t / 3.14) * doc.clientWidth/5 }
+  const x2 = (t) => { return p.sin(t / 3.14) * doc.clientWidth/5 + p.sin(-t) * 2 }
+  const y2 = (t) => { return p.cos(t / 3.14) * doc.clientWidth/10 + p.cos(t / 24) + 2 }
 
   // Minutes
-  let aX = sketchSize/20
-  let aY = sketchSize/20
-  let bX = sketchSize/2 - 20
-  let bY = sketchSize/20
-  let cX = sketchSize/2 - 20
-  let cY = sketchSize/2 - 20
-  let dX = sketchSize/20
-  let dY = sketchSize/2 - 20
+  let aX = doc.clientWidth/20
+  let aY = doc.clientWidth/20
+  let bX = doc.clientWidth/2 - 20
+  let bY = doc.clientWidth/20
+  let cX = doc.clientWidth/2 - 20
+  let cY = doc.clientWidth/2 - 20
+  let dX = doc.clientWidth/20
+  let dY = doc.clientWidth/2 - 20
 
   let lineXa = new Array(60);
   let lineYa = new Array(60);
@@ -27,11 +29,8 @@ export default function Clock (p, props) {
   let cx, cy;
   let secondsRadius;
 
-
   p.setup = function () {
-
-    const canvas = p.createCanvas(sketchSize, sketchSize)
-    canvas.class('SketchWrapper');
+    p.createCanvas(doc.clientWidth, doc.clientWidth);
     console.log(`created canvas`)
     p.stroke(255);
 
@@ -66,13 +65,21 @@ export default function Clock (p, props) {
     }
   }
 
-  p.draw = function () {
+  p.windowResized = function() {
+    console.log("hello");
+    const doc = document.getElementById('canvas');
+    p.resizeCanvas(doc.clientWidth, doc.clientHeight);
+  }
+
+
+
+  p.draw = function() {
     p.background(0);
 
     // hours
     p.stroke(225);
     p.strokeWeight(2);
-    p.translate(sketchSize/4 , sketchSize/4);
+    p.translate(doc.clientWidth/4 , doc.clientWidth/4);
 
     for (let i = 0; i < p.hour(); i++) {
       p.line(x1(t - i), y1(t - i), x2(t + i), y2(t + i));
@@ -81,7 +88,7 @@ export default function Clock (p, props) {
     t += 0.05;
 
     // minutes
-    //translate(sketchSize/9, sketchSize/8);
+    //translate(doc.clientWidth/9, doc.clientWidth/8);
 
     p.stroke(225);
     p.strokeWeight(1);
@@ -92,11 +99,11 @@ export default function Clock (p, props) {
 
     // Seconds
     // subtract HALF_PI to make them start at the top
-    let radius = p.min(sketchSize, sketchSize) ;
+    let radius = p.min(doc.clientWidth, doc.clientWidth) ;
     secondsRadius = radius * 0.18;
 
-    cx = sketchSize - sketchSize/ 2;
-    cy = sketchSize - sketchSize / 2;
+    cx = doc.clientWidth - doc.clientWidth/ 2;
+    cy = doc.clientWidth - doc.clientWidth / 2;
 
     let s = p.map(p.second(), 0, 60, 0, p.TWO_PI) - p.HALF_PI;
 
@@ -104,20 +111,16 @@ export default function Clock (p, props) {
     p.stroke(225);
     p.strokeWeight(2);
 
-    for (var i = 0; i < sketchSize/6; i +=20) {   // Seconds all linked to clock in middle of grd
+    for (var i = 0; i < doc.clientWidth/6; i +=20) {   // Seconds all linked to clock in middle of grd
       p.line(cx, cy, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx + sketchSize/6, cy, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx + sketchSize/6, cy - sketchSize/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx - sketchSize/6, cy, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx, cy + sketchSize/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx, cy - sketchSize/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx - sketchSize/6, cy - sketchSize/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx - sketchSize/6, cy + sketchSize/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx + sketchSize/6, cy + sketchSize/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+      p.line(cx + doc.clientWidth/6, cy, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+      p.line(cx + doc.clientWidth/6, cy - doc.clientWidth/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+      p.line(cx - doc.clientWidth/6, cy, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+      p.line(cx, cy + doc.clientWidth/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+      p.line(cx, cy - doc.clientWidth/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+      p.line(cx - doc.clientWidth/6, cy - doc.clientWidth/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+      p.line(cx - doc.clientWidth/6, cy + doc.clientWidth/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+      p.line(cx + doc.clientWidth/6, cy + doc.clientWidth/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
     }
-  }
-
-  p.windowResized = function () {
-    p.resizeCanvas(sketchSize, sketchSize);
   }
 }

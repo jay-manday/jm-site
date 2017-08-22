@@ -1,26 +1,37 @@
 import React from 'react';
 import { Box } from 'grid-styled';
 import styled from 'styled-components';
-import P5Wrapper from './P5Wrapper';
+import P5Wrapper from 'react-p5-wrapper';
+
 
 class SketchWrapper extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      ready: false
+      ready: false,
+      width: undefined,
+      heigh: undefined,
     }
   }
 
   componentDidMount(props) {
+    const height = document.getElementById('canvas').clientHeight;
+    const width = document.getElementById('canvas').clientWidth;
     console.log(`mounted P5Wrapper`)
     this.setState({
       ready: true,
+      width,
+      height
     })
   }
 
+  changeWidthHeight(width, height) {
+    console.log("changing");
+    this.setState({ height, width });
+    console.log("changed");
+  }
 
   render(props) {
-
     console.log(`rendered P5Wrapper`)
     return (
 
@@ -33,17 +44,16 @@ class SketchWrapper extends React.Component {
 
         <StyledSketch>
           <Box w={1}>
-          <P5Wrapper
-            name='SketchWrapper'
-            sketch={this.props.sketch}
-          />
-        </Box>
+            <div className="canvas-wrapper" id="canvas">
+              <P5Wrapper sketch={this.props.sketch}  />
+            </div>
+          </Box>
         </StyledSketch>
 
         <Box pt={3}>
-            <TitleStyle>
-              {this.props.title}
-            </TitleStyle>
+          <TitleStyle>
+            {this.props.title}
+          </TitleStyle>
         </Box>
 
         <Box pt={1}>
