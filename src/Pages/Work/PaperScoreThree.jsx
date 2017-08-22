@@ -14,7 +14,7 @@ const PaperScoreThree = () => (
       <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
         <SectionTitle title='work' />
       </Box>
-      
+
       <Grid width={3/4}>
         <Flex wrap>
 
@@ -49,16 +49,19 @@ export default PaperScoreThree;
 const AboutType= styled.h2`
 @media (min-width: 20em) {
   font-size: 1em;
+  line-height: 1em;
   text-decoration: none;
 }
 
 @media (min-width: 37.5em) {
   font-size: 1.5em;
+  line-height: 1.5em;
   text-decoration: none;
 }
   font-family: 'GrotesqueMT';
   font-size: 1.25em;
   font-weight: 300;
+  line-height: 1.25em;
   color: white;
   margin: 0;
 `;

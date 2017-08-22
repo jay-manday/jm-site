@@ -46,17 +46,20 @@ export default ContingentClock;
 const AboutType= styled.h2`
   @media (min-width: 20em) {
     font-size: 1em;
+    line-height: 1em;
     text-decoration: none;
   }
 
   @media (min-width: 37.5em) {
     font-size: 1.5em;
+    line-height: 1.5em;
     text-decoration: none;
   }
 
   font-family: 'GrotesqueMT';
   font-size: 1.25em;
   font-weight: 300;
+  line-height: 1.25em;
   color: white;
   margin: 0;
 `;
