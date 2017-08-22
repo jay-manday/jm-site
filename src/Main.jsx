@@ -1,7 +1,8 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from './Pages/Home'
-import PaperScoreThree from './Pages/Work/PaperScoreThree'
+import PaperScoreThree from './Pages/Work/PaperScoreThree';
+import ContingentClock from './Pages/Work/ContingentClock';
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -12,6 +13,7 @@ const Main = () => (
   <Switch>
     <Route exact path='/' component={Home}/>
     <Route exact path='/work/paper-score-three' component={PaperScoreThree} />
+    <Route exact path='/work/contingent-clock' component={ContingentClock} />
   </Switch>
 )
 

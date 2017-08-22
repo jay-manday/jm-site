@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Box } from 'grid-styled';
 import styled from 'styled-components';
 import P5Wrapper from 'react-p5-wrapper';
@@ -7,6 +8,7 @@ import P5Wrapper from 'react-p5-wrapper';
 class SketchWrapper extends React.Component {
   constructor(props) {
     super(props);
+    this.updateDimensions = this.updateDimensions.bind(this);
     this.state = {
       ready: false,
       width: undefined,
@@ -17,6 +19,7 @@ class SketchWrapper extends React.Component {
   componentDidMount(props) {
     const height = document.getElementById('canvas').clientWidth;
     const width = document.getElementById('canvas').clientWidth;
+    window.addEventListener('Resize', this.updateDimensions);
     console.log(`mounted P5Wrapper`)
     this.setState({
       ready: true,
@@ -25,10 +28,15 @@ class SketchWrapper extends React.Component {
     })
   }
 
-  changeWidthHeight(width, height) {
-    console.log("changing");
+  updateDimensions(width, height) {
+    console.log(`updating dimensions: ${window.innerWidth}`);
     this.setState({ height, width });
     console.log("changed");
+  }
+
+  compnentWillUnmount(props) {
+    window.removeEventListener('Resize', this.updateDimensions);
+    console.log(`removed event listener`)
   }
 
   render(props) {
@@ -45,15 +53,19 @@ class SketchWrapper extends React.Component {
         <StyledSketch>
           <Box w={1}>
             <div className="canvas-wrapper" id="canvas">
-              <P5Wrapper sketch={this.props.sketch}  />
+              <Link to={this.props.href} >
+                <P5Wrapper sketch={this.props.sketch}  />
+              </Link>
             </div>
           </Box>
         </StyledSketch>
 
         <Box pt={3}>
-          <TitleStyle>
-            {this.props.title}
-          </TitleStyle>
+          <Link to={this.props.href} >
+            <TitleStyle>
+              {this.props.title}
+            </TitleStyle>
+          </Link>
         </Box>
 
         <Box pt={1}>

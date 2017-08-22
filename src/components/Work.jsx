@@ -23,13 +23,13 @@ const Work = (props) => (
         />
 
       <SketchWrapper
+        href={`/work/contingent-clock`}
         classID={'SketchWrapper'}
         className={'sketch'}
         sketch={Clock}
         title={'Contingent Clock'}
         medium={'Chance and Code'}
-
-        size={268}/>
+      />
       </Flex>
     </Grid>
   </Flex>

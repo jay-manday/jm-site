@@ -14,11 +14,10 @@ now
 ```
 
 TODOS:
-
-  - set sketch to remount on screen resize
   - add pdf viewer component to work
   - add documentation + content
   - edit typography leading
+  - add routes to work page
   - finish layout tweaks
   - adjust font values
   - plug in more content
