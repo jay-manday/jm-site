@@ -14,11 +14,10 @@ now
 ```
 
 TODOS:
-  - add pdf viewer component to work
+  - adjust YouTube player proportions
+  - add image carousel component
   - add documentation + content
-  - edit typography leading
   - add routes to work page
-  - finish layout tweaks
-  - adjust font values
-  - plug in more content
   - set up google analytics
+  - plug in more content
+  - finish layout tweaks
