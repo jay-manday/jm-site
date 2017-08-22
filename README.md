@@ -15,7 +15,7 @@ now
 
 TODOS:
 
-  - set sketch width to css element
+  - set sketch to remount on screen resize
   - add pdf viewer component to work
   - add documentation + content
   - edit typography leading

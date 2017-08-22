@@ -15,7 +15,7 @@ class SketchWrapper extends React.Component {
   }
 
   componentDidMount(props) {
-    const height = document.getElementById('canvas').clientHeight;
+    const height = document.getElementById('canvas').clientWidth;
     const width = document.getElementById('canvas').clientWidth;
     console.log(`mounted P5Wrapper`)
     this.setState({
