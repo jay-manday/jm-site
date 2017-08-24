@@ -66,9 +66,7 @@ export default function Clock (p) {
   }
 
   p.windowResized = function() {
-    const doc = document.getElementById('canvas');
-    p.createCanvas(doc.clientWidth, doc.clientWidth);
-
+    p.resizeCanvas(p.windowWidth, p.windowWidth);
   }
 
 
