@@ -35,7 +35,8 @@ const PaperScoreThree = () => (
           </Box>
 
           <Box width={[1, 2/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
-            <Player/>
+            <Player
+              videoId="6hIgBEXuQD8"/>
           </Box>
 
         </Flex>

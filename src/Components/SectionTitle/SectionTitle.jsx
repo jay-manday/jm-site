@@ -1,11 +1,11 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const SectionTitle = (props) => (
-  <Route path={`/${props.title}`}>
+  <Link to={`/${props.title}`}>
     <TitleStyle>{props.title}</TitleStyle>
-  </Route>
+  </Link>
 )
 
 export default SectionTitle;

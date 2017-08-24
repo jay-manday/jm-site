@@ -14,7 +14,6 @@ now
 ```
 
 TODOS:
-  - adjust YouTube player proportions
   - add image carousel component
   - add documentation + content
   - add routes to work page

@@ -1,14 +1,14 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const NavTitle = (props) => (
 
-    <Route path={'/'}>
+    <Link to={'/'}>
       <StyledLink>
         <p>J<Spanned>ason</Spanned> Mandel</p>
       </StyledLink>
-    </Route>
+    </Link>
 
 )
 

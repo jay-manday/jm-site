@@ -3,27 +3,23 @@ import { Box } from 'grid-styled';
 import { Text } from 'rebass';
 import styled from 'styled-components';
 
-const AboutItems = () => (
+const ContactItems = (props) => (
 
     <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
-      <Text width={[1]} f={3}>
+      <Text width={[1]} f={3} mb={1}>
         <AboutType>
-          I'm a Designer and Engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
+          {props.phone}
         </AboutType>
       </Text>
-
-      <Box py={3}>
-        <Text width={[1, 2/3]} f={3}>
-          <AboutType>
-            B.S. in Visual Arts and Mathematics <br />
-            School of Art + Design at Purchase College
-          </AboutType>
-        </Text>
-      </Box>
+      <Text width={[1]} f={3} mb={1}>
+        <AboutType>
+          {props.email}
+        </AboutType>
+      </Text>
     </Box>
 )
 
-export default AboutItems;
+export default ContactItems;
 
 const AboutType= styled.h2`
 @media (min-width: 20em) {
