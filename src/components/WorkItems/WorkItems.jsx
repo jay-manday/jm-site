@@ -6,16 +6,18 @@ import { Image } from 'rebass';
 
 const WorkItems = (props) => (
 
-  <Box width={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+  <Box>
     <Link to={props.href} >
       <Image src={props.img} />
     </Link>
 
 
     <Box pt={3}>
+      <Link to={props.href} >
         <TitleStyle>
           {props.title}
         </TitleStyle>
+      </Link>
     </Box>
 
     <Box pt={1}>

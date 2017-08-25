@@ -24,12 +24,14 @@ const Spanned = styled.span`
 
 const StyledLink = styled.a`
   @media (min-width: 20em) {
-    font-size: .9em;
+    font-size: 1.4em;
+    line-height: 1.5em;
     text-decoration: none;
   }
 
   @media (min-width: 37.5em) {
     font-size: 1.5em;
+    line-height: 1.5em;
     text-decoration: none;
   }
   :hover {

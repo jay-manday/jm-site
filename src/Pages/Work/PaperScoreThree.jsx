@@ -3,21 +3,19 @@ import Navigation from '../../Components/Navigation';
 import SectionTitle from '../../Components/SectionTitle/SectionTitle';
 import WorkItems from '../../Components/WorkItems/WorkItems';
 import Player from '../../Components/YouTube/Player';
-import { Flex, Box, Grid } from 'grid-styled';
+import { Flex, Box } from 'grid-styled';
 import styled from 'styled-components';
-import { Text } from 'rebass';
 
 const PaperScoreThree = () => (
   <div>
     <Navigation items={['work', 'about', '']} />
-    <Flex wrap>
-      <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
-        <SectionTitle title='work' />
-      </Box>
 
-      <Grid width={3/4}>
-        <Flex wrap>
+      <Flex wrap>
+        <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+          <SectionTitle title='work' />
+        </Box>
 
+        <Box w={[3/4, 1/2, 1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
           <WorkItems
             href={`/work/paper-score-three`}
             img={'https://d2w9rnfcy7mm78.cloudfront.net/1156854/original_7ea09cc794c5a2b2c9ec4ab1702d9bc7.jpg'}
@@ -25,32 +23,57 @@ const PaperScoreThree = () => (
             medium={'paper, piezos, & pure data'}
             site={'Neuberger Museum, 2017'}
           />
+        </Box>
 
-          <Box w={[1, 2/3, ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
-            <Text width={[1, 2/3]}>
-              <AboutType>
-                I'm a Designer and Engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
-              </AboutType>
-            </Text>
+        <Box w={[2/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+          <ResponsiveDisplayBig>
+            <AboutType>
+              I'm a Designer and Engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
+            </AboutType>
+          </ResponsiveDisplayBig>
+        </Box>
+      </Flex>
+
+
+      <Flex>
+
+        <Box width={[3/4, 1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+          <Box w={[1/4, 0]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+            <ResponsiveDisplaySmall>
+              <SectionTitle title='about' />
+            </ResponsiveDisplaySmall>
           </Box>
 
-          <Box width={[1, 2/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
-            <Player
-              videoId="6hIgBEXuQD8"/>
-          </Box>
+          <ResponsiveDisplaySmall>
+          <AboutType>
+            I'm a Designer and Engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
+          </AboutType>
+          </ResponsiveDisplaySmall>
+        </Box>
+      </Flex>
 
-        </Flex>
-      </Grid>
-    </Flex>
+      <Flex>
+
+        <Box w={[0, 1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+          <ResponsiveDisplayBig>
+            <SectionTitle title='about' />
+          </ResponsiveDisplayBig>
+        </Box>
+
+        <Box width={[1, 2/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+          <Player videoId="6hIgBEXuQD8"/>
+        </Box>
+      </Flex>
+
   </div>
 )
 
 export default PaperScoreThree;
 
-const AboutType= styled.h2`
+const AboutType = styled.h2`
 @media (min-width: 20em) {
   font-size: 1em;
-  line-height: 1em;
+  line-height: 1.5em;
   text-decoration: none;
 }
 
@@ -65,4 +88,20 @@ const AboutType= styled.h2`
   line-height: 1.25em;
   color: white;
   margin: 0;
+`;
+
+const ResponsiveDisplaySmall = styled.span`
+  @media (max-width: 20em) {
+    display: inline;
+  }
+
+  display: none;
+`;
+
+const ResponsiveDisplayBig = styled.span`
+  @media (min-width: 28em) {
+    display: inline;
+  }
+
+  display: none;
 `;

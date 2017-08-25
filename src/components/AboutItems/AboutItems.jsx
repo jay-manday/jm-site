@@ -28,7 +28,7 @@ export default AboutItems;
 const AboutType= styled.h2`
 @media (min-width: 20em) {
   font-size: 1em;
-  line-height: 1em;
+  line-height: 1.25em;
   text-decoration: none;
 }
 

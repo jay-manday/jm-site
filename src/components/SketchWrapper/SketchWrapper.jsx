@@ -43,12 +43,7 @@ class SketchWrapper extends React.Component {
     console.log(`rendered P5Wrapper`)
     return (
 
-      <Box
-        width={[1, 1/2, 1/3]}
-        p={[2, 3]}
-        pl={[2, 3]}
-        pt={[3, 4]}
-      >
+      <Box>
 
         <StyledSketch>
           <Box w={1}>
@@ -75,7 +70,6 @@ class SketchWrapper extends React.Component {
         </Box>
 
       </Box>
-
 
     )
   }
