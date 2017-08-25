@@ -35,24 +35,26 @@ const PaperScoreThree = () => (
       </Flex>
 
 
-      <Flex>
-
-        <Box width={[3/4, 1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+      <Flex wrap>
           <Box w={[1/4, 0]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
             <ResponsiveDisplaySmall>
               <SectionTitle title='about' />
             </ResponsiveDisplaySmall>
           </Box>
 
+
+        <Box w={[3/4, 0]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
           <ResponsiveDisplaySmall>
-          <AboutType>
-            I'm a Designer and Engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
-          </AboutType>
+            <AboutType>
+              I'm a Designer and Engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
+            </AboutType>
           </ResponsiveDisplaySmall>
+
         </Box>
+
       </Flex>
 
-      <Flex>
+      <Flex wrap>
 
         <Box w={[0, 1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
           <ResponsiveDisplayBig>
@@ -71,8 +73,8 @@ const PaperScoreThree = () => (
 export default PaperScoreThree;
 
 const AboutType = styled.h2`
-@media (min-width: 20em) {
-  font-size: 1em;
+@media (max-width: 37.5em) {
+  font-size: 1.5em;
   line-height: 1.5em;
   text-decoration: none;
 }
@@ -83,23 +85,22 @@ const AboutType = styled.h2`
   text-decoration: none;
 }
   font-family: 'GrotesqueMT';
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 300;
-  line-height: 1.25em;
+  line-height: 1.5em;
   color: white;
   margin: 0;
 `;
 
 const ResponsiveDisplaySmall = styled.span`
-  @media (max-width: 20em) {
+  @media (max-width: 37.5em) {
     display: inline;
   }
-
   display: none;
 `;
 
 const ResponsiveDisplayBig = styled.span`
-  @media (min-width: 28em) {
+  @media (min-width: 48em) {
     display: inline;
   }
 

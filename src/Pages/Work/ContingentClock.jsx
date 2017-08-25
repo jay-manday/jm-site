@@ -57,21 +57,21 @@ const ContingentClock = () => (
 
 export default ContingentClock;
 
-const ResponsiveDisplayBig = styled.span`
-  @media (min-width: 20em) {
-    display: none;
+const ResponsiveDisplaySmall = styled.span`
+  @media (max-width: 37.5em) {
+    display: inline;
   }
-
-  display: inline;
+  display: none;
 `;
 
-const ResponsiveDisplaySmall = styled.span`
-  @media (max-width: 20em) {
+const ResponsiveDisplayBig = styled.span`
+  @media (min-width: 48em) {
     display: inline;
   }
 
   display: none;
 `;
+
 
 const AboutType= styled.h2`
   @media (min-width: 20em) {
