@@ -9,63 +9,86 @@ import styled from 'styled-components';
 const PaperScoreThree = () => (
   <div>
     <Navigation items={['work', 'about', '']} />
+    <Flex wrap>
 
-      <Flex wrap>
-        <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
-          <SectionTitle title='work' />
-        </Box>
+      <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+        <SectionTitle title='work' />
+      </Box>
 
-        <Box w={[3/4, 1/2, 1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
-          <WorkItems
-            href={`/work/paper-score-three`}
-            img={'https://d2w9rnfcy7mm78.cloudfront.net/1156854/original_7ea09cc794c5a2b2c9ec4ab1702d9bc7.jpg'}
-            title={'Paper Score #3'}
-            medium={'paper, piezos, & pure data'}
-            site={'Neuberger Museum, 2017'}
-          />
-        </Box>
+      <Box w={[3/4, 1/2, 1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+        <WorkItems
+          href={`/work/paper-score-three`}
+          img={'https://d2w9rnfcy7mm78.cloudfront.net/1156854/original_7ea09cc794c5a2b2c9ec4ab1702d9bc7.jpg'}
+          title={'Paper Score #3'}
+          medium={'paper, piezos, & pure data'}
+          site={'Neuberger Museum, 2016'}
+        />
+      </Box>
 
-        <Box w={[2/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
-          <ResponsiveDisplayBig>
+      <Box w={[2/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+        <ResponsiveDisplayBig>
+          <Box pb={2}>
             <AboutType>
-              I'm a Designer and Engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
+              This is a part of a series of studies on inter-relationship of emergent media in concurrence with traditional mediums such as paper-craft through a concomitant compositional schema.
             </AboutType>
-          </ResponsiveDisplayBig>
-        </Box>
-      </Flex>
-
-
-      <Flex wrap>
-          <Box w={[1/4, 0]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
-            <ResponsiveDisplaySmall>
-              <SectionTitle title='about' />
-            </ResponsiveDisplaySmall>
           </Box>
 
-
-        <Box w={[3/4, 0]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
-          <ResponsiveDisplaySmall>
+          <Box pb={2}>
             <AboutType>
-              I'm a Designer and Engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
+              A composition made of the recordings from the physical formulation of pulp to paper is projected through the paper via transducers while the piece was at rest, awaiting activation by the realization of an inter-dependent score.
             </AboutType>
-          </ResponsiveDisplaySmall>
+          </Box>
 
-        </Box>
+          <Box pb={2}>
+            <AboutType>
+              As the participant channels the instructions, the transitory motion of pencil in hand across paper, producing acoustic artifacts which are projected through same paper of causation.
+            </AboutType>
+          </Box>
+        </ResponsiveDisplayBig>
+      </Box>
+    </Flex>
 
-      </Flex>
+    <Flex wrap>
+      <Box w={[1/4, 0]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+        <ResponsiveDisplaySmall>
+          <SectionTitle title='about' />
+        </ResponsiveDisplaySmall>
+      </Box>
 
-      <Flex wrap>
+      <Box w={[3/4, 0]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+        <ResponsiveDisplaySmall>
+          <Box pb={2}>
+            <AboutType>
+              This is a part of a series of studies on inter-relationship of emergent media in concurrence with traditional mediums such as paper-craft through a concomitant compositional schema.
+            </AboutType>
+          </Box>
 
-        <Box w={[0, 1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
-          <ResponsiveDisplayBig>
-            <SectionTitle title='about' />
-          </ResponsiveDisplayBig>
-        </Box>
+          <Box pb={2}>
+            <AboutType>
+              A composition made of the recordings from the physical formulation of pulp to paper is projected through the paper via transducers while the piece was at rest, awaiting activation by the realization of an inter-dependent score.
+            </AboutType>
+          </Box>
 
-        <Box width={[1, 2/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
-          <Player videoId="6hIgBEXuQD8"/>
-        </Box>
-      </Flex>
+          <Box pb={2}>
+            <AboutType>
+              As the participant channels the instructions, the transitory motion of pencil in hand across paper, producing acoustic artifacts which are projected through same paper of causation.
+            </AboutType>
+          </Box>
+        </ResponsiveDisplaySmall>
+      </Box>
+    </Flex>
+
+    <Flex wrap>
+      <Box w={[0, 1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+        <ResponsiveDisplayBig>
+          <SectionTitle title='about' />
+        </ResponsiveDisplayBig>
+      </Box>
+
+      <Box width={[1, 2/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+        <Player videoId="JjdqXNqkQ-4"/>
+      </Box>
+    </Flex>
 
   </div>
 )
@@ -74,8 +97,8 @@ export default PaperScoreThree;
 
 const AboutType = styled.h2`
 @media (max-width: 37.5em) {
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1em;
+  line-height: 1.25em;
   text-decoration: none;
 }
 
@@ -100,7 +123,7 @@ const ResponsiveDisplaySmall = styled.span`
 `;
 
 const ResponsiveDisplayBig = styled.span`
-  @media (min-width: 48em) {
+  @media (min-width: 37.5em) {
     display: inline;
   }
 

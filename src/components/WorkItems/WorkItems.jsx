@@ -45,7 +45,7 @@ const TitleStyle = styled.h1`
 
   font-family: GrotesqueMT;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 1em;
   color: white;
   text-decoration: none;
   margin: 0;
@@ -54,7 +54,7 @@ const TitleStyle = styled.h1`
 const SubStyle = styled.h1`
   font-family: GrotesqueMT;
   font-style: italic;
-  font-size: .5em;
+  font-size: .75em;
   color: white;
   margin: 0;
 `;

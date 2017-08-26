@@ -15,7 +15,7 @@ const NavTitle = (props) => (
 export default NavTitle;
 
 const Spanned = styled.span`
-  @media (min-width: 48em) {
+  @media (min-width: 40em) {
     display: inline;
   }
 
@@ -23,23 +23,17 @@ const Spanned = styled.span`
 `;
 
 const StyledLink = styled.a`
-  @media (min-width: 20em) {
-    font-size: 1.4em;
-    line-height: 1.5em;
-    text-decoration: none;
-  }
-
-  @media (min-width: 37.5em) {
-    font-size: 1.5em;
-    line-height: 1.5em;
-    text-decoration: none;
-  }
+@media (min-width: 40em) {
+  font-size: 2em;
+  line-height: 1.5 em;
+  text-decoration: none;
+}
   :hover {
     color: red;
   }
 
   font-family: 'GrotesqueMT-Italic';
-  font-weight: normal
-  font-size: 1em;
+  font-weight: normal;
+  font-size: .9em;
   color: white;
 `;

@@ -26,21 +26,18 @@ const AboutItems = () => (
 export default AboutItems;
 
 const AboutType= styled.h2`
-@media (min-width: 20em) {
+@media (max-width: 48em) {
   font-size: 1em;
   line-height: 1.25em;
   text-decoration: none;
 }
 
-@media (min-width: 37.5em) {
-  font-size: 1.5em;
-  line-height: 1.5em;
-  text-decoration: none;
-}
+  background-color: black;
   font-family: 'GrotesqueMT';
-  font-size: 1.25em;
+  text-decoration: none;
+  line-height: 1.5em;
+  font-size: 1.5em;
   font-weight: 300;
   color: white;
-  line-height: 1.25em;
   margin: 0;
 `;
