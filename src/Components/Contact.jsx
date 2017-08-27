@@ -11,8 +11,8 @@ const Contact = (props) => (
     </Box>
 
     <ContactItems
-      phone='(1) 914 417 5472'
-      email='jason.mandel@purchase.edu' />
+      email='jason.mandel@purchase.edu'
+      phone='(1) 914 417 5472'/>
   </Flex>
 )
 

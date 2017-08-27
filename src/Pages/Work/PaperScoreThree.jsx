@@ -29,13 +29,13 @@ const PaperScoreThree = () => (
         <ResponsiveDisplayBig>
           <Box pb={2}>
             <AboutType>
-              This is a part of a series of studies on inter-relationship of emergent media in concurrence with traditional mediums such as paper-craft through a concomitant compositional schema.
+              A series of studies on inter-relationship of emergent media in concurrence with traditional mediums such as paper-craft through a concomitant compositional schema.
             </AboutType>
           </Box>
 
           <Box pb={2}>
             <AboutType>
-              A composition made of the recordings from the physical formulation of pulp to paper is projected through the paper via transducers while the piece was at rest, awaiting activation by the realization of an inter-dependent score.
+              The composition consists of the recordings of the physical formulation of pulp to paper, projected through the paper via transducers while the piece was at rest, awaiting activation by the realization of an inter-dependent score.
             </AboutType>
           </Box>
 
@@ -59,7 +59,7 @@ const PaperScoreThree = () => (
         <ResponsiveDisplaySmall>
           <Box pb={2}>
             <AboutType>
-              This is a part of a series of studies on inter-relationship of emergent media in concurrence with traditional mediums such as paper-craft through a concomitant compositional schema.
+              A series of studies on inter-relationship of emergent media in concurrence with traditional mediums such as paper-craft through a concomitant compositional schema.
             </AboutType>
           </Box>
 
@@ -81,12 +81,65 @@ const PaperScoreThree = () => (
     <Flex wrap>
       <Box w={[0, 1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
         <ResponsiveDisplayBig>
-          <SectionTitle title='about' />
+          <SectionTitle title='work' />
         </ResponsiveDisplayBig>
       </Box>
 
       <Box width={[1, 2/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
         <Player videoId="JjdqXNqkQ-4"/>
+      </Box>
+    </Flex>
+
+    <Flex wrap>
+      <Box w={[0, 1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+        <ResponsiveDisplayBig>
+          <SectionTitle title='about' />
+        </ResponsiveDisplayBig>
+      </Box>
+      <Box w={[2/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+        <ResponsiveDisplayBig>
+          <Box pb={2}>
+            <AboutType>
+              A series of studies on inter-relationship of emergent media in concurrence with traditional mediums such as paper-craft through a concomitant compositional schema.
+            </AboutType>
+          </Box>
+
+          <Box pb={2}>
+            <AboutType>
+              The composition consists of the recordings of the physical formulation of pulp to paper, projected through the paper via transducers while the piece was at rest, awaiting activation by the realization of an inter-dependent score.
+            </AboutType>
+          </Box>
+        </ResponsiveDisplayBig>
+      </Box>
+    </Flex>
+
+    <Flex wrap>
+      <Box w={[1/4, 0]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+        <ResponsiveDisplaySmall>
+          <SectionTitle title='about' />
+        </ResponsiveDisplaySmall>
+      </Box>
+
+      <Box w={[3/4, 0]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+        <ResponsiveDisplaySmall>
+          <Box pb={2}>
+            <AboutType>
+              A series of studies on inter-relationship of emergent media in concurrence with traditional mediums such as paper-craft through a concomitant compositional schema.
+            </AboutType>
+          </Box>
+
+          <Box pb={2}>
+            <AboutType>
+              A composition made of the recordings from the physical formulation of pulp to paper is projected through the paper via transducers while the piece was at rest, awaiting activation by the realization of an inter-dependent score.
+            </AboutType>
+          </Box>
+
+          <Box pb={2}>
+            <AboutType>
+              As the participant channels the instructions, the transitory motion of pencil in hand across paper, producing acoustic artifacts which are projected through same paper of causation.
+            </AboutType>
+          </Box>
+        </ResponsiveDisplaySmall>
       </Box>
     </Flex>
 

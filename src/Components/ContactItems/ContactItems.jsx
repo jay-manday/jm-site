@@ -8,12 +8,12 @@ const ContactItems = (props) => (
     <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
       <Text width={[1]} f={3} mb={1}>
         <AboutType>
-          {props.phone}
+          {props.email}
         </AboutType>
       </Text>
       <Text width={[1]} f={3} mb={1}>
         <AboutType>
-          {props.email}
+          {props.phone}
         </AboutType>
       </Text>
     </Box>
@@ -29,8 +29,8 @@ const AboutType= styled.h2`
 }
 
 @media (min-width: 37.5em) {
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1.25em;
+  line-height: 1.25em;
   text-decoration: none;
 }
   font-family: 'GrotesqueMT';

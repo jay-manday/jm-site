@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const SectionTitle = (props) => (
-  <Link to={`/${props.title}`}>
+  <Link to={`/`}>
     <TitleStyle>{props.title}</TitleStyle>
   </Link>
 )

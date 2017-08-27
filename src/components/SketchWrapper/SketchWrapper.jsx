@@ -91,7 +91,7 @@ const TitleStyle = styled.h1`
 
   font-family: GrotesqueMT;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: white;
   text-decoration: none;
   margin: 0;
