@@ -8,15 +8,19 @@ const AboutItems = () => (
     <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
       <Text width={[1]} f={3}>
         <AboutType>
-          I'm a Designer & Engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
+          I'm a designer & engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
         </AboutType>
       </Text>
 
       <Box py={3}>
-        <Text width={[1, 2/3]} f={3}>
+        <Text width={[1]} f={3}>
+          <AboutType>
+            School of Art + Design at Purchase College
+          </AboutType>
+        </Text>
+        <Text width={[1]} f={3}>
           <AboutType>
             B.S. in Visual Arts and Mathematics <br />
-            School of Art + Design at Purchase College
           </AboutType>
         </Text>
       </Box>

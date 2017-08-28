@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const ContactItems = (props) => (
 
-    <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+    <Box >
       <Text width={[1]} f={3} mb={1}>
         <AboutType>
           {props.email}
