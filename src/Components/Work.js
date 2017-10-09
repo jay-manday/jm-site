@@ -1,0 +1,56 @@
+import React from 'react';
+import { Flex, Box, Grid } from 'grid-styled';
+import ErrorBoundary from './ErrorBoundary/ErrorBoundary'
+import SectionTitle from './SectionTitle/SectionTitle';
+import WorkItems from './WorkItems/WorkItems';
+import SketchWrapper from './SketchWrapper/SketchWrapper';
+import Clock from './Sketches/Clock';
+
+const Work = (props) => (
+  <Flex wrap>
+    <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+      <SectionTitle title='work' />
+    </Box>
+
+    <Grid width={3/4}>
+      <Flex wrap>
+
+        <Box w={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+          <ErrorBoundary>
+            <SketchWrapper
+              href={`/work/contingent-clock`}
+              classID={'SketchWrapper'}
+              className={'sketch'}
+              sketch={Clock}
+              title={'Contingent Clock'}
+              medium={'Chance and Code'}
+            />
+          </ErrorBoundary>
+
+        </Box>
+
+        <Box w={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+          <WorkItems
+            href={`/work/paper-score-three`}
+            img={`https://d2w9rnfcy7mm78.cloudfront.net/1156854/original_7ea09cc794c5a2b2c9ec4ab1702d9bc7.jpg`}
+            title={'Paper Score #3'}
+            medium={'paper, piezos, & pure data'}
+            site={'Neuberger Museum, 2016'}
+          />
+        </Box>
+        <Box w={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+          <WorkItems
+            href={`/work/paper-score-three`}
+            img={`https://d2w9rnfcy7mm78.cloudfront.net/1219626/original_634b313d842272ccff0523507d676ab8.jpg`}
+            title={'Print & Graphics'}
+            medium={'digital  and print media'}
+            site={'2015 - 2017'}
+          />
+        </Box>
+
+      </Flex>
+    </Grid>
+  </Flex>
+)
+
+export default Work;
