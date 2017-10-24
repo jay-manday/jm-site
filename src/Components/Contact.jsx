@@ -9,7 +9,7 @@ const Contact = (props) => (
 
   <Flex wrap>
     <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
-      <SectionTitle title='contact' />
+      <SectionTitle title='colophon' />
     </Box>
 
     <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >

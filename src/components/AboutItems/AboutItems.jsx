@@ -8,7 +8,7 @@ const AboutItems = () => (
     <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
       <Text width={[1]} f={3}>
         <AboutType>
-          I'm a designer & engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
+          I'm a designer & engineer researching data and society. I like to contribute to open source projects like <LinkStyle href="p5js.org">p5.js</LinkStyle>, gardening with <LinkStyle href="http://learning-gardens.co/">learning gardens</LinkStyle> and teaching kids creative coding at the <LinkStyle href="ryeartscenter.org">Rye Arts Center</LinkStyle>.
         </AboutType>
       </Text>
 
@@ -28,7 +28,19 @@ const AboutItems = () => (
 )
 
 export default AboutItems;
+const LinkStyle = styled.a`
+  display:inline-block;
 
+  border-bottom: 3px solid #0000ee;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+
+  :hover {
+    color: red;
+  }
+`;
 const AboutType= styled.h2`
 @media (max-width: 48em) {
   font-size: 1em;

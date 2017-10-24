@@ -3,24 +3,33 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const SectionTitle = (props) => (
-  <Link to={`/`}>
+  <LinkStyle to={`/`}>
+
     <TitleStyle>{props.title}</TitleStyle>
-  </Link>
+
+  </LinkStyle>
 )
 
 export default SectionTitle;
+const LinkStyle = styled(Link)`
+
+  text-decoration: none;
+`;
 
 const TitleStyle = styled.p`
 @media (max-width: 48em) {
+  display:inline-block;
   font-size: 1em;
   line-height: 1.5em;
   text-decoration: none;
-}
+  border-bottom: 3px solid #0000ee;
 
+}
   :hover {
     color: red;
   }
-
+  display:inline-block;
+  border-bottom: 5px solid #0000ee;
   background-color: black;
   font-family: 'GrotesqueMT';
   text-decoration: none;

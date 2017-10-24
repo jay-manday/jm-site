@@ -6,7 +6,7 @@ import Contact from '../Components/Contact';
 
 const Home = () => (
   <div>
-    <Navigation items={['about', 'work', 'contact']} />
+    <Navigation items={['about', 'work', 'colophon']} />
     <About />
     <Work />
     <Contact />
