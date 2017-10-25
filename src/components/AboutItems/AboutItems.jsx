@@ -29,18 +29,29 @@ const AboutItems = () => (
 
 export default AboutItems;
 const LinkStyle = styled.a`
+@media (max-width: 48em) {
   display:inline-block;
-
+  word-wrap: break-word;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-decoration: none;
   border-bottom: 3px solid #0000ee;
+
+}
+  display:inline-block;
+  word-wrap: break-word;
+  border-bottom: 5px solid #0000ee;
   text-decoration: none;
   padding: 0px;
   margin: 0px;
   color: white;
 
+
   :hover {
     color: red;
   }
 `;
+
 const AboutType= styled.h2`
 @media (max-width: 48em) {
   font-size: 1em;

@@ -9,11 +9,11 @@ import { Image } from 'rebass';
 
 const PaperScoreThree = () => (
   <div>
-    <Navigation items={['work', 'about', '']} />
+    <Navigation items={['about', 'work', '']} />
     <Flex wrap>
 
       <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
-        <SectionTitle title='work' />
+        <SectionTitle title='about' />
       </Box>
 
       <Box w={[3/4, 1/2, 1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>

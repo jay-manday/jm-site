@@ -31,7 +31,7 @@ const StyledLink = styled.a`
   line-height: 1.5 em;
   text-decoration: none;
   display:inline-block;
-  border-bottom: 3px solid #0000ee;
+  border-bottom: 5px solid #0000ee;
   padding-bottom: 0px;
 }
   :hover {
