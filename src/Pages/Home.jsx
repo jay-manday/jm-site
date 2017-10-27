@@ -2,14 +2,18 @@ import React from 'react';
 import Navigation from '../Components/Navigation';
 import About from '../Components/About';
 import Work from '../Components/Work';
-import Contact from '../Components/Contact';
+import Colophon from '../Components/Colophon';
 
 const Home = () => (
   <div>
-    <Navigation items={['about', 'work', 'colophon']} />
-    <About />
+    <Navigation items={["about","work","colophon"]}/>
+
+    <About/>
+
     <Work />
-    <Contact />
+
+    <Colophon/>
+
   </div>
 )
 

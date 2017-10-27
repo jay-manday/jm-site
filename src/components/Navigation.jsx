@@ -1,7 +1,8 @@
 import React from 'react'
+
+import { Flex, Box } from 'grid-styled';
 import NavTitle from './NavTitle/NavTitle';
 import SectionTitle from './SectionTitle/SectionTitle';
-import { Flex, Box } from 'grid-styled';
 
 const Navigation = (props) => (
   <Flex wrap align='baseline' justify='space-around'>
@@ -14,7 +15,6 @@ const Navigation = (props) => (
         <SectionTitle title={title} />
       </Box>
     )}
-
   </Flex>
 )
 
