@@ -15,7 +15,7 @@ const ContingentClock = () => (
         <SectionTitle title='work' />
       </Box>
 
-      <Box w={[3/4, 1/2, 1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+      <Box w={[3/4, 1/2]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
         <SketchWrapper
           href={`/work/contingent-clock`}
           classID={'SketchWrapper'}
@@ -25,11 +25,15 @@ const ContingentClock = () => (
           medium={'Chance and Code'}
         />
       </Box>
-
-      <Box w={[2/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+    </Flex>
+    <Flex wrap>
+      <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+        <SectionTitle title='about' />
+      </Box>
+      <Box w={[3/4, 1/2]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
         <ResponsiveDisplayBig>
           <AboutType>
-            I'm a Designer and Engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
+            This abstracted clock is a study made with p5.js
           </AboutType>
         </ResponsiveDisplayBig>
       </Box>

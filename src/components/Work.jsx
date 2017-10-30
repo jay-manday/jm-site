@@ -15,6 +15,15 @@ const Work = (props) => (
       <Flex wrap>
 
         <Box w={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+          <WorkItems
+            href={`/work/the-multi`}
+            img={`https://d2w9rnfcy7mm78.cloudfront.net/1295090/original_c585fad9056ca53ae2e11ccea6cc1b63.jpg`}
+            title={'The Multi 18'}
+            medium={'design conference'}
+            site={'2017 - 2018'}
+          />
+        </Box>
+        <Box w={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
           <SketchWrapper
             href={`/work/contingent-clock`}
             classID={'SketchWrapper'}
@@ -34,15 +43,7 @@ const Work = (props) => (
             site={'Neuberger Museum, 2016'}
           />
         </Box>
-        <Box w={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
-          <WorkItems
-            href={`/work/paper-score-three`}
-            img={`https://d2w9rnfcy7mm78.cloudfront.net/1219626/original_634b313d842272ccff0523507d676ab8.jpg`}
-            title={'Print & Graphics'}
-            medium={'digital  and print media'}
-            site={'2015 - 2017'}
-          />
-        </Box>
+
 
       </Flex>
     </Grid>

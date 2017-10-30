@@ -1,10 +1,8 @@
 import React from 'react'
 import { Text } from 'rebass';
+import { Box } from 'grid-styled';
 import styled from 'styled-components';
-import { Flex, Box } from 'grid-styled';
-import ContactIcons from '../ContactIcons/ContactIcons';
 import ContactItems from '../ContactItems/ContactItems';
-
 
 const AboutItems = () => (
 
@@ -26,36 +24,20 @@ const AboutItems = () => (
             B.S. in Visual Arts and Mathematics <br />
           </AboutType>
         </Text>
+
       </Box>
 
-      <Box py={3}>
+      <Box py={2}>
         <ContactItems
           email='jason.mandel@purchase.edu'
-          phone='(1) 914 417 5472'
         />
-      <Flex wrap>
-
-        <ContactIcons
-          width={48}
-          height={48}
-          url='https://twitter.com/jaymanday'
-          image='https://d2w9rnfcy7mm78.cloudfront.net/1222973/original_a59c38ae69092fab601f6e88ba9a6d7f.png'
-        />
-
-        <ContactIcons
-          width={48}
-          height={48}
-          url='https://github.com/jay-manday'
-          image='https://d2w9rnfcy7mm78.cloudfront.net/1221844/original_713585cf2c09a83a4a06d0757b1a2fc3.png'
-        />
-
-        <ContactIcons
-          url='https://www.are.na/jason-mandel-1484367816/channels'
-          image='https://d2w9rnfcy7mm78.cloudfront.net/1222957/original_e951a05eb73d4494cd78c92da928ec71.png'
-          />
-      </Flex>
-
       </Box>
+      <Text width={[1]} f={3}>
+        <AboutType>
+          <LinkStyle href="http://s3.amazonaws.com/arena-attachments/1380589/5a621bb1d45b1ef89f7cb20f63d1177d.pdf?1509389154">
+            Resumé</LinkStyle>
+        </AboutType>
+      </Text>
     </Box>
 )
 
@@ -68,8 +50,8 @@ const LinkStyle = styled.a`
   line-height: 1.5em;
   text-decoration: none;
   border-bottom: 3px solid #0000ee;
-
 }
+
   display:inline-block;
   word-wrap: break-word;
   border-bottom: 5px solid #0000ee;
@@ -77,7 +59,6 @@ const LinkStyle = styled.a`
   padding: 0px;
   margin: 0px;
   color: white;
-
 
   :hover {
     color: red;
