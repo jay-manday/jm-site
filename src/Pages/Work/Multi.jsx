@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 const Multi = () => (
   <div>
-    <Navigation items={['about', 'work', '']} />
+    <Navigation />
     <Flex wrap>
 
       <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>

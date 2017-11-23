@@ -9,7 +9,7 @@ import styled from 'styled-components';
 
 const ContingentClock = () => (
   <div>
-    <Navigation items={['work', 'about', '']} />
+    <Navigation />
     <Flex wrap>
       <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
         <SectionTitle title='work' />

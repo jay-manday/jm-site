@@ -4,22 +4,20 @@ import styled from 'styled-components';
 
 const SectionTitle = (props) => (
   <LinkStyle to={`/#${props.title}`}>
-
     <TitleStyle>{props.title}</TitleStyle>
-
   </LinkStyle>
 )
 
 export default SectionTitle;
-const LinkStyle = styled(Link)`
 
+const LinkStyle = styled(Link)`
   text-decoration: none;
 `;
 
 const TitleStyle = styled.p`
 @media (max-width: 48em) {
   display:inline-block;
-  font-size: 1em;
+  font-size: 1.125em;
   line-height: 1.5em;
   text-decoration: none;
   border-bottom: 3px solid #0000ee;

@@ -7,7 +7,7 @@ import Clock from './Sketches/Clock';
 
 const Work = (props) => (
   <Flex wrap>
-    <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+    <Box w={[1/4]} pt={[3, 4]} pb={[3, 4]} pl={[2, 3]} >
       <SectionTitle title='work' />
     </Box>
 
@@ -17,7 +17,7 @@ const Work = (props) => (
         <Box w={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
           <WorkItems
             href={`/work/the-multi`}
-            img={`https://d2w9rnfcy7mm78.cloudfront.net/1295090/original_c585fad9056ca53ae2e11ccea6cc1b63.jpg`}
+            img={`https://d2w9rnfcy7mm78.cloudfront.net/1450245/original_4f1645b374101daf0f70fcb0013b7c2b.png`}
             title={'The Multi 18'}
             medium={'design conference'}
             site={'2017 - 2018'}
