@@ -13,10 +13,9 @@ Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.
 now
 ```
 
-TODOS:
-  - add image carousel component
-  - add documentation + content
-  - add routes to work page
+TODOS:  
+  - add fade out transitions
   - set up google analytics
   - plug in more content
   - finish layout tweaks
+  - redux?

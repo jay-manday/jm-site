@@ -67,16 +67,18 @@ const LinkStyle = styled.a`
 
 const AboutType= styled(Text)`
 @media (max-width: 48em) {
-  font-size: 1.25em;
-  line-height: 1.5em;
+  display: float;
+  font-size: 1em;
+  line-height: 1.25em;
   text-decoration: none;
 }
 
   background-color: black;
   font-family: 'GrotesqueMT';
   text-decoration: none;
-  line-height: 1.25em;
-  font-size: 1.5em;
+  display: float;
+  line-height: 1.5em;
+  font-size: 1.875em;
   font-weight: 300;
   color: white;
   margin: 0;
