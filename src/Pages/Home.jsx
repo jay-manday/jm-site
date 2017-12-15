@@ -21,20 +21,26 @@ class Home extends React.Component {
     }, 1000)
   }
 
+  componentWillUnmount(props) {
+    this.setState({
+      visible: false,
+    })
+  }
+
   render(props) {
     return (
       <div>
-          <Fade out={!this.state.visible}>
-            <Navigation />
-          </Fade>
-          <Fade out={!this.state.visible}>
-            <About/>
-          </Fade>
-          <Fade out={!this.state.visible}>
-            <Work />
-          </Fade>
-          <Fade out={!this.state.visible}>
-            <Colophon/>
+        <Fade>
+          <Navigation />
+        </Fade>
+        <Fade>
+          <About/>
+        </Fade>
+        <Fade>
+          <Work />
+        </Fade>
+        <Fade>
+          <Colophon/>
         </Fade>
       </div>
     );
@@ -66,5 +72,5 @@ const fadeOut = keyframes`
 const Fade = styled.div`
   visibility: ${props => props.out ? 'hidden' : 'visible'};
   animation: ${props => props.out ? fadeOut : fadeIn} 0.5s linear;
-  transition: visibility 1s linear;
+  transition: visibility .5s linear;
 `;

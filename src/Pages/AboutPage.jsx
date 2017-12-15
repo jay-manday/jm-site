@@ -2,7 +2,6 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Navigation from '../Components/Navigation';
 import About from '../Components/About';
-import Work from '../Components/Work';
 import Colophon from '../Components/Colophon';
 
 class AboutPage extends React.Component {
@@ -21,16 +20,22 @@ class AboutPage extends React.Component {
     }, 1000)
   }
 
+  componentWillUnmount(props) {
+    this.setState({
+      visible: false,
+    })
+  }
+
   render(props) {
     return (
       <div>
-          <Fade out={!this.state.visible}>
+          <Fade>
             <Navigation />
           </Fade>
-          <Fade out={!this.state.visible}>
+          <Fade>
             <About/>
           </Fade>
-          <Fade out={!this.state.visible}>
+          <Fade>
             <Colophon/>
         </Fade>
       </div>

@@ -19,6 +19,13 @@ class ColophonPage extends React.Component {
     }, 1000)
   }
 
+  componentWillUnmount(props) {
+    this.setState({
+      visible: false,
+    })
+  }
+
+
   render(props) {
     return (
       <div>
