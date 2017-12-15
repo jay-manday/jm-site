@@ -14,10 +14,72 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-p5-wrapper": "^0.0.4",
+<<<<<<< HEAD
+    "react-router-dom": "^4.1.2",
+    "react-router-hash-link": "^1.1.1",
+    "react-scrollchor": "^4.0.0",
+    "react-transition-group": "^2.2.1",
+    "react-youtube": "^7.4.0",
+    "rebass": "^1.0.4",
+    "style-loader": "0.18.2",
+    "styled-components": "^2.1.2",
+    "sw-precache-webpack-plugin": "0.11.4",
+    "url-loader": "0.5.9",
+    "webpack": "3.5.1",
+    "webpack-dev-server": "2.7.1",
+    "webpack-manifest-plugin": "1.2.1",
+    "whatwg-fetch": "2.0.3",
+    "yarn": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.js?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+=======
     "react-router": "^4.2.0",
     "react-static": "^1.0.26",
     "rebass": "^1.0.4",
     "styled-components": "^2.2.1"
+>>>>>>> master
   },
   "devDependencies": {
     "eslint-config-react-tools": "^1.0.6",

@@ -39,6 +39,14 @@ const WorkItems = (props) => (
 export default WorkItems;
 
 const TitleStyle = styled.h1`
+@media (max-width: 48em) {
+  display:inline-block;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-decoration: none;
+  border-bottom: 3px solid #0000ee;
+
+}
   :hover {
     color: red;
   }
@@ -49,6 +57,17 @@ const TitleStyle = styled.h1`
   color: white;
   text-decoration: none;
   margin: 0;
+
+  display:inline-block;
+  border-bottom: 5px solid #0000ee;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+
+  :hover {
+    color: red;
+  }
 `;
 
 const SubStyle = styled.h1`

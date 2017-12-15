@@ -8,7 +8,7 @@ import Clock from './Sketches/Clock';
 
 const Work = (props) => (
   <Flex wrap>
-    <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+    <Box w={[1/4]} pt={[3, 4]} pb={[3, 4]} pl={[2, 3]} >
       <SectionTitle title='work' />
     </Box>
 
@@ -16,6 +16,25 @@ const Work = (props) => (
       <Flex wrap>
 
         <Box w={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+<<<<<<< HEAD:src/components/Work.jsx
+          <WorkItems
+            href={`/work/the-multi`}
+            img={`https://d2w9rnfcy7mm78.cloudfront.net/1450245/original_4f1645b374101daf0f70fcb0013b7c2b.png`}
+            title={'The Multi 18'}
+            medium={'design conference'}
+            site={'2017 - 2018'}
+          />
+        </Box>
+        <Box w={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+          <SketchWrapper
+            href={`/work/contingent-clock`}
+            classID={'SketchWrapper'}
+            className={'sketch'}
+            sketch={Clock}
+            title={'Contingent Clock'}
+            medium={'Chance and Code'}
+          />
+=======
           <ErrorBoundary>
             <SketchWrapper
               href={`/work/contingent-clock`}
@@ -27,6 +46,7 @@ const Work = (props) => (
             />
           </ErrorBoundary>
 
+>>>>>>> master:src/Components/Work.js
         </Box>
 
         <Box w={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
@@ -38,15 +58,7 @@ const Work = (props) => (
             site={'Neuberger Museum, 2016'}
           />
         </Box>
-        <Box w={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
-          <WorkItems
-            href={`/work/paper-score-three`}
-            img={`https://d2w9rnfcy7mm78.cloudfront.net/1219626/original_634b313d842272ccff0523507d676ab8.jpg`}
-            title={'Print & Graphics'}
-            medium={'digital  and print media'}
-            site={'2015 - 2017'}
-          />
-        </Box>
+
 
       </Flex>
     </Grid>

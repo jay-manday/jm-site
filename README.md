@@ -13,14 +13,16 @@ Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.
 now
 ```
 
-TODOS:
-  - add image carousel component
-  - add documentation + content
-  - add routes to work page
+TODOS:  
+  - add fade out transitions
   - set up google analytics
   - plug in more content
   - finish layout tweaks
+<<<<<<< HEAD
+  - redux?
+=======
 
 
 Optimize - re patch with next.js + progressive-render ???
 https://github.com/zeit/next.js/blob/ba65b07dffd02a8fe23e22b2ceda6771efd4d129/examples/progressive-render/pages/index.js
+>>>>>>> master
