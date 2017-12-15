@@ -1,10 +1,16 @@
+<<<<<<< HEAD:src/Pages/Home.jsx
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+=======
+import React from 'react'
+//
+>>>>>>> master:src/Containers/Home.js
 import Navigation from '../Components/Navigation';
 import About from '../Components/About';
 import Work from '../Components/Work';
 import Colophon from '../Components/Colophon';
 
+<<<<<<< HEAD:src/Pages/Home.jsx
 class Home extends React.Component {
   constructor(props) {
     super()
@@ -46,6 +52,19 @@ class Home extends React.Component {
     );
   }
 }
+=======
+import ErrorBoundary from '../Components/ErrorBoundary/ErrorBoundary'
+
+const Home = () => (
+  <div>
+    <Navigation items={['about', 'work', 'contact']} />
+    <About />
+    <Work />
+    <Contact />
+  </div>
+
+)
+>>>>>>> master:src/Containers/Home.js
 
 export default Home;
 

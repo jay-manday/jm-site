@@ -18,4 +18,11 @@ TODOS:
   - set up google analytics
   - plug in more content
   - finish layout tweaks
+<<<<<<< HEAD
   - redux?
+=======
+
+
+Optimize - re patch with next.js + progressive-render ???
+https://github.com/zeit/next.js/blob/ba65b07dffd02a8fe23e22b2ceda6771efd4d129/examples/progressive-render/pages/index.js
+>>>>>>> master
