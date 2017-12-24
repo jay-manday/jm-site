@@ -1,6 +1,5 @@
 import React from 'react';
 import { Flex, Box, Grid } from 'grid-styled';
-import ErrorBoundary from './ErrorBoundary/ErrorBoundary'
 import SectionTitle from './SectionTitle/SectionTitle';
 import WorkItems from './WorkItems/WorkItems';
 import SketchWrapper from './SketchWrapper/SketchWrapper';
@@ -16,7 +15,6 @@ const Work = (props) => (
       <Flex wrap>
 
         <Box w={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
-<<<<<<< HEAD:src/components/Work.jsx
           <WorkItems
             href={`/work/the-multi`}
             img={`https://d2w9rnfcy7mm78.cloudfront.net/1450245/original_4f1645b374101daf0f70fcb0013b7c2b.png`}
@@ -34,19 +32,6 @@ const Work = (props) => (
             title={'Contingent Clock'}
             medium={'Chance and Code'}
           />
-=======
-          <ErrorBoundary>
-            <SketchWrapper
-              href={`/work/contingent-clock`}
-              classID={'SketchWrapper'}
-              className={'sketch'}
-              sketch={Clock}
-              title={'Contingent Clock'}
-              medium={'Chance and Code'}
-            />
-          </ErrorBoundary>
-
->>>>>>> master:src/Components/Work.js
         </Box>
 
         <Box w={[1, 1/2, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>

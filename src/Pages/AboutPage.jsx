@@ -20,22 +20,16 @@ class AboutPage extends React.Component {
     }, 1000)
   }
 
-  componentWillUnmount(props) {
-    this.setState({
-      visible: false,
-    })
-  }
-
   render(props) {
     return (
       <div>
-          <Fade>
+          <Fade out={!this.state.visible}>
             <Navigation />
           </Fade>
-          <Fade>
+          <Fade out={!this.state.visible}>
             <About/>
           </Fade>
-          <Fade>
+          <Fade out={!this.state.visible}>
             <Colophon/>
         </Fade>
       </div>

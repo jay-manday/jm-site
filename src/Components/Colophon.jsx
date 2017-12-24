@@ -7,10 +7,10 @@ import ContactIcons from './ContactIcons/ContactIcons';
 
 
 
-const Contact = (props) => (
+const Colophon = (props) => (
 
   <Flex wrap>
-    <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
+    <Box w={[1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} mt={1}>
       <SectionTitle title='colophon' />
     </Box>
 
@@ -57,7 +57,7 @@ const Contact = (props) => (
   </Flex>
 )
 
-export default Contact;
+export default Colophon;
 
 const AboutType= styled.h2`
 @media (max-width: 48em) {

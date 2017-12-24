@@ -1,16 +1,10 @@
-<<<<<<< HEAD:src/Pages/Home.jsx
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-=======
-import React from 'react'
-//
->>>>>>> master:src/Containers/Home.js
 import Navigation from '../Components/Navigation';
 import About from '../Components/About';
 import Work from '../Components/Work';
 import Colophon from '../Components/Colophon';
 
-<<<<<<< HEAD:src/Pages/Home.jsx
 class Home extends React.Component {
   constructor(props) {
     super()
@@ -27,44 +21,25 @@ class Home extends React.Component {
     }, 1000)
   }
 
-  componentWillUnmount(props) {
-    this.setState({
-      visible: false,
-    })
-  }
-
   render(props) {
     return (
       <div>
-        <Fade>
-          <Navigation />
-        </Fade>
-        <Fade>
-          <About/>
-        </Fade>
-        <Fade>
-          <Work />
-        </Fade>
-        <Fade>
-          <Colophon/>
+          <Fade out={!this.state.visible}>
+            <Navigation />
+          </Fade>
+          <Fade out={!this.state.visible}>
+            <About/>
+          </Fade>
+          <Fade out={!this.state.visible}>
+            <Work />
+          </Fade>
+          <Fade out={!this.state.visible}>
+            <Colophon/>
         </Fade>
       </div>
     );
   }
 }
-=======
-import ErrorBoundary from '../Components/ErrorBoundary/ErrorBoundary'
-
-const Home = () => (
-  <div>
-    <Navigation items={['about', 'work', 'contact']} />
-    <About />
-    <Work />
-    <Contact />
-  </div>
-
-)
->>>>>>> master:src/Containers/Home.js
 
 export default Home;
 
@@ -91,5 +66,5 @@ const fadeOut = keyframes`
 const Fade = styled.div`
   visibility: ${props => props.out ? 'hidden' : 'visible'};
   animation: ${props => props.out ? fadeOut : fadeIn} 0.5s linear;
-  transition: visibility .5s linear;
+  transition: visibility 1s linear;
 `;

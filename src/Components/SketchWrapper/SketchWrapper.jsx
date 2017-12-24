@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-static';
+import { Link } from 'react-router-dom';
 import { Box } from 'grid-styled';
 import styled from 'styled-components';
 import P5Wrapper from 'react-p5-wrapper';

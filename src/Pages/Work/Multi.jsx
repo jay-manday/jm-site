@@ -16,8 +16,8 @@ const Multi = () => (
 
       <Box w={[3/4, 1/2, 1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
       <WorkItems
-        href={`/work/multi`}
-        img={`https://d2w9rnfcy7mm78.cloudfront.net/1450245/original_4f1645b374101daf0f70fcb0013b7c2b.png`}
+        href={`/work/paper-score-three`}
+        img={`https://d2w9rnfcy7mm78.cloudfront.net/1295090/original_c585fad9056ca53ae2e11ccea6cc1b63.jpg`}
         title={'The Multi 18'}
         medium={'design conference'}
         site={'2017 - 2018'}
@@ -93,30 +93,4 @@ const ResponsiveDisplayBig = styled.span`
   }
 
   display: none;
-`;
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-`;
-
-const fadeOut = keyframes`
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-`;
-
-const Fade = styled.div`
-  visibility: ${props => props.out ? 'hidden' : 'visible'};
-  animation: ${props => props.out ? fadeOut : fadeIn} 0.5s linear;
-  transition: visibility 1s linear;
 `;
