@@ -4,9 +4,6 @@ import { Flex, Box } from 'grid-styled';
 import SectionTitle from './SectionTitle/SectionTitle';
 import ContactIcons from './ContactIcons/ContactIcons';
 
-
-
-
 const Colophon = (props) => (
 
   <Flex wrap>
@@ -15,7 +12,6 @@ const Colophon = (props) => (
     </Box>
 
     <Box w={[2/4, 1/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
-
       <AboutType>Set with &nbsp;
         <LinkStyle href="https://www.bertholdtypes.com/font/akzidenz-grotesk/proplus/">
           Akzidenz Grotesk

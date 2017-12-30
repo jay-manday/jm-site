@@ -6,22 +6,20 @@ import SectionTitle from './SectionTitle/SectionTitle';
 const data = [
   {id:1, name: 'about'},
   {id:2, name: 'work' },
-  {id:3, name: 'colophon'},
+  {id:3, name: 'writings'}
 ];
 
 const Navigation = (props) => (
   <Flex wrap align='baseline' justify='space-around'>
-
-      <Box w={[1/4]} pt={[3, 4]} pb={[3, 4]} pl={[2, 3]} >
-        <NavTitle />
-      </Box>
+    <Box w={[1/4]} pt={[3, 4]} pb={[3, 4]} pl={[2, 3]} >
+      <NavTitle />
+    </Box>
     {data.map((item, id) =>
-
-        <Box key={id} w={[1/4]} p={[3,4]}  pl={[2, 3]} >
-          <SectionTitle title={item.name}/>
-        </Box>
+      <Box key={id} w={[1/4]} p={[3,4]}  pl={[2, 3]} >
+        <SectionTitle title={item.name}/>
+      </Box>
     )}
   </Flex>
 )
 
-export default Navigation
+export default Navigation;

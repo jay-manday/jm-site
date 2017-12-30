@@ -24,17 +24,17 @@ class Home extends React.Component {
   render(props) {
     return (
       <div>
-          <Fade out={!this.state.visible}>
-            <Navigation />
-          </Fade>
-          <Fade out={!this.state.visible}>
-            <About/>
-          </Fade>
-          <Fade out={!this.state.visible}>
-            <Work />
-          </Fade>
-          <Fade out={!this.state.visible}>
-            <Colophon/>
+        <Fade out={!this.state.visible}>
+          <Navigation />
+        </Fade>
+        <Fade out={!this.state.visible}>
+          <About/>
+        </Fade>
+        <Fade out={!this.state.visible}>
+          <Work />
+        </Fade>
+        <Fade out={!this.state.visible}>
+          <Colophon/>
         </Fade>
       </div>
     );

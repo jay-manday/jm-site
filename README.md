@@ -14,7 +14,8 @@ now
 ```
 
 TODOS:  
-  - add fade out transitions
+  - add writing section
+  - finish first piece
   - set up google analytics
   - plug in more content
   - finish layout tweaks
