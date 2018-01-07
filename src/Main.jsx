@@ -6,7 +6,7 @@ import WorkPage from './Pages/WorkPage';
 import PaperScoreThree from './Pages/Work/PaperScoreThree';
 import ContingentClock from './Pages/Work/ContingentClock';
 import Multi from './Pages/Work/Multi';
-import ColophonPage from './Pages/ColophonPage';
+import WritingPage from './Pages/WritingPage';
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -21,7 +21,7 @@ const Main = () => (
     <Route exact path='/work/paper-score-three' component={PaperScoreThree} />
     <Route exact path='/work/contingent-clock' component={ContingentClock} />
     <Route exact path='/work/the-multi' component={Multi} />
-    <Route exact path='/colophon' component={ColophonPage} />
+    <Route exact path='/writings' component={WritingPage} />
   </Switch>
 )
 

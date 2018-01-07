@@ -7,7 +7,7 @@ import ContactIcons from './ContactIcons/ContactIcons';
 const Colophon = (props) => (
 
   <Flex wrap>
-    <Box w={[1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} mt={1}>
+    <Box w={[1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} mt={[0, 1]}>
       <SectionTitle title='colophon' />
     </Box>
 
@@ -28,8 +28,14 @@ const Colophon = (props) => (
         <LinkStyle href="https://zeit.co/now">
           now
         </LinkStyle>
+        &nbsp; and
       </AboutType>
-
+      <AboutType>
+        seeded on Dat by &nbsp;
+      <LinkStyle href="dat://jmandel-jaymanday.hashbase.io/">
+        Hashbase
+      </LinkStyle>
+      </AboutType>
       <Flex wrap>
         <ContactIcons
           width={40} height={40}

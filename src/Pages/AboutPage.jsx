@@ -31,27 +31,33 @@ class AboutPage extends React.Component {
 
           <Fade out={!this.state.visible}>
             <Flex wrap>
-            <Box w={[1/4]} p={[3,4]} pl={[2, 3]} >
-              <SectionTitle title='about' />
+            <Box w={[1/4]} p={[3,4]} pl={[2, 3]} mt={[0,1]}>
+              <SectionTitle title='currently:' />
             </Box>
-              <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+            <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
             <AboutType>
-              Currently: <br/>
-              <br />
               Studying Visual Art and Mathematics at Purchase College <br/>
-              Thinking about relationships, translation, and artifacts. <br/>
-              Curating a student directed design conference. <br/>
-              <br/>
-              I'm interested in: <br/>
-              <br />
+              Thinking about relationships, translation, and artifacts <br/>
+              Curating a student directed design conference <br/>
+            </AboutType>
+            </Box>
+            <Box w={[1/4]} p={[3,4]} pl={[2, 3]} mt={[0,1]}>
+              <SectionTitle title='interests:' />
+            </Box>
+            <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+            <AboutType>
               Exploring hidden narratives formalized by data <br/>
               The social graphs across intentional communities <br/>
               Holistic approaches to design and computation <br/>
               All things electro-acoustic <br/>
               Modular structures <br/>
-              <br/>
-              You should check out: <br/>
-              <br />
+            </AboutType>
+            </Box>
+            <Box w={[1/4]} p={[3,4]} pl={[2, 3]} mt={[0,1]}>
+              <SectionTitle title='check out:' />
+            </Box>
+            <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+              <AboutType>
               <LinkStyle href="http://learning-gardens.co/">
               Learning Gardens
               </LinkStyle> <br/>
@@ -60,7 +66,6 @@ class AboutPage extends React.Component {
               <LinkStyle href="https://github.com/learning-gardens/cybernetics-club">
               Cybernetics Club </LinkStyle><br/>
               <LinkStyle href="https://are.na">Are.na</LinkStyle>
-
             </AboutType>
           </Box>
           </Flex>
