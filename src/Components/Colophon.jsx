@@ -17,14 +17,12 @@ const Colophon = (props) => (
           Akzidenz Grotesk
         </LinkStyle>
       </AboutType>
-      <AboutType>
-        This site is built with &nbsp;
+      <AboutType>This site is built with &nbsp;
         <LinkStyle href="https://reactjs.org/">
           React
         </LinkStyle>
       </AboutType>
-      <AboutType>
-        Hosted with &nbsp;
+      <AboutType>Hosted with &nbsp;
         <LinkStyle href="https://zeit.co/now">
           now
         </LinkStyle>
@@ -32,9 +30,9 @@ const Colophon = (props) => (
       </AboutType>
       <AboutType>
         seeded on Dat by &nbsp;
-      <LinkStyle href="dat://jmandel-jaymanday.hashbase.io/">
+        <LinkStyle href="dat://jmandel-jaymanday.hashbase.io/">
         Hashbase
-      </LinkStyle>
+        </LinkStyle>
       </AboutType>
       <Flex wrap>
         <ContactIcons
@@ -64,8 +62,8 @@ export default Colophon;
 const AboutType= styled.h2`
 @media (max-width: 48em) {
   display: float;
-  font-size: 1em;
-  line-height: 1.25em;
+  font-size: 1.125em;
+  line-height: 1.5em;
   text-decoration: none;
 }
 
@@ -74,7 +72,7 @@ const AboutType= styled.h2`
   text-decoration: none;
   display: float;
   line-height: 1.5em;
-  font-size: 1.875em;
+  font-size: 2em;
   font-weight: 300;
   color: white;
   margin: 0;
@@ -83,8 +81,8 @@ const AboutType= styled.h2`
 const LinkStyle = styled.a`
 @media (max-width: 48em) {
   display:float;
-  text-decoration: none;
-  border-bottom: 3px solid #0000ee;
+  text-decoration: underline;
+  text-decoration-color: #0000ee;
 }
   :link {
     color: #ffffff;
@@ -101,6 +99,6 @@ const LinkStyle = styled.a`
   }
 
   display:float;
-  border-bottom: 5px solid #0000ee;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #0000ee;
 `;

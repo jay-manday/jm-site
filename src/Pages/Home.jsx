@@ -1,4 +1,5 @@
 import React from 'react';
+import Delayed from 'react-delayed';
 import styled, { keyframes } from 'styled-components';
 import Navigation from '../Components/Navigation';
 import About from '../Components/About';
@@ -24,18 +25,26 @@ class Home extends React.Component {
   render(props) {
     return (
       <div>
+        <Delayed mounted={true} mountAfter={750}>
         <Fade out={!this.state.visible}>
           <Navigation />
         </Fade>
+        </Delayed>
+        <Delayed mounted={true} mountAfter={900}>
         <Fade out={!this.state.visible}>
           <About/>
         </Fade>
+        </Delayed>
+        <Delayed mounted={true} mountAfter={1100}>
         <Fade out={!this.state.visible}>
           <Work />
         </Fade>
+        </Delayed>
+        <Delayed mounted={true} mountAfter={1400}>
         <Fade out={!this.state.visible}>
           <Colophon/>
         </Fade>
+        </Delayed>
       </div>
     );
   }

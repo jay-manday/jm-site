@@ -1,4 +1,5 @@
 import React from 'react';
+import Delayed from 'react-delayed';
 import styled, { keyframes } from 'styled-components';
 import Navigation from '../Components/Navigation';
 import Work from '../Components/Work';
@@ -23,15 +24,21 @@ class AboutPage extends React.Component {
   render(props) {
     return (
       <div>
+        <Delayed mounted={true} mountAfter={1050}>
           <Fade out={!this.state.visible}>
             <Navigation />
           </Fade>
+        </Delayed>
+        <Delayed mounted={true} mountAfter={1250}>
           <Fade out={!this.state.visible}>
             <Work />
           </Fade>
+        </Delayed>
+        <Delayed mounted={true} mountAfter={1350}>
           <Fade out={!this.state.visible}>
             <Colophon/>
         </Fade>
+      </Delayed>
       </div>
     );
   }

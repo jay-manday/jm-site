@@ -11,7 +11,8 @@ const SectionTitle = (props) => (
 export default SectionTitle;
 
 const LinkStyle = styled(Link)`
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #0000ee;
 `;
 
 const TitleStyle = styled.p`
@@ -19,18 +20,17 @@ const TitleStyle = styled.p`
   display:inline-block;
   font-size: 1.125em;
   line-height: 1.5em;
-  text-decoration: none;
-  border-bottom: 3px solid #0000ee;
-
+  text-decoration: underline;
+  text-decoration-color: #0000ee;
 }
   :hover {
     color: red;
   }
   display:inline-block;
-  border-bottom: 5px solid #0000ee;
+  text-decoration: underline;
+    text-decoration-color: #0000ee;
   background-color: black;
   font-family: 'GrotesqueMT';
-  text-decoration: none;
   line-height: 1em;
   font-size: 1.875em;
   font-weight: 300;

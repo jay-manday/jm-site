@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text } from 'rebass';
+import Delayed from 'react-delayed';
 import { Flex, Box } from 'grid-styled';
 import styled, { keyframes } from 'styled-components';
 import Navigation from '../Components/Navigation';
@@ -25,55 +26,69 @@ class AboutPage extends React.Component {
   render(props) {
     return (
       <div>
+        <Delayed mounted={true} mountAfter={650}>
         <Fade out={!this.state.visible}>
           <Navigation />
         </Fade>
-
+        </Delayed>
+        <Delayed mounted={true} mountAfter={1000}>
           <Fade out={!this.state.visible}>
-            <Flex wrap>
-            <Box w={[1/4]} p={[3,4]} pl={[2, 3]} mt={[0,1]}>
-              <SectionTitle title='currently:' />
-            </Box>
-            <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
-            <AboutType>
-              Studying Visual Art and Mathematics at Purchase College <br/>
-              Thinking about relationships, translation, and artifacts <br/>
-              Curating a student directed design conference <br/>
-            </AboutType>
-            </Box>
-            <Box w={[1/4]} p={[3,4]} pl={[2, 3]} mt={[0,1]}>
-              <SectionTitle title='interests:' />
-            </Box>
-            <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
-            <AboutType>
-              Exploring hidden narratives formalized by data <br/>
-              The social graphs across intentional communities <br/>
-              Holistic approaches to design and computation <br/>
-              All things electro-acoustic <br/>
-              Modular structures <br/>
-            </AboutType>
-            </Box>
-            <Box w={[1/4]} p={[3,4]} pl={[2, 3]} mt={[0,1]}>
-              <SectionTitle title='check out:' />
-            </Box>
-            <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+          <Flex wrap>
+              <Box w={[1/4]} p={[3,4]} pl={[2, 3]} mt={[0,1]}>
+                <SectionTitle title='currently:' />
+              </Box>
+
+              <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+                <AboutType>
+                  Studying Visual Art and Mathematics at Purchase College <br/>
+                  Thinking about relationships, translation, and artifacts <br/>
+                  Curating a student directed design conference <br/>
+                </AboutType>
+              </Box>
+
+
+
+              <Box w={[1/4]} p={[3,4]} pl={[2, 3]} mt={[0,1]}>
+                <SectionTitle title='interests:' />
+              </Box>
+              <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
               <AboutType>
-              <LinkStyle href="http://learning-gardens.co/">
-              Learning Gardens
-              </LinkStyle> <br/>
-              <LinkStyle href="http://newcomputers.group/">
-              New Computer Working Group </LinkStyle><br/>
-              <LinkStyle href="https://github.com/learning-gardens/cybernetics-club">
-              Cybernetics Club </LinkStyle><br/>
-              <LinkStyle href="https://are.na">Are.na</LinkStyle>
-            </AboutType>
-          </Box>
-          </Flex>
+                  Exploring hidden narratives formalized by data <br/>
+                  The social graphs across intentional communities <br/>
+                  Holistic approaches to design and computation <br/>
+                  All things electro-acoustic <br/>
+                  Modular structures <br/>
+              </AboutType>
+              </Box>
+
+              <Box w={[1/4]} p={[3,4]} pl={[2, 3]} mt={[0,1]}>
+                <SectionTitle title='check out:' />
+              </Box>
+              <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+                <AboutType>
+                  <LinkStyle href="http://learning-gardens.co/">
+                  Learning Gardens
+                  </LinkStyle> <br/>
+                  <LinkStyle href="http://newcomputers.group/">
+                  New Computer Working Group </LinkStyle><br/>
+                  <LinkStyle href="https://github.com/learning-gardens/cybernetics-club">
+                  Cybernetics Club </LinkStyle><br/>
+                  <LinkStyle href="https://are.na">Are.na</LinkStyle>
+                </AboutType>
+              </Box>
+              </Flex>
+            </Fade>
+
+        </Delayed>
+        <Delayed mounted={true} mountAfter={1350}>
+          <Fade out={!this.state.visible}>
+
+
+            <Colophon />
+
           </Fade>
 
-          <Fade out={!this.state.visible}>
-            <Colophon />
-        </Fade>
+        </Delayed>
 
       </div>
     );
@@ -88,14 +103,14 @@ const LinkStyle = styled.a`
   word-wrap: break-word;
   font-size: 1em;
   line-height: 1.5em;
-  text-decoration: none;
-  border-bottom: 3px solid #0000ee;
+  text-decoration: underline;
+  text-decoration-color: #0000ee;
 }
 
   display:inline-block;
   word-wrap: break-word;
-  border-bottom: 5px solid #0000ee;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #0000ee;
   padding: 0px;
   margin: 0px;
   color: white;

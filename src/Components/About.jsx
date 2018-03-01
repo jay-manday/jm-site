@@ -12,11 +12,11 @@ const About = (props) => (
 
     <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
       <AboutType width={[1]} f={3}>
-        I'm a designer & engineer researching data and society. I enjoy contributing to open source projects like <LinkStyle href="p5js.org">p5.js</LinkStyle>, gardening at <LinkStyle href="http://learning-gardens.co/">learning gardens</LinkStyle> and teaching kids creative coding at the <LinkStyle href="ryeartscenter.org">Rye Arts Center</LinkStyle>.
+        I'm a designer & engineer, currently a research assistant working on climate visualizations for the <LinkStyle href="urbansystemslab.com">Urban Systems Lab</LinkStyle> at the New School. I enjoy contributing to open source projects like <LinkStyle href="p5js.org">p5.js</LinkStyle>, gardening at <LinkStyle href="http://learning-gardens.co/">learning gardens</LinkStyle> and teaching kids creative coding at the <LinkStyle href="ryeartscenter.org">Rye Arts Center</LinkStyle>.
       </AboutType>
 
       <Box py={3}>
-        <AboutType width={[1]} f={3}>
+        <AboutType width={[1]} f={3} pt={3}>
           School of Art + Design at Purchase College
         </AboutType>
         <AboutType width={[1]} f={3}>
@@ -44,18 +44,17 @@ export default About;
 
 const LinkStyle = styled.a`
 @media (max-width: 48em) {
-  display:inline-block;
+  display: inline-block;
   word-wrap: break-word;
   font-size: 1em;
-  line-height: 1.5em;
-  text-decoration: none;
-  border-bottom: 3px solid #0000ee;
+  text-decoration: underline;
+  text-decoration-color: #0000ee;
 }
 
   display:inline-block;
   word-wrap: break-word;
-  border-bottom: 5px solid #0000ee;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #0000ee;
   padding: 0px;
   margin: 0px;
   color: white;
@@ -68,8 +67,8 @@ const LinkStyle = styled.a`
 const AboutType= styled(Text)`
 @media (max-width: 48em) {
   display: float;
-  font-size: 1em;
-  line-height: 1.25em;
+  font-size: 1.25em;
+  line-height: 1.5em;
   text-decoration: none;
 }
 
@@ -78,7 +77,7 @@ const AboutType= styled(Text)`
   text-decoration: none;
   display: float;
   line-height: 1.5em;
-  font-size: 1.875em;
+  font-size: 2em;
   font-weight: 300;
   color: white;
   margin: 0;

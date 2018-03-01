@@ -16,9 +16,9 @@ const LinkStyle = styled(Link) `
   @media (min-width: 40em) {
     font-size: 2em;
     line-height: 1.5 em;
-    text-decoration: none;
     display:inline-block;
-    border-bottom: 5px solid #0000ee;
+    text-decoration: underline;
+    text-decoration-color: #0000ee;
     padding-bottom: 0px;
   }
     :hover {
@@ -26,8 +26,8 @@ const LinkStyle = styled(Link) `
     }
 
     display:inline-block;
-    text-decoration: none;
-    border-bottom: 3px solid #0000ee;
+    text-decoration: underline;
+    text-decoration-color: #0000ee;
     font-family: 'GrotesqueMT-Italic';
     font-weight: normal;
     font-size: 1.075em;
@@ -38,6 +38,8 @@ const LinkStyle = styled(Link) `
 const Spanned = styled.span`
   @media (min-width: 40em) {
     display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: #0000ee;
   }
 
   display: none;

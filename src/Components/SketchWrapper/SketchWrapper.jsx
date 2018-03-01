@@ -87,11 +87,9 @@ const StyledSketch = styled.div `
 const TitleStyle = styled.h1`
 @media (max-width: 48em) {
   display:inline-block;
-  font-size: 1em;
-  line-height: 1.5em;
-  text-decoration: none;
-  border-bottom: 3px solid #0000ee;
-
+  font-size: 1.25em;
+  text-decoration: underline;
+  text-decoration-color: #0000ee;
 }
   :hover {
     color: red;
@@ -99,24 +97,24 @@ const TitleStyle = styled.h1`
 
   font-family: GrotesqueMT;
   font-style: italic;
-  font-size: 1.25em;
+  font-size: 1.5em;
   color: white;
-  text-decoration: none;
-  margin: 0;
-
+  text-decoration: underline;
+  text-decoration-color: #0000ee;
   display:inline-block;
-  border-bottom: 5px solid #0000ee;
-  text-decoration: none;
   padding: 0px;
   margin: 0px;
   color: white;
 
+  :hover {
+    color: red;
+  }
 `;
 
 const SubStyle = styled.h1`
   font-family: GrotesqueMT;
   font-style: italic;
-  font-size: .75em;
+  font-size: 1em;
   color: white;
   margin: 0;
 `;
