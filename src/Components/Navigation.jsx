@@ -9,7 +9,7 @@ const data = [
   {id:3, name: 'writings'}
 ];
 
-const Navigation = (props) => (
+const Navigation = () => (
   <Flex wrap align='baseline' justify='space-around'>
     <Box w={[1/4]} pt={[3, 4]} pb={[3, 4]} pl={[2, 3]} >
       <NavTitle />

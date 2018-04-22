@@ -4,14 +4,13 @@ import { Flex, Box } from 'grid-styled';
 import SectionTitle from './SectionTitle/SectionTitle';
 import ContactIcons from './ContactIcons/ContactIcons';
 
-const Colophon = (props) => (
-
+const Colophon = () => (
   <Flex wrap>
     <Box w={[1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} mt={[0, 1]}>
       <SectionTitle title='colophon' />
     </Box>
 
-    <Box w={[2/4, 1/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+    <Box w={3/4} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
       <AboutType>Set with &nbsp;
         <LinkStyle href="https://www.bertholdtypes.com/font/akzidenz-grotesk/proplus/">
           Akzidenz Grotesk
@@ -61,7 +60,6 @@ export default Colophon;
 
 const AboutType= styled.h2`
 @media (max-width: 48em) {
-  display: float;
   font-size: 1.125em;
   line-height: 1.5em;
   text-decoration: none;
@@ -70,7 +68,6 @@ const AboutType= styled.h2`
   background-color: black;
   font-family: 'GrotesqueMT';
   text-decoration: none;
-  display: float;
   line-height: 1.5em;
   font-size: 2em;
   font-weight: 300;
@@ -80,7 +77,6 @@ const AboutType= styled.h2`
 
 const LinkStyle = styled.a`
 @media (max-width: 48em) {
-  display:float;
   text-decoration: underline;
   text-decoration-color: #0000ee;
 }
@@ -98,7 +94,6 @@ const LinkStyle = styled.a`
     color: red;
   }
 
-  display:float;
   text-decoration: underline;
   text-decoration-color: #0000ee;
 `;

@@ -30,19 +30,23 @@ const PaperScoreThree = () => (
         <ResponsiveDisplayBig>
           <Box pb={2}>
             <AboutType>
-              A series of studies on inter-relationship of emergent media in concurrence with traditional mediums such as paper-craft through a concomitant compositional schema.
+              A series of studies on inter-relationship of emergent media in concurrence with traditional mediums
+              such as paper-craft through a concomitant compositional schema.
             </AboutType>
           </Box>
 
           <Box pb={2}>
             <AboutType>
-              The composition consists of the recordings of the physical formulation of pulp to paper, projected through the paper via transducers while the piece was at rest, awaiting activation by the realization of an inter-dependent score.
+              The composition consists of the recordings of the physical formulation of pulp to paper,
+               projected through the paper via transducers while the piece was at rest, awaiting activation
+                by the realization of an inter-dependent score.
             </AboutType>
           </Box>
 
           <Box pb={2}>
             <AboutType>
-              As the participant channels the instructions, the transitory motion of pencil in hand across paper, producing acoustic artifacts which are projected through same paper of causation.
+              As the participant channels the instructions, the transitory motion of pencil in hand across paper,
+               producing acoustic artifacts which are projected through same paper of causation.
             </AboutType>
           </Box>
         </ResponsiveDisplayBig>
@@ -60,19 +64,23 @@ const PaperScoreThree = () => (
         <ResponsiveDisplaySmall>
           <Box pb={2}>
             <AboutType>
-              A series of studies on inter-relationship of emergent media in concurrence with traditional mediums such as paper-craft through a concomitant compositional schema.
+              A series of studies on inter-relationship of emergent media in concurrence with traditional mediums
+               such as paper-craft through a concomitant compositional schema.
             </AboutType>
           </Box>
 
           <Box pb={2}>
             <AboutType>
-              A composition made of the recordings from the physical formulation of pulp to paper is projected through the paper via transducers while the piece was at rest, awaiting activation by the realization of an inter-dependent score.
+              A composition made of the recordings from the physical formulation of pulp to paper is projected
+               through the paper via transducers while the piece was at rest, awaiting activation by the realization
+                of an inter-dependent score.
             </AboutType>
           </Box>
 
           <Box pb={2}>
             <AboutType>
-              As the participant channels the instructions, the transitory motion of pencil in hand across paper, producing acoustic artifacts which are projected through same paper of causation.
+              As the participant channels the instructions, the transitory motion of pencil in hand across paper,
+               producing acoustic artifacts which are projected through same paper of causation.
             </AboutType>
           </Box>
         </ResponsiveDisplaySmall>
@@ -101,19 +109,24 @@ const PaperScoreThree = () => (
         <ResponsiveDisplaySmall>
           <Box pb={2}>
             <AboutType>
-              The piece was on dislay November 2016 in the Neuberger Museum and was commissioned for a lecture by Miller Puckette, and moderated by Elizabeth Phillips.
+              The piece was on dislay November 2016 in the Neuberger Museum and was commissioned for a lecture
+              by Miller Puckette, and moderated by Elizabeth Phillips.
             </AboutType>
           </Box>
 
           <Box pb={2}>
             <AboutType>
-              Milller Puckette is creator of the Max & Pure Data programming languages which he developed at IRCAM in 1987. Miller Puckette has a Ph.D. in Mathematics from Harvard and was a founding member of the MIT Media Lab. He teaches in the Music department at UC San Diego and was the Associate Director of the Center for Research in Computing & the Arts.
+              Milller Puckette is creator of the Max & Pure Data programming languages which he developed at IRCAM
+               in 1987. Miller Puckette has a Ph.D. in Mathematics from Harvard and was a founding member of the
+                MIT Media Lab. He teaches in the Music department at UC San Diego and was the Associate Director
+                of the Center for Research in Computing & the Arts.
             </AboutType>
           </Box>
 
           <Box pb={2}>
             <AboutType>
-              Miller Puckette has collaborated with several artists including Philipe Manoury, Rand Steiger, Vibeke Sorensen and Juliana Snapper among others.
+              Miller Puckette has collaborated with several artists including Philipe Manoury, Rand Steiger,
+               Vibeke Sorensen and Juliana Snapper among others.
             </AboutType>
           </Box>
         </ResponsiveDisplaySmall>
@@ -129,19 +142,24 @@ const PaperScoreThree = () => (
         <ResponsiveDisplayBig>
           <Box pb={2}>
             <AboutType>
-              The piece was on dislay November 2016 in the Neuberger Museum and was commissioned for a lecture by Miller Puckette, and moderated by Elizabeth Phillips.
+              The piece was on dislay November 2016 in the Neuberger Museum and was commissioned for a
+               lecture by Miller Puckette, and moderated by Elizabeth Phillips.
             </AboutType>
           </Box>
 
           <Box pb={2}>
             <AboutType>
-              Milller Puckette is creator of the Max & Pure Data programming languages which he developed at IRCAM in 1987. Miller Puckette has a Ph.D. in Mathematics from Harvard and was a founding member of the MIT Media Lab. He teaches in the Music department at UC San Diego and was the Associate Director of the Center for Research in Computing & the Arts.
+              Milller Puckette is creator of the Max & Pure Data programming languages which he developed
+               at IRCAM in 1987. Miller Puckette has a Ph.D. in Mathematics from Harvard and was a founding
+                member of the MIT Media Lab. He teaches in the Music department at UC San Diego and was
+                 the Associate Director of the Center for Research in Computing & the Arts.
             </AboutType>
           </Box>
 
           <Box pb={2}>
             <AboutType>
-              Miller Puckette has collaborated with several artists including Philipe Manoury, Rand Steiger, Vibeke Sorensen and Juliana Snapper among others.
+              Miller Puckette has collaborated with several artists including Philipe Manoury,
+              Rand Steiger, Vibeke Sorensen and Juliana Snapper among others.
             </AboutType>
           </Box>
         </ResponsiveDisplayBig>
@@ -157,14 +175,20 @@ const PaperScoreThree = () => (
 
       <Box w={[0, 1/3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
         <ResponsiveDisplayBig>
-          <Image pb={2}  src='https://d2w9rnfcy7mm78.cloudfront.net/1221774/original_f21ee6fc9de6ee30a8e46ad5c8deccdf.jpg' />
+          <Image
+            pb={2}
+            src='https://d2w9rnfcy7mm78.cloudfront.net/1221774/original_f21ee6fc9de6ee30a8e46ad5c8deccdf.jpg'
+          />
         </ResponsiveDisplayBig>
       </Box>
 
       <Box w={1/3} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} pb={2}>
         <ResponsiveDisplayBig>
           <AboutType>
-            The lecture was moderated by Elizabeth Phillips, faculty from the Sculpture Department in the School of Art + Design. Phillips has been exploring emergent properties with electronic sound and environmental art. Elizabeth is a Guggenheim Fellow and has worked closely with figures such as John Cage, Merce Cunningham & Co, Nam June Paik, Yoshi Wada, among many others.
+            The lecture was moderated by Elizabeth Phillips, faculty from the Sculpture Department in
+             the School of Art + Design. Phillips has been exploring emergent properties with electronic sound
+              and environmental art. Elizabeth is a Guggenheim Fellow and has worked closely with figures such
+               as John Cage, Merce Cunningham & Co, Nam June Paik, Yoshi Wada, among many others.
           </AboutType>
         </ResponsiveDisplayBig>
       </Box>

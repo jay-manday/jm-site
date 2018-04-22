@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'rebass';
+import { Image, Text } from 'rebass';
 import Delayed from 'react-delayed';
 import { Flex, Box } from 'grid-styled';
 import styled, { keyframes } from 'styled-components';
@@ -8,88 +8,91 @@ import Colophon from '../Components/Colophon';
 import SectionTitle from '../Components/SectionTitle/SectionTitle';
 
 class AboutPage extends React.Component {
-  constructor(props) {
-    super()
+  constructor() {
+    super();
     this.state = {
       visible: true,
-    }
+    };
   }
 
-  componentDidMount(props) {
+  componentDidMount() {
     setTimeout(() => {
       this.setState({
         visible: true,
-      })
-    }, 1000)
+      });
+    }, 1000);
   }
 
-  render(props) {
+  render() {
     return (
       <div>
-        <Delayed mounted={true} mountAfter={650}>
-        <Fade out={!this.state.visible}>
-          <Navigation />
-        </Fade>
-        </Delayed>
-        <Delayed mounted={true} mountAfter={1000}>
+        <Delayed mounted={true} mountAfter={350}>
           <Fade out={!this.state.visible}>
-          <Flex wrap>
-              <Box w={[1/4]} p={[3,4]} pl={[2, 3]} mt={[0,1]}>
-                <SectionTitle title='currently:' />
+            <Navigation />
+          </Fade>
+        </Delayed>
+        <Delayed mounted={true} mountAfter={600}>
+          <Fade out={!this.state.visible}>
+            <Flex wrap>
+              <Box w={[1/4]} p={[3,4]} pl={[2, 3]}>
+                <SectionTitle title='self' />
               </Box>
 
-              <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+              <Box w={[3/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+                <Image
+                  width={[1, 1/3]}
+                  height={[1, 1/3]}
+                  src="https://goo.gl/JkH4FB"
+                />
+              </Box>
+              <Box w={[1/4]} p={[3,4]} pl={[2, 3]}>
+                <SectionTitle title='currently' />
+              </Box>
+
+              <Box w={[3/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
                 <AboutType>
                   Studying Visual Art and Mathematics at Purchase College <br/>
                   Thinking about relationships, translation, and artifacts <br/>
+                  Visualizing climate scenarios across several cities <br/>
                   Curating a student directed design conference <br/>
                 </AboutType>
               </Box>
 
-
-
-              <Box w={[1/4]} p={[3,4]} pl={[2, 3]} mt={[0,1]}>
-                <SectionTitle title='interests:' />
+              <Box w={[1/4]} p={[3,4]} pl={[2, 3]}>
+                <SectionTitle title='interests' />
               </Box>
-              <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
-              <AboutType>
+              <Box w={[3/4 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+                <AboutType>
                   Exploring hidden narratives formalized by data <br/>
-                  The social graphs across intentional communities <br/>
                   Holistic approaches to design and computation <br/>
                   All things electro-acoustic <br/>
                   Modular structures <br/>
-              </AboutType>
+                </AboutType>
               </Box>
 
-              <Box w={[1/4]} p={[3,4]} pl={[2, 3]} mt={[0,1]}>
-                <SectionTitle title='check out:' />
+              <Box w={[1/4]} p={[3,4]} pl={[2, 3]}>
+                <SectionTitle title='check out' />
               </Box>
-              <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+              <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
                 <AboutType>
                   <LinkStyle href="http://learning-gardens.co/">
-                  Learning Gardens
+                    Learning Gardens
                   </LinkStyle> <br/>
                   <LinkStyle href="http://newcomputers.group/">
-                  New Computer Working Group </LinkStyle><br/>
+                    New Computer Working Group </LinkStyle><br/>
                   <LinkStyle href="https://github.com/learning-gardens/cybernetics-club">
-                  Cybernetics Club </LinkStyle><br/>
+                    Cybernetics Club </LinkStyle><br/>
                   <LinkStyle href="https://are.na">Are.na</LinkStyle>
                 </AboutType>
               </Box>
               </Flex>
             </Fade>
-
-        </Delayed>
-        <Delayed mounted={true} mountAfter={1350}>
+          </Delayed>
+        <Delayed mounted={true} mountAfter={1050}>
           <Fade out={!this.state.visible}>
-
-
             <Colophon />
-
           </Fade>
-
         </Delayed>
-
       </div>
     );
   }

@@ -27,11 +27,10 @@ export default function Clock (p) {
 
   // Seconds
   let cx, cy;
-  let secondsRadius;
+  let secR;
 
   p.setup = function () {
     p.createCanvas(doc.clientWidth, doc.clientWidth);
-    console.log(`created canvas`)
     p.stroke(255);
 
     for (let i = 0; i < 60; i ++) {
@@ -97,8 +96,8 @@ export default function Clock (p) {
 
     // Seconds
     // subtract HALF_PI to make them start at the top
-    let radius = p.min(doc.clientWidth, doc.clientWidth) ;
-    secondsRadius = radius * 0.18;
+    let r = p.min(doc.clientWidth, doc.clientWidth) ;
+    secR = r * 0.18;
 
     cx = doc.clientWidth - doc.clientWidth/ 2;
     cy = doc.clientWidth - doc.clientWidth / 2;
@@ -110,15 +109,15 @@ export default function Clock (p) {
     p.strokeWeight(2);
 
     for (var i = 0; i < doc.clientWidth/6; i +=20) {   // Seconds all linked to clock in middle of grd
-      p.line(cx, cy, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx + doc.clientWidth/6, cy, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx + doc.clientWidth/6, cy - doc.clientWidth/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx - doc.clientWidth/6, cy, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx, cy + doc.clientWidth/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx, cy - doc.clientWidth/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx - doc.clientWidth/6, cy - doc.clientWidth/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx - doc.clientWidth/6, cy + doc.clientWidth/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
-      p.line(cx + doc.clientWidth/6, cy + doc.clientWidth/6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+      p.line(cx, cy, cx + p.cos(s) * secR, cy + p.sin(s) * secR);
+      p.line(cx + doc.clientWidth/6, cy, cx + p.cos(s) * secR, cy + p.sin(s) * secR);
+      p.line(cx + doc.clientWidth/6, cy - doc.clientWidth/6, cx + p.cos(s) * secR, cy + p.sin(s) * secR);
+      p.line(cx - doc.clientWidth/6, cy, cx + p.cos(s) * secR, cy + p.sin(s) * secR);
+      p.line(cx, cy + doc.clientWidth/6, cx + p.cos(s) * secR, cy + p.sin(s) * secR);
+      p.line(cx, cy - doc.clientWidth/6, cx + p.cos(s) * secR, cy + p.sin(s) * secR);
+      p.line(cx - doc.clientWidth/6, cy - doc.clientWidth/6, cx + p.cos(s) * secR, cy + p.sin(s) * secR);
+      p.line(cx - doc.clientWidth/6, cy + doc.clientWidth/6, cx + p.cos(s) * secR, cy + p.sin(s) * secR);
+      p.line(cx + doc.clientWidth/6, cy + doc.clientWidth/6, cx + p.cos(s) * secR, cy + p.sin(s) * secR);
     }
   }
 }

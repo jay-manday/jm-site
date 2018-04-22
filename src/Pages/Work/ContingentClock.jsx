@@ -28,7 +28,9 @@ const ContingentClock = () => (
     </Flex>
     <Flex wrap>
       <Box w={[1/4]} p={[2, 3]} pl={[2, 3]}  pt={[3, 4]}>
-        <SectionTitle title='about' />
+        <ResponsiveDisplayBig>
+          <SectionTitle title='about' />
+        </ResponsiveDisplayBig>
       </Box>
       <Box w={[3/4, 1/2]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
         <ResponsiveDisplayBig>
@@ -50,7 +52,7 @@ const ContingentClock = () => (
       <Box width={[3/4, 1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
         <ResponsiveDisplaySmall>
           <AboutType>
-            I'm a Designer and Engineer researching data and society. I like to contribute to open source projects like p5.js, gardening with learning gardens and teaching kids creative coding at the Rye Arts Center.
+            This abstracted clock is a study made with p5.js
           </AboutType>
         </ResponsiveDisplaySmall>
       </Box>

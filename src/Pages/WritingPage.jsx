@@ -1,4 +1,5 @@
 import React from 'react';
+import Delayed from 'react-delayed';
 import styled, { keyframes } from 'styled-components';
 import Navigation from '../Components/Navigation';
 import SectionTitle from '../Components/SectionTitle/SectionTitle';
@@ -6,14 +7,14 @@ import Colophon from '../Components/Colophon';
 import { Text, Box, Flex } from 'rebass';
 
 class WritingPage extends React.Component {
-  constructor(props) {
-    super()
+  constructor() {
+    super();
     this.state = {
       visible: true,
     }
   }
 
-  componentDidMount(props) {
+  componentDidMount() {
     setTimeout(() => {
       this.setState({
         visible: true,
@@ -21,12 +22,15 @@ class WritingPage extends React.Component {
     }, 1000)
   }
 
-  render(props) {
+  render() {
     return (
       <div>
+        <Delayed mounted={true} mountAfter={1050}>
           <Fade out={!this.state.visible}>
             <Navigation />
           </Fade>
+        </Delayed>
+        <Delayed mounted={true} mountAfter={1250}>
           <Fade out={!this.state.visible}>
             <Flex wrap>
               <Box w={[1/4]} p={[3,4]} pl={[2, 3]} >
@@ -37,9 +41,12 @@ class WritingPage extends React.Component {
               </Box>
             </Flex>
           </Fade>
+        </Delayed>
+        <Delayed mounted={true} mountAfter={1450}>
           <Fade out={!this.state.visible}>
             <Colophon/>
-        </Fade>
+          </Fade>
+        </Delayed>
       </div>
     );
   }

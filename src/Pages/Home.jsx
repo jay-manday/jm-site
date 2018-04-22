@@ -7,43 +7,43 @@ import Work from '../Components/Work';
 import Colophon from '../Components/Colophon';
 
 class Home extends React.Component {
-  constructor(props) {
-    super()
+  constructor() {
+    super();
     this.state = {
-      visible: true,
-    }
+      visible: true
+    };
   }
 
-  componentDidMount(props) {
+  componentDidMount() {
     setTimeout(() => {
       this.setState({
         visible: true,
-      })
-    }, 1000)
+      });
+    }, 1000);
   }
 
-  render(props) {
+  render() {
     return (
       <div>
-        <Delayed mounted={true} mountAfter={750}>
-        <Fade out={!this.state.visible}>
-          <Navigation />
-        </Fade>
+        <Delayed mounted={true} mountAfter={350}>
+          <Fade out={!this.state.visible}>
+           <Navigation />
+          </Fade>
+        </Delayed>
+        <Delayed mounted={true} mountAfter={700}>
+          <Fade out={!this.state.visible}>
+            <About/>
+          </Fade>
         </Delayed>
         <Delayed mounted={true} mountAfter={900}>
-        <Fade out={!this.state.visible}>
-          <About/>
-        </Fade>
+          <Fade out={!this.state.visible}>
+            <Work />
+          </Fade>
         </Delayed>
-        <Delayed mounted={true} mountAfter={1100}>
-        <Fade out={!this.state.visible}>
-          <Work />
-        </Fade>
-        </Delayed>
-        <Delayed mounted={true} mountAfter={1400}>
-        <Fade out={!this.state.visible}>
-          <Colophon/>
-        </Fade>
+        <Delayed mounted={true} mountAfter={1000}>
+          <Fade out={!this.state.visible}>
+            <Colophon/>
+          </Fade>
         </Delayed>
       </div>
     );

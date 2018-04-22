@@ -16,7 +16,7 @@ class SketchWrapper extends React.Component {
     }
   }
 
-  componentDidMount(props) {
+  componentDidMount() {
     const height = document.getElementById('canvas').clientWidth;
     const width = document.getElementById('canvas').clientWidth;
     window.addEventListener('Resize', this.updateDimensions);
@@ -34,12 +34,12 @@ class SketchWrapper extends React.Component {
     console.log("changed");
   }
 
-  compnentWillUnmount(props) {
+  compnentWillUnmount() {
     window.removeEventListener('Resize', this.updateDimensions);
     console.log(`removed event listener`)
   }
 
-  render(props) {
+  render() {
     console.log(`rendered P5Wrapper`)
     return (
 

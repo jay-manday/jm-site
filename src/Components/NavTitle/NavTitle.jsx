@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const NavTitle = (props) => (
+const NavTitle = () => (
 
   <LinkStyle to={'/'}>
     J<Spanned>ason</Spanned> Mandel

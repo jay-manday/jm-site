@@ -5,7 +5,7 @@ import WorkItems from './WorkItems/WorkItems';
 import SketchWrapper from './SketchWrapper/SketchWrapper';
 import Clock from './Sketches/Clock';
 
-const Work = (props) => (
+const Work = () => (
   <Flex wrap>
     <Box w={[1/4]} pt={[3, 4]} pb={[3, 4]} pl={[2, 3]} >
       <SectionTitle title='work' />

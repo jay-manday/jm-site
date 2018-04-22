@@ -4,15 +4,19 @@ import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import SectionTitle from './SectionTitle/SectionTitle';
 
-const About = (props) => (
+const About = () => (
   <Flex wrap>
     <Box w={[1/4]} p={[3,4]} pl={[2, 3]} >
       <SectionTitle title='about' />
     </Box>
 
-    <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
+    <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
       <AboutType width={[1]} f={3}>
-        I'm a designer & engineer, currently a research assistant working on climate visualizations for the <LinkStyle href="urbansystemslab.com">Urban Systems Lab</LinkStyle> at the New School. I enjoy contributing to open source projects like <LinkStyle href="p5js.org">p5.js</LinkStyle>, gardening at <LinkStyle href="http://learning-gardens.co/">learning gardens</LinkStyle> and teaching kids creative coding at the <LinkStyle href="ryeartscenter.org">Rye Arts Center</LinkStyle>.
+        I am a designer & engineer, currently a research assistant working on climate visualizations for the
+        <LinkStyle href="https://urbansystemslab.com">Urban Systems Lab</LinkStyle> at the
+        <LinkStyle href="https://newschool.edu/">New School</LinkStyle>. I enjoy gardening with
+        <LinkStyle href="http://learning-gardens.co/">learning gardens</LinkStyle>
+        and teaching kids creative coding at the <LinkStyle href="ryeartscenter.org">Rye Arts Center</LinkStyle>.
       </AboutType>
 
       <Box py={3}>
@@ -31,7 +35,7 @@ const About = (props) => (
       </Box>
       <Box>
         <AboutType width={[1]} f={3}>
-          <LinkStyle href="http://s3.amazonaws.com/arena-attachments/1380589/5a621bb1d45b1ef89f7cb20f63d1177d.pdf?1509389154">
+          <LinkStyle href="https://d2w9rnfcy7mm78.cloudfront.net/1835707/large_101396e0eaa2e09220180303-4-13yb594.jpg">
             Resumé
           </LinkStyle>
         </AboutType>
