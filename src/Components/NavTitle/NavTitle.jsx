@@ -12,10 +12,9 @@ const NavTitle = () => (
 
 export default NavTitle;
 
-const LinkStyle = styled(Link) `
-  @media (min-width: 40em) {
-    font-size: 2em;
-    line-height: 1.5 em;
+const LinkStyle = styled(Link)`
+  @media (max-width: 48em) {
+    font-size: 1.5em;
     display:inline-block;
     text-decoration: underline;
     text-decoration-color: #0000ee;
@@ -30,17 +29,17 @@ const LinkStyle = styled(Link) `
     text-decoration-color: #0000ee;
     font-family: 'GrotesqueMT-Italic';
     font-weight: normal;
-    font-size: 1.075em;
+    font-size: 3em;
     color: white;
     padding-bottom: 5px;
   `;
 
 const Spanned = styled.span`
-  @media (min-width: 40em) {
-    display: inline-block;
-    text-decoration: underline;
-    text-decoration-color: #0000ee;
+  @media (max-width: 48em) {
+    display: none;
   }
 
-  display: none;
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: #0000ee;
 `;

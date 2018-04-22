@@ -18,8 +18,7 @@ const LinkStyle = styled(Link)`
 const TitleStyle = styled.p`
 @media (max-width: 48em) {
   display:inline-block;
-  font-size: 1.125em;
-  line-height: 1.5em;
+  font-size: 1.5em;
   text-decoration: underline;
   text-decoration-color: #0000ee;
 }
@@ -31,8 +30,7 @@ const TitleStyle = styled.p`
     text-decoration-color: #0000ee;
   background-color: black;
   font-family: 'GrotesqueMT';
-  line-height: 1em;
-  font-size: 1.875em;
+  font-size: 3em;
   font-weight: 300;
   color: white;
   margin: 0;

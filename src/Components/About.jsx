@@ -12,11 +12,12 @@ const About = () => (
 
     <Box w={[3/4, 2/3 ]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
       <AboutType width={[1]} f={3}>
-        I am a designer & engineer, currently a research assistant working on climate visualizations for the
-        <LinkStyle href="https://urbansystemslab.com">Urban Systems Lab</LinkStyle> at the
-        <LinkStyle href="https://newschool.edu/">New School</LinkStyle>. I enjoy gardening with
+        I am a designer & engineer, currently a research assistant working on climate visualizations for the &nbsp;
+        <LinkStyle href="https://urbansystemslab.com">Urban Systems Lab</LinkStyle> at the &nbsp;
+        <LinkStyle href="https://newschool.edu/">New School</LinkStyle>. Investigating geospatial blockchain
+        applications with <LinkStyle href="https://foam.space/"> FOAM </LinkStyle>. I enjoy gardening with &nbsp;
         <LinkStyle href="http://learning-gardens.co/">learning gardens</LinkStyle>
-        and teaching kids creative coding at the <LinkStyle href="ryeartscenter.org">Rye Arts Center</LinkStyle>.
+        &nbsp; and teaching kids creative coding at the <LinkStyle href="ryeartscenter.org">Rye Arts Center</LinkStyle>.
       </AboutType>
 
       <Box py={3}>
