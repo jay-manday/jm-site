@@ -1,12 +1,12 @@
 import React from 'react';
 import Delayed from 'react-delayed';
 import styled, { keyframes } from 'styled-components';
-import Navigation from '../Components/Navigation';
-import SectionTitle from '../Components/SectionTitle/SectionTitle';
-import Colophon from '../Components/Colophon';
+import Navigation from '../../Components/Navigation';
+import SectionTitle from '../../Components/SectionTitle/SectionTitle';
+import Colophon from '../../Components/Colophon';
 import { Text, Box, Flex } from 'rebass';
 
-class WritingPage extends React.Component {
+class Urban extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -34,7 +34,7 @@ class WritingPage extends React.Component {
           <Fade out={!this.state.visible}>
             <Flex wrap>
               <Box w={[1 / 4]} p={[3, 4]} pl={[3, 4]} >
-                <SectionTitle title='writings' />
+                <SectionTitle title='urban systems lab' />
               </Box>
               <Box w={[1, 1 / 2, 1 / 3]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
                 <AboutType>Coming Soon</AboutType>
@@ -52,7 +52,7 @@ class WritingPage extends React.Component {
   }
 }
 
-export default WritingPage;
+export default Urban;
 
 const fadeIn = keyframes`
   from {
@@ -83,7 +83,7 @@ const Fade = styled.div`
 const AboutType = styled(Text) `
 @media (max-width: 48em) {
   display: float;
-  font-size: 16pc;
+  font-size: 16px;
   text-decoration: none;
 }
 
@@ -96,3 +96,4 @@ const AboutType = styled(Text) `
   color: white;
   margin: 0;
 `;
+

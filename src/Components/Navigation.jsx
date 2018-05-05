@@ -11,7 +11,7 @@ const data = [
 
 const Navigation = () => (
   <Flex wrap align='baseline' justify='space-around'>
-    <Box w={[1/4]} pt={[3, 4]} pb={[3, 4]} pl={[2, 3]} >
+    <Box w={[1/4]} pt={[3, 4]} pb={[3, 4]} pl={[2, 4]} >
       <NavTitle />
     </Box>
     {data.map((item, id) =>

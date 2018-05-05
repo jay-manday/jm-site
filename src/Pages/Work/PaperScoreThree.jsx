@@ -238,18 +238,18 @@ export default PaperScoreThree;
 
 const AboutType = styled.h2`
 @media (max-width: 37.5em) {
-  font-size: 1.5em;
+  font-size: 24px;
   text-decoration: none;
 }
 
 @media (min-width: 37.5em) {
-  font-size: 2em;
+  font-size: 32px;
   text-decoration: none;
 }
   font-family: 'GrotesqueMT';
-  font-size: 1.5em;
+  font-size: 24px;
   font-weight: 300;
-  line-height: 1.5em;
+  line-height: 24px;
   color: white;
   margin: 0;
 `;

@@ -14,7 +14,7 @@ export default NavTitle;
 
 const LinkStyle = styled(Link)`
   @media (max-width: 48em) {
-    font-size: 1.5em;
+    font-size: 20px;
     display:inline-block;
     text-decoration: underline;
     text-decoration-color: #0000ee;
@@ -29,13 +29,13 @@ const LinkStyle = styled(Link)`
     text-decoration-color: #0000ee;
     font-family: 'GrotesqueMT-Italic';
     font-weight: normal;
-    font-size: 3em;
+    font-size: 32px;
     color: white;
     padding-bottom: 5px;
   `;
 
 const Spanned = styled.span`
-  @media (max-width: 48em) {
+  @media (max-width: 50em) {
     display: none;
   }
 

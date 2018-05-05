@@ -38,6 +38,7 @@
     "react-dev-utils": "^3.1.0",
     "react-dom": "^15.6.1",
     "react-error-overlay": "^1.0.10",
+    "react-ga": "^2.5.0",
     "react-p5-wrapper": "^0.0.4",
     "react-router-dom": "^4.1.2",
     "react-router-hash-link": "^1.1.1",

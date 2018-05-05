@@ -41,7 +41,7 @@ export default WorkItems;
 const TitleStyle = styled.h1`
 @media (max-width: 48em) {
   display:inline-block;
-  font-size: 1.25em;
+  font-size: 20px;
   text-decoration: underline;
   text-decoration-color: #0000ee;
 
@@ -52,7 +52,7 @@ const TitleStyle = styled.h1`
 
   font-family: GrotesqueMT;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 32px;
   color: white;
   text-decoration: underline;
   text-decoration-color: #0000ee;
@@ -61,9 +61,10 @@ const TitleStyle = styled.h1`
   display:inline-block;
   text-decoration: underline;
   text-decoration-color: #0000ee;
-  padding: 0px;
-  margin: 0px;
   color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0px;
 
   :hover {
     color: red;
@@ -71,9 +72,15 @@ const TitleStyle = styled.h1`
 `;
 
 const SubStyle = styled.h1`
+@media (max-width: 48em) {
+  display:inline-block;
+  font-size: 16px;
+}
   font-family: GrotesqueMT;
   font-style: italic;
-  font-size: 1em;
+  font-size: 24px;
   color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin: 0;
 `;

@@ -65,11 +65,10 @@ class AboutPage extends React.Component {
 
 export default AboutPage;
 
-const AboutType = styled(Text)`
+const AboutType = styled(Text) `
 @media (max-width: 48em) {
   display: float;
-  font-size: 1em;
-  line-height: 1.25em;
+  font-size: 16px;
   text-decoration: none;
 }
 
@@ -77,8 +76,8 @@ const AboutType = styled(Text)`
   font-family: 'GrotesqueMT';
   text-decoration: none;
   display: float;
-  line-height: 1.5em;
-  font-size: 1.875em;
+  line-height: 24px;
+  font-size: 30px;
   font-weight: 300;
   color: white;
   margin: 0;

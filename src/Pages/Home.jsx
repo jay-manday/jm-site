@@ -5,6 +5,7 @@ import Navigation from '../Components/Navigation';
 import About from '../Components/About';
 import Work from '../Components/Work';
 import Colophon from '../Components/Colophon';
+import ReactGA from 'react-ga';
 
 class Home extends React.Component {
   constructor() {
@@ -77,3 +78,6 @@ const Fade = styled.div`
   animation: ${props => props.out ? fadeOut : fadeIn} 0.5s linear;
   transition: visibility 1s linear;
 `;
+
+ReactGA.initialize('UA-68238638-2');
+ReactGA.pageview(window.location.pathname + window.location.search);

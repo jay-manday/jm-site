@@ -81,21 +81,21 @@ const ResponsiveDisplayBig = styled.span`
 
 const AboutType= styled.h2`
   @media (min-width: 20em) {
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 16px;
+    line-height: 20px;
     text-decoration: none;
   }
 
   @media (min-width: 37.5em) {
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: 24px;
+    line-height: 24px;
     text-decoration: none;
   }
 
   font-family: 'GrotesqueMT';
-  font-size: 1.25em;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 1.5em;
+  line-height: 20px;
   color: white;
   margin: 0;
 `;

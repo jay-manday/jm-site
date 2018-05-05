@@ -6,42 +6,47 @@ import ContactIcons from './ContactIcons/ContactIcons';
 
 const Colophon = () => (
   <Flex wrap>
-    <Box w={[1/4]} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} mt={[0, 1]}>
+    <Box w={[1 / 4]} p={[2, 3]} pl={[2, 4]} pt={[3, 4]} mt={[0, 1]}>
       <SectionTitle title='colophon' />
     </Box>
 
     <Box w={3/4} p={[2, 3]} pl={[2, 3]} pt={[3, 4]} >
-      <AboutType>Set with &nbsp;
+      <AboutType>set with &nbsp;
         <LinkStyle href="https://www.bertholdtypes.com/font/akzidenz-grotesk/proplus/">
-          Akzidenz Grotesk
+          akzidenz grotesk
         </LinkStyle>
       </AboutType>
-      <AboutType>This site is built with &nbsp;
+      <AboutType>this site is built with &nbsp;
         <LinkStyle href="https://reactjs.org/">
-          React
+          react
         </LinkStyle>
       </AboutType>
-      <AboutType>Hosted with &nbsp;
+      <AboutType>hosted with &nbsp;
         <LinkStyle href="https://zeit.co/now">
           now
         </LinkStyle>
         &nbsp; and
       </AboutType>
       <AboutType>
-        seeded on Dat by &nbsp;
+        seeded on &nbsp;
         <LinkStyle href="dat://jmandel-jaymanday.hashbase.io/">
-        Hashbase
+        dat
         </LinkStyle>
       </AboutType>
       <Flex wrap>
         <ContactIcons
-          width={40} height={40}
+          width={45} height={45}
+          url='https://www.linkedin.com/in/jason-mandel-960a39103/'
+          image='https://d2w9rnfcy7mm78.cloudfront.net/2138316/original_3a3e994d9cc235aff7e8f7ecf64a0101.png'
+        />
+        <ContactIcons
+          width={45} height={45}
           url='https://twitter.com/jaymanday'
           image='https://d2w9rnfcy7mm78.cloudfront.net/1222973/original_a59c38ae69092fab601f6e88ba9a6d7f.png'
         />
 
         <ContactIcons
-          width={40} height={40}
+          width={45} height={45}
           url='https://github.com/jay-manday'
           image='https://d2w9rnfcy7mm78.cloudfront.net/1221844/original_713585cf2c09a83a4a06d0757b1a2fc3.png'
         />
@@ -60,16 +65,16 @@ export default Colophon;
 
 const AboutType= styled.h2`
 @media (max-width: 48em) {
-  font-size: 1.125em;
-  line-height: 1.5em;
+  font-size: 18px;
+  line-height: 20px;
   text-decoration: none;
 }
 
   background-color: black;
   font-family: 'GrotesqueMT';
   text-decoration: none;
-  line-height: 1.5em;
-  font-size: 2em;
+  line-height: 40px;
+  font-size: 32px;
   font-weight: 300;
   color: white;
   margin: 0;

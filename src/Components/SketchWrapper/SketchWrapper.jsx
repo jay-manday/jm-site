@@ -90,6 +90,7 @@ const TitleStyle = styled.h1`
   font-size: 1.25em;
   text-decoration: underline;
   text-decoration-color: #0000ee;
+
 }
   :hover {
     color: red;
@@ -97,14 +98,19 @@ const TitleStyle = styled.h1`
 
   font-family: GrotesqueMT;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 2em;
   color: white;
   text-decoration: underline;
   text-decoration-color: #0000ee;
+  margin: 0;
+
   display:inline-block;
-  padding: 0px;
-  margin: 0px;
+  text-decoration: underline;
+  text-decoration-color: #0000ee;
   color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0px;
 
   :hover {
     color: red;
@@ -112,9 +118,15 @@ const TitleStyle = styled.h1`
 `;
 
 const SubStyle = styled.h1`
+@media (max-width: 48em) {
+  display:inline-block;
+  font-size: 1em;
+}
   font-family: GrotesqueMT;
   font-style: italic;
-  font-size: 1em;
+  font-size: 1.5em;
   color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin: 0;
 `;
