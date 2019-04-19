@@ -2311,7 +2311,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/src/components/Document.js";
+var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/src/components/Document.js";
 
 
 

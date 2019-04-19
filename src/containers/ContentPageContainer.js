@@ -1,16 +1,16 @@
-import React from 'react'
-import Head from 'next/head'
-import Content from 'components/Content'
-import { findPost } from 'content'
+import React from 'react';
+import Head from 'next/head';
+import Content from 'components/Content';
+import { findPost } from 'content';
 
 class ContentContainer extends React.Component {
-  static async getInitialProps (props) {
+  static async getInitialProps(props) {
     return {
-      id: props.query.id
-    }
+      id: props.query.id,
+    };
   }
 
-  render () {
+  render() {
     const { Doc, title } = findPost(this.props.id)
     return (
       <React.Fragment>
@@ -19,8 +19,8 @@ class ContentContainer extends React.Component {
         </Head>
         <Content Doc={Doc} />
       </React.Fragment>
-    )
+    );
   }
 }
 
-export default ContentContainer
+export default ContentContainer;

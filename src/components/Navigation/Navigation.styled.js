@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'next';
 import styled from 'styled-components';
 
-export const LinkStyle = styled(props => <Link {...props}/>)`
+export const LinkStyle = styled.a`
   text-decoration: underline;
   text-decoration-color: #0000ee;
 `;
@@ -31,7 +30,7 @@ export const TitleStyle = styled.p`
   margin: 0;
 `;
 
-export const LinkStyleSpecial = styled(props => <Link {...props} />)`
+export const LinkStyleSpecial = styled.a`
   @media (max-width: 48em) {
     font-size: 20px;
     display:inline-block;

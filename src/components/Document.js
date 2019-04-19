@@ -8,8 +8,8 @@ import Document, {
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const sheet = new ServerStyleSheet()
-    const originalRenderPage = ctx.renderPage
+    const sheet = new ServerStyleSheet();
+    const originalRenderPage = ctx.renderPage;
 
     try {
       ctx.renderPage = () =>
@@ -26,13 +26,13 @@ export default class MyDocument extends Document {
             {initialProps.styles}
             {sheet.getStyleElement()}
           </>
-      }
+      };
     } finally {
-      sheet.seal()
+      sheet.seal();
     }
   }
 
-  render () {
+  render() {
     return (
       <html>
         <Head>

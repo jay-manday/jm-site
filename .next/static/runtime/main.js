@@ -6639,7 +6639,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "/Users/jasonmandel/Desktop/bold/alehatsman.com/.next");
+      source_map_support_1.rewriteStacktrace(error, "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/.next");
       return error;
     }
   };

@@ -1,5 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
-import './fontawersome'
+/* eslint-disable import/prefer-default-export */
+import { createGlobalStyle } from 'styled-components';
+import './fontawersome';
 
 export const GlobalStyle = createGlobalStyle`
   html, body {
@@ -35,4 +36,4 @@ export const GlobalStyle = createGlobalStyle`
   a:link, a:visited, a:active {
     color: inherit;
   }
-`
+`;

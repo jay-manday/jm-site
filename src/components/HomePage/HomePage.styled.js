@@ -10,9 +10,5 @@ export const MainWrapper = styled.section`
 `;
 
 export const HomeWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
   max-width: 100%;
-  margin: 0 auto;
-  padding: 50px 20px;
 `;

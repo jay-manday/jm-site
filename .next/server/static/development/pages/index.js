@@ -156,7 +156,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/content/dotfiles_and_configuration_management_using_ansible.mdx";
+var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/content/dotfiles_and_configuration_management_using_ansible.mdx";
 
 
 var meta = {
@@ -742,7 +742,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/content/static_blog_generator_using_nextjs_styledcomponents_mdx.mdx";
+var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/content/static_blog_generator_using_nextjs_styledcomponents_mdx.mdx";
 
 
 var meta = {
@@ -2615,7 +2615,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/content/what_questions_to_ask_your_potential_employer.mdx";
+var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/content/what_questions_to_ask_your_potential_employer.mdx";
 
 
 var meta = {
@@ -4487,7 +4487,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/src/components/FaIcon.js";
+var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/src/components/FaIcon.js";
 
 
 
@@ -4505,7 +4505,7 @@ var FIcon = function FIcon(props) {
 
 /* harmony default export */ __webpack_exports__["default"] = (styled_components__WEBPACK_IMPORTED_MODULE_3___default()(FIcon).withConfig({
   displayName: "FaIcon",
-  componentId: "kj78rp-0"
+  componentId: "sc-13nbqrb-0"
 })([""]));
 
 /***/ }),
@@ -4514,13 +4514,11 @@ var FIcon = function FIcon(props) {
 /*!*********************************************!*\
   !*** ./src/components/HomePage/HomePage.js ***!
   \*********************************************/
-/*! exports provided: default, Spanned, LinkStyleSpecial */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Spanned", function() { return Spanned; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkStyleSpecial", function() { return LinkStyleSpecial; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
@@ -4528,9 +4526,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HomePage_styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HomePage.styled */ "./src/components/HomePage/HomePage.styled.js");
 /* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../User */ "./src/components/User/index.js");
 /* harmony import */ var _PostList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../PostList */ "./src/components/PostList/index.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/src/components/HomePage/HomePage.js";
+/* harmony import */ var _Navigation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Navigation */ "./src/components/Navigation/index.js");
+var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/src/components/HomePage/HomePage.js";
 
 /* eslint-disable */
 
@@ -4544,45 +4541,30 @@ var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/src/component
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HomePage_styled__WEBPACK_IMPORTED_MODULE_2__["HomeWrapper"], {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 15
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LinkStyleSpecial, {
-    href: "/",
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HomePage_styled__WEBPACK_IMPORTED_MODULE_2__["MainWrapper"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
-    },
-    __self: this
-  }, "J", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Spanned, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, "ason"), " Mandel"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HomePage_styled__WEBPACK_IMPORTED_MODULE_2__["MainWrapper"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PostList__WEBPACK_IMPORTED_MODULE_4__["default"], {
     posts: posts,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 17
     },
     __self: this
   })));
 });
-var Spanned = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.span.withConfig({
-  displayName: "HomePage__Spanned",
-  componentId: "sc-15971vw-0"
-})(["@media (max-width:50em){display:none;}display:inline-block;text-decoration:underline;text-decoration-color:#0000ee;"]);
-var LinkStyleSpecial = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.a.withConfig({
-  displayName: "HomePage__LinkStyleSpecial",
-  componentId: "sc-15971vw-1"
-})(["@media (max-width:48em){font-size:20px;display:inline-block;text-decoration:underline;text-decoration-color:#0000ee;padding-bottom:0px;}:hover{color:red;}display:inline-block;text-decoration:underline;text-decoration-color:#0000ee;font-family:'GrotesqueMT-Italic';font-weight:normal;font-size:32px;color:white;padding-bottom:5px;"]);
 
 /***/ }),
 
@@ -4603,16 +4585,16 @@ __webpack_require__.r(__webpack_exports__);
 
 var SidebarWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.section.withConfig({
   displayName: "HomePagestyled__SidebarWrapper",
-  componentId: "sc-1sb0r48-0"
+  componentId: "hti2r1-0"
 })(["display:flex;"]);
 var MainWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.section.withConfig({
   displayName: "HomePagestyled__MainWrapper",
-  componentId: "sc-1sb0r48-1"
+  componentId: "hti2r1-1"
 })(["display:flex;margin-left:50px;"]);
 var HomeWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "HomePagestyled__HomeWrapper",
-  componentId: "sc-1sb0r48-2"
-})(["display:flex;flex-direction:row;max-width:100%;margin:0 auto;padding:50px 20px;"]);
+  componentId: "hti2r1-2"
+})(["max-width:100%;"]);
 
 /***/ }),
 
@@ -4627,6 +4609,218 @@ var HomeWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.w
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HomePage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomePage */ "./src/components/HomePage/HomePage.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _HomePage__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/Navigation/Navigation.js":
+/*!*************************************************!*\
+  !*** ./src/components/Navigation/Navigation.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rebass */ "rebass");
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _NavigationTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NavigationTitle */ "./src/components/Navigation/NavigationTitle.js");
+/* harmony import */ var _NavigationSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NavigationSection */ "./src/components/Navigation/NavigationSection.js");
+var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/src/components/Navigation/Navigation.js";
+
+
+
+
+var data = [{
+  id: 1,
+  name: 'about'
+}, {
+  id: 2,
+  name: 'work'
+}, {
+  id: 3,
+  name: 'colophon'
+}];
+
+var Navigation = function Navigation() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Flex"], {
+    wrap: "true",
+    width: 1,
+    align: "baseline",
+    justify: "space-around",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    width: [1 / 4],
+    pt: [3, 4],
+    pb: [3, 4],
+    pl: [2, 4],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavigationTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  })), data.map(function (item, id) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+      key: id,
+      width: [1 / 4],
+      p: [3, 4],
+      pl: [2, 3],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavigationSection__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      title: item.name,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }));
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Navigation);
+
+/***/ }),
+
+/***/ "./src/components/Navigation/Navigation.styled.js":
+/*!********************************************************!*\
+  !*** ./src/components/Navigation/Navigation.styled.js ***!
+  \********************************************************/
+/*! exports provided: LinkStyle, TitleStyle, LinkStyleSpecial, Spanned */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkStyle", function() { return LinkStyle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TitleStyle", function() { return TitleStyle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkStyleSpecial", function() { return LinkStyleSpecial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Spanned", function() { return Spanned; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var LinkStyle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.a.withConfig({
+  displayName: "Navigationstyled__LinkStyle",
+  componentId: "im5zgs-0"
+})(["text-decoration:underline;text-decoration-color:#0000ee;"]);
+var TitleStyle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.p.withConfig({
+  displayName: "Navigationstyled__TitleStyle",
+  componentId: "im5zgs-1"
+})(["@media (max-width:48em){display:inline-block;line-height:24px;font-size:20px;text-decoration:underline;text-decoration-color:#0000ee;}:hover{color:red;}display:inline-block;text-decoration:underline;text-decoration-color:#0000ee;background-color:black;font-family:'GrotesqueMT';font-size:32px;font-weight:300;color:white;margin:0;"]);
+var LinkStyleSpecial = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.a.withConfig({
+  displayName: "Navigationstyled__LinkStyleSpecial",
+  componentId: "im5zgs-2"
+})(["@media (max-width:48em){font-size:20px;display:inline-block;text-decoration:underline;text-decoration-color:#0000ee;padding-bottom:0px;}:hover{color:red;}display:inline-block;text-decoration:underline;text-decoration-color:#0000ee;font-family:'GrotesqueMT-Italic';font-weight:normal;font-size:32px;color:white;padding-bottom:5px;"]);
+var Spanned = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.span.withConfig({
+  displayName: "Navigationstyled__Spanned",
+  componentId: "im5zgs-3"
+})(["@media (max-width:50em){display:none;}display:inline-block;text-decoration:underline;text-decoration-color:#0000ee;"]);
+
+/***/ }),
+
+/***/ "./src/components/Navigation/NavigationSection.js":
+/*!********************************************************!*\
+  !*** ./src/components/Navigation/NavigationSection.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Navigation_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navigation.styled */ "./src/components/Navigation/Navigation.styled.js");
+var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/src/components/Navigation/NavigationSection.js";
+
+
+
+var NavigationSection = function NavigationSection(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation_styled__WEBPACK_IMPORTED_MODULE_1__["LinkStyle"], {
+    href: "/".concat(props.title),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation_styled__WEBPACK_IMPORTED_MODULE_1__["TitleStyle"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, props.title));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NavigationSection);
+
+/***/ }),
+
+/***/ "./src/components/Navigation/NavigationTitle.js":
+/*!******************************************************!*\
+  !*** ./src/components/Navigation/NavigationTitle.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Navigation_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navigation.styled */ "./src/components/Navigation/Navigation.styled.js");
+var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/src/components/Navigation/NavigationTitle.js";
+
+
+
+var NavigationTitle = function NavigationTitle() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation_styled__WEBPACK_IMPORTED_MODULE_1__["LinkStyleSpecial"], {
+    href: '/',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "J", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation_styled__WEBPACK_IMPORTED_MODULE_1__["Spanned"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, "ason"), " Mandel");
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NavigationTitle);
+
+/***/ }),
+
+/***/ "./src/components/Navigation/index.js":
+/*!********************************************!*\
+  !*** ./src/components/Navigation/index.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Navigation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navigation */ "./src/components/Navigation/Navigation.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Navigation__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
 
 
@@ -4650,7 +4844,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _PostList_styled__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./PostList.styled */ "./src/components/PostList/PostList.styled.js");
 
-var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/src/components/PostList/PostList.js";
+var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/src/components/PostList/PostList.js";
 
 
 
@@ -4804,7 +4998,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _User_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./User.styled */ "./src/components/User/User.styled.js");
 /* harmony import */ var _FaIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../FaIcon */ "./src/components/FaIcon.js");
-var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/src/components/User/User.js";
+var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/src/components/User/User.js";
 
 
 
@@ -5047,7 +5241,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_HomePage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/HomePage */ "./src/components/HomePage/index.js");
 /* harmony import */ var _content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../content */ "./src/content.js");
-var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/src/containers/HomePageContainer.js";
+var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/src/containers/HomePageContainer.js";
 
 
 
@@ -5056,7 +5250,7 @@ var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/src/container
     posts: Object(_content__WEBPACK_IMPORTED_MODULE_2__["getPosts"])(),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   });
@@ -5136,7 +5330,7 @@ function sortPosts(posts) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/jasonmandel/Desktop/bold/alehatsman.com/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -5347,6 +5541,17 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "rebass":
+/*!*************************!*\
+  !*** external "rebass" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("rebass");
 
 /***/ }),
 

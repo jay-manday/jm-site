@@ -1,5 +1,5 @@
 {
-  "name": "alehatsman.com",
+  "name": "jm-site",
   "version": "0.0.1",
   "description": "Personal website",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atsman/alehatsman.com.git"
+    "url": "git+https://github.com/jaymanday/jm-site.git"
   },
   "keywords": [
     "Next.js",
@@ -23,12 +23,12 @@
     "Components",
     "Mdx"
   ],
-  "author": "Aleh Atsman",
+  "author": "Jason Mandel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atsman/alehatsman.com/issues"
+    "url": "https://github.com/jaymanday/jm-site/issues"
   },
-  "homepage": "https://github.com/atsman/alehatsman.com#readme",
+  "homepage": "https://github.com/jaymanday/jm-site#readme",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
@@ -47,6 +47,7 @@
     "remark-emoji": "^2.0.2",
     "remark-images": "^0.18.0",
     "styled-components": "^4.2.0",
+    "styled-system": "^4.1.0",
     "webpack": "^4.30.0",
     "webpack-node-externals": "^1.7.2"
   },
