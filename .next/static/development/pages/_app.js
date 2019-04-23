@@ -27791,7 +27791,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/src/components/App.js";
+var _jsxFileName = "/Users/jasonmandel/Desktop/jm-site/src/components/App.js";
 
 
 
@@ -27951,7 +27951,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  html, body {\n    height: 100%;\n    width: 100%;\n  }\n\n  html {\n    font-size: 62.5%;\n  }\n\n  body {\n    font-family: 'Roboto', 'Lato', sans-serif;\n    font-size: 1.6rem;\n    margin: 0;\n    padding: 0;\n    background-color: #000;\n    color: #fff;\n  }\n\n  #__next {\n    height: 100%;\n  }\n\n  * {\n    box-sizing: border-box;\n  }\n\n  a {\n    text-decoration: none;\n  }\n\n  a:link, a:visited, a:active {\n    color: inherit;\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  html, body {\n    height: 100%;\n    width: 100%;\n  }\n\n  html {\n    font-size: 62.5%;\n  }\n\n  body {\n    color: #fff;\n    background-color: #000;\n    font-family: 'Roboto', 'Lato', sans-serif;\n    font-size: 1.6rem;\n    padding: 0;\n    margin: 0;\n  }\n\n  #__next {\n    height: 100%;\n  }\n\n  * {\n    box-sizing: border-box;\n  }\n\n  a {\n    text-decoration: none;\n  }\n\n  a:link, a:visited, a:active {\n    color: inherit;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

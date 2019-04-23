@@ -1,12 +1,17 @@
-import React from 'react';
 import styled from 'styled-components';
 
-export const LinkStyle = styled.a`
+export const TitleStyle = styled.p`
+  display:inline-block;
   text-decoration: underline;
   text-decoration-color: #0000ee;
-`;
+  background-color: black;
+  font-family: 'Inter'
+  font-style:  normal;
+  font-weight: 500;
+  font-size: 32px;
+  color: white;
+  margin: 0;
 
-export const TitleStyle = styled.p`
   @media (max-width: 48em) {
     display:inline-block;
     line-height: 24px;
@@ -18,19 +23,19 @@ export const TitleStyle = styled.p`
   :hover {
     color: red;
   }
+`;
 
+export const LinkStyle = styled.a`
+  color: white;
+  padding-bottom: 5px;
   display:inline-block;
   text-decoration: underline;
   text-decoration-color: #0000ee;
-  background-color: black;
-  font-family: 'GrotesqueMT';
+    font-family: 'Inter'
+  font-style:  normal;
+  font-weight: 500;
   font-size: 32px;
-  font-weight: 300;
-  color: white;
-  margin: 0;
-`;
 
-export const LinkStyleSpecial = styled.a`
   @media (max-width: 48em) {
     font-size: 20px;
     display:inline-block;
@@ -42,23 +47,14 @@ export const LinkStyleSpecial = styled.a`
   :hover {
     color: red;
   }
-
-  display:inline-block;
-  text-decoration: underline;
-  text-decoration-color: #0000ee;
-  font-family: 'GrotesqueMT-Italic';
-  font-weight: normal;
-  font-size: 32px;
-  color: white;
-  padding-bottom: 5px;
 `;
 
 export const Spanned = styled.span`
-  @media (max-width: 50em) {
-    display: none;
-  }
-
   display: inline-block;
   text-decoration: underline;
   text-decoration-color: #0000ee;
+
+  @media (max-width: 50em) {
+    display: none;
+  }
 `;

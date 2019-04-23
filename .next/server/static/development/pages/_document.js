@@ -2311,7 +2311,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/jasonmandel/Desktop/bold/alehatsman.com/jm-site/src/components/Document.js";
+var _jsxFileName = "/Users/jasonmandel/Desktop/jm-site/src/components/Document.js";
 
 
 
@@ -2331,15 +2331,16 @@ function (_Document) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("html", {
+        lang: "en",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 35
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_11__["Head"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 36
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("meta", {
@@ -2347,7 +2348,7 @@ function (_Document) {
         content: "initial-scale=1.0, width=device-width",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 37
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("link", {
@@ -2356,7 +2357,7 @@ function (_Document) {
         href: "/static/css/typography.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 38
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("link", {
@@ -2364,25 +2365,25 @@ function (_Document) {
         href: "/static/images/logo.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 39
         },
         __self: this
       }), this.props.styleTags), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("body", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 42
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_11__["Main"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 43
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_11__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 44
         },
         __self: this
       })));
@@ -2409,7 +2410,7 @@ function (_Document) {
                         return sheet.collectStyles(react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(App, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, props, {
                           __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 17
+                            lineNumber: 16
                           },
                           __self: this
                         })));

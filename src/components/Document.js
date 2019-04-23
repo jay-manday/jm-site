@@ -12,20 +12,18 @@ export default class MyDocument extends Document {
     const originalRenderPage = ctx.renderPage;
 
     try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />)
-        });
+      ctx.renderPage = () => originalRenderPage({
+        enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+      });
 
       const initialProps = await Document.getInitialProps(ctx);
 
       return {
         ...initialProps,
-        styles:
-          <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
-          </>
+        styles: <>
+          {initialProps.styles}
+          {sheet.getStyleElement()}
+        </>
       };
     } finally {
       sheet.seal();
@@ -34,11 +32,11 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="en">
         <Head>
-          <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-          <link rel='stylesheet' type='text/css' href='/static/css/typography.css' />
-          <link rel='icon' href='/static/images/logo.png' />
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link rel="stylesheet" type="text/css" href="/static/css/typography.css" />
+          <link rel="icon" href="/static/images/logo.png" />
           {this.props.styleTags}
         </Head>
         <body>
@@ -46,6 +44,6 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </html>
-    )
+    );
   }
 }

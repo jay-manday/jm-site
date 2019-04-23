@@ -1,14 +1,15 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 
 import {
   Spanned,
-  LinkStyleSpecial,
+  LinkStyle,
 } from './Navigation.styled';
 
 const NavigationTitle = () => (
-  <LinkStyleSpecial href={'/'}>
+  <LinkStyle href="/">
     J<Spanned>ason</Spanned> Mandel
-  </LinkStyleSpecial>
+  </LinkStyle>
 );
 
 export default NavigationTitle;

@@ -13,12 +13,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    color: #fff;
+    background-color: #000;
     font-family: 'Roboto', 'Lato', sans-serif;
     font-size: 1.6rem;
-    margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #fff;
+    margin: 0;
   }
 
   #__next {

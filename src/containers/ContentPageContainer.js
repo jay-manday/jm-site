@@ -1,9 +1,14 @@
-import React from 'react';
-import Head from 'next/head';
-import Content from 'components/Content';
-import { findPost } from 'content';
 
-class ContentContainer extends React.Component {
+import Head from 'next/head';
+import React, {
+  Fragment,
+  Component,
+} from 'react';
+import { findPost } from 'content';
+import Content from 'components/Content';
+
+
+class ContentContainer extends Component {
   static async getInitialProps(props) {
     return {
       id: props.query.id,
@@ -11,14 +16,15 @@ class ContentContainer extends React.Component {
   }
 
   render() {
-    const { Doc, title } = findPost(this.props.id)
+    const { id } = this.props;
+    const { Doc, title } = findPost(id);
     return (
-      <React.Fragment>
+      <Fragment>
         <Head>
           <title>{title || ''}</title>
         </Head>
         <Content Doc={Doc} />
-      </React.Fragment>
+      </Fragment>
     );
   }
 }

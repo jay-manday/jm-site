@@ -4,9 +4,9 @@ import {
   TitleStyle,
 } from './Navigation.styled';
 
-const NavigationSection = props => (
-  <LinkStyle href={`/${props.title}`}>
-    <TitleStyle>{props.title}</TitleStyle>
+const NavigationSection = ({ title }) => (
+  <LinkStyle href={`/${title}`}>
+    <TitleStyle>{title}</TitleStyle>
   </LinkStyle>
 );
 

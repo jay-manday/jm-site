@@ -1,10 +1,10 @@
 import {
   UserWrapper, Photo, Fullname,
   Description, Highligh, PointsWrapper,
-  Point, PointText
-} from './User.styled'
+  Point, PointText,
+} from './User.styled';
 
-import FaIcon from '../FaIcon'
+import FaIcon from '../FaIcon';
 
 const User = () => (
   <UserWrapper>
@@ -51,6 +51,6 @@ const User = () => (
       </Point>
     </PointsWrapper>
   </UserWrapper>
-)
+);
 
-export default User
+export default User;

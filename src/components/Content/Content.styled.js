@@ -4,11 +4,10 @@ import styled, { css } from 'styled-components';
 const Wrapper = styled.main`
   margin: 0 auto;
   padding: 20px 20px;
-  max-width: 900px;
-
-  font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 1.5;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.75;
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 `;
@@ -17,7 +16,7 @@ const AWrapper = styled.a`
   color: #0094FF !important; 
 `;
 
-const a = props => <AWrapper {...props} target='_blank' />;
+const a = props => <AWrapper {...props} target="_blank" />;
 
 const img = styled.img`
   max-width: 100%;
@@ -54,7 +53,7 @@ const h2 = styled.h2`
 `;
 
 const p = styled.p`
-  margin: 10px 0;
+  margin: 32px 0;
 `;
 
 const list = css`
