@@ -4708,6 +4708,27 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/components/About/About.styled.js":
+/*!**********************************************!*\
+  !*** ./src/components/About/About.styled.js ***!
+  \**********************************************/
+/*! exports provided: AboutType */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutType", function() { return AboutType; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+/* eslint-disable import/prefer-default-export */
+
+var AboutType = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.p.withConfig({
+  displayName: "Aboutstyled__AboutType",
+  componentId: "sc-83id92-0"
+})(["@media (max-width:48em){display:float;font-size:16px;line-height:24px;text-decoration:none;}background-color:black;font-family:'Inter';text-decoration:none;display:float;line-height:40px;font-size:32px;font-weight:300;color:white;margin:0;"]);
+
+/***/ }),
+
 /***/ "./src/components/FaIcon.js":
 /*!**********************************!*\
   !*** ./src/components/FaIcon.js ***!
@@ -4769,10 +4790,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Navigation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Navigation */ "./src/components/Navigation/index.js");
 /* harmony import */ var _section__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../section */ "./src/components/section/index.js");
 /* harmony import */ var _content__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../content */ "./src/components/content/index.js");
-/* harmony import */ var _content_about_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../content/about.mdx */ "./content/about.mdx");
+/* harmony import */ var _colophon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../colophon */ "./src/components/colophon/index.js");
+/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../about */ "./src/components/about/index.js");
+/* harmony import */ var _content_about_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../content/about.mdx */ "./content/about.mdx");
 var _jsxFileName = "/Users/jasonmandel/Desktop/jm-site/src/components/HomePage/HomePage.js";
 
 /* eslint-disable */
+
+
 
 
 
@@ -4788,34 +4813,53 @@ var _jsxFileName = "/Users/jasonmandel/Desktop/jm-site/src/components/HomePage/H
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HomePage_styled__WEBPACK_IMPORTED_MODULE_3__["HomeWrapper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 22
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_2__["Flex"], {
     wrap: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_section__WEBPACK_IMPORTED_MODULE_7__["default"], {
     title: "about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 24
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_content__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    Doc: _content_about_mdx__WEBPACK_IMPORTED_MODULE_9__["default"],
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_about__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 25
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_2__["Flex"], {
+    wrap: "true",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_section__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    title: "colophon",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_colophon__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
     },
     __self: this
   })));
@@ -5235,6 +5279,146 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/components/Social/Icon.js":
+/*!***************************************!*\
+  !*** ./src/components/Social/Icon.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rebass */ "rebass");
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/jasonmandel/Desktop/jm-site/src/components/Social/Icon.js";
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var width = _ref.width,
+      height = _ref.height,
+      margin = _ref.margin,
+      url = _ref.url,
+      image = _ref.image;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    width: width,
+    height: height,
+    pr: 3,
+    pt: 1,
+    pb: 1,
+    ml: margin,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: url,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Image"], {
+    src: image,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  })));
+});
+
+/***/ }),
+
+/***/ "./src/components/Social/Social.js":
+/*!*****************************************!*\
+  !*** ./src/components/Social/Social.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rebass */ "rebass");
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Icon */ "./src/components/Social/Icon.js");
+var _jsxFileName = "/Users/jasonmandel/Desktop/jm-site/src/components/Social/Social.js";
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Flex"], {
+    wrap: "true",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    width: 45,
+    height: 45,
+    url: "https://www.linkedin.com/in/jason-mandel-960a39103/",
+    image: "https://d2w9rnfcy7mm78.cloudfront.net/2138316/original_3a3e994d9cc235aff7e8f7ecf64a0101.png",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    width: 45,
+    height: 45,
+    url: "https://twitter.com/jaymanday",
+    image: "https://d2w9rnfcy7mm78.cloudfront.net/1222973/original_a59c38ae69092fab601f6e88ba9a6d7f.png",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    width: 45,
+    height: 45,
+    url: "https://github.com/jay-manday",
+    image: "https://d2w9rnfcy7mm78.cloudfront.net/1221844/original_713585cf2c09a83a4a06d0757b1a2fc3.png",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    width: 55,
+    height: 55,
+    url: "https://www.are.na/jason-mandel-1484367816/channels",
+    image: "https://d2w9rnfcy7mm78.cloudfront.net/1222957/original_e951a05eb73d4494cd78c92da928ec71.png",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }));
+});
+
+/***/ }),
+
+/***/ "./src/components/Social/index.js":
+/*!****************************************!*\
+  !*** ./src/components/Social/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Social__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Social */ "./src/components/Social/Social.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Social__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/components/User/User.js":
 /*!*************************************!*\
   !*** ./src/components/User/User.js ***!
@@ -5473,6 +5657,307 @@ var PointText = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.span.wi
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./User */ "./src/components/User/User.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _User__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/about/About.js":
+/*!***************************************!*\
+  !*** ./src/components/about/About.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rebass */ "rebass");
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Navigation_Navigation_styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Navigation/Navigation.styled */ "./src/components/Navigation/Navigation.styled.js");
+/* harmony import */ var _About_About_styled__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../About/About.styled */ "./src/components/About/About.styled.js");
+var _jsxFileName = "/Users/jasonmandel/Desktop/jm-site/src/components/about/About.js";
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    w: 3 / 4,
+    p: [2, 3],
+    pl: [2, 3],
+    pt: [3, 4],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_About_About_styled__WEBPACK_IMPORTED_MODULE_3__["AboutType"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, "Currently:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }), "Building tools for precision agriculture with ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation_Navigation_styled__WEBPACK_IMPORTED_MODULE_2__["LinkStyle"], {
+    href: "teralytic.co",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "Teralytic"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }), "Previously:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }), "Software Engineer working on data driven urbanism with ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation_Navigation_styled__WEBPACK_IMPORTED_MODULE_2__["LinkStyle"], {
+    href: "urbansystemslab.com",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Numina"), ".", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }), "Research Assistant looking into climate resiliency at the ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation_Navigation_styled__WEBPACK_IMPORTED_MODULE_2__["LinkStyle"], {
+    href: "urbansystemslab.com",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "Urban Systems Lab"), ".", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }), "Teaching kids creative coding at the ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation_Navigation_styled__WEBPACK_IMPORTED_MODULE_2__["LinkStyle"], {
+    href: "ryeartscenter.org",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "Rye Arts Center"), ".", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }), "School of Art + Design at Purchase College ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }), "B.S. in Visual Arts and Mathematics ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation_Navigation_styled__WEBPACK_IMPORTED_MODULE_2__["LinkStyle"], {
+    href: "http://s3.amazonaws.com/arena-attachments/1380589/5a621bb1d45b1ef89f7cb20f63d1177d.pdf?1509389154",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, "Resum\xE9")));
+});
+
+/***/ }),
+
+/***/ "./src/components/about/index.js":
+/*!***************************************!*\
+  !*** ./src/components/about/index.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _About__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./About */ "./src/components/about/About.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _About__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/colophon/Colophon.js":
+/*!*********************************************!*\
+  !*** ./src/components/colophon/Colophon.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rebass */ "rebass");
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Navigation_Navigation_styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Navigation/Navigation.styled */ "./src/components/Navigation/Navigation.styled.js");
+/* harmony import */ var _About_About_styled__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../About/About.styled */ "./src/components/About/About.styled.js");
+/* harmony import */ var _Social__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Social */ "./src/components/Social/index.js");
+var _jsxFileName = "/Users/jasonmandel/Desktop/jm-site/src/components/colophon/Colophon.js";
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    w: 3 / 4,
+    p: [2, 3],
+    pl: [2, 3],
+    pt: [3, 4],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_About_About_styled__WEBPACK_IMPORTED_MODULE_3__["AboutType"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, "set with \xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation_Navigation_styled__WEBPACK_IMPORTED_MODULE_2__["LinkStyle"], {
+    href: "https://rsms.me/inter/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, "Inter"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }), "built with \xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation_Navigation_styled__WEBPACK_IMPORTED_MODULE_2__["LinkStyle"], {
+    href: "https://nextjs.org/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Next"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }), "hosted with \xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation_Navigation_styled__WEBPACK_IMPORTED_MODULE_2__["LinkStyle"], {
+    href: "https://zeit.co/now",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, "Now"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }), "part of a \xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation_Navigation_styled__WEBPACK_IMPORTED_MODULE_2__["LinkStyle"], {
+    href: "https://webring.xxiivv.com/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, "webring")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Social__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }));
+});
+
+/***/ }),
+
+/***/ "./src/components/colophon/index.js":
+/*!******************************************!*\
+  !*** ./src/components/colophon/index.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Colophon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Colophon */ "./src/components/colophon/Colophon.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Colophon__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
 
 
