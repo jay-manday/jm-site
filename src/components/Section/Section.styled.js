@@ -1,50 +1,41 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-export const TitleStyle = styled.p`
-  display:inline-block;
-  text-decoration: underline;
-  text-decoration-color: #0000ee;
-  background-color: black;
-  font-family: 'Inter'
-  font-style:  normal;
-  font-weight: 500;
-  font-size: 32px;
-  color: white;
-  margin: 0;
-
-  @media (max-width: 48em) {
-    display:inline-block;
-    line-height: 24px;
-    font-size: 20px;
-    text-decoration: underline;
-    text-decoration-color: #0000ee;
+export const Hover = keyframes`
+  0% {
+    
   }
 
-  :hover {
-    color: red;
+  100% {
+    
   }
 `;
 
-export const LinkStyle = styled.a`
-  color: white;
+export const Link = styled.a`
+  color: #fff;
   padding-bottom: 5px;
   display:inline-block;
-  text-decoration: underline;
-  text-decoration-color: #0000ee;
   font-family: 'Inter'
   font-style:  normal;
   font-weight: 500;
   font-size: 32px;
+  text-decoration: underline;
+  text-decoration-color: #0000ee;
+  -webkit-transition: color 0.5s;
+
 
   @media (max-width: 48em) {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 24px
     display:inline-block;
     text-decoration: underline;
     text-decoration-color: #0000ee;
     padding-bottom: 0px;
+    -webkit-transition: color 0.5s;
   }
 
+
   :hover {
-    color: red;
+    color: #f00;
+    -webkit-transition: color 0.5s;
   }
 `;
