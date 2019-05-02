@@ -1,7 +1,9 @@
 import React from 'react';
 import { Flex, Box } from 'rebass';
 
+import Processing from 'components/Processing';
 import WorkItems from './WorkItems';
+
 
 const Work = () => (
   <Box width={3 / 4}>
@@ -59,6 +61,14 @@ const Work = () => (
           title="The Multi 18"
           medium="design conference"
         />
+      </Box>
+      <Box
+        width={[1, 1 / 2, 1 / 3]}
+        p={[2, 3]}
+        pl={[2, 3]}
+        pt={[3, 4]}
+      >
+        <Processing />
       </Box>
       <Box
         width={[1, 1 / 2, 1 / 3]}

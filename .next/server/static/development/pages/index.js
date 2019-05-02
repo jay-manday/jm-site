@@ -3,6 +3,12 @@ module.exports =
 /******/ 	// The module cache
 /******/ 	var installedModules = require('../../../ssr-module-cache.js');
 /******/
+/******/ 	// object to store loaded chunks
+/******/ 	// "0" means "already loaded"
+/******/ 	var installedChunks = {
+/******/ 		"static/development/pages/index.js": 0
+/******/ 	};
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/
@@ -85,6 +91,13 @@ module.exports =
 /******/
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// uncaught error handler for webpack runtime
+/******/ 	__webpack_require__.oe = function(err) {
+/******/ 		process.nextTick(function() {
+/******/ 			throw err; // catch this error by using import().catch()
+/******/ 		});
+/******/ 	};
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -5130,37 +5143,31 @@ var data = [{
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HomePage_styled__WEBPACK_IMPORTED_MODULE_3__["HomeWrapper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HomePage_styled__WEBPACK_IMPORTED_MODULE_3__["Fade"], {
+    delay: "1s",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation__WEBPACK_IMPORTED_MODULE_6__["default"], {
     data: data,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_2__["Flex"], {
-    wrap: "true",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Section__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    title: "about",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_About__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HomePage_styled__WEBPACK_IMPORTED_MODULE_3__["Fade"], {
+    delay: "1s",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_2__["Flex"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_2__["Flex"], {
     wrap: "true",
     __source: {
       fileName: _jsxFileName,
@@ -5168,39 +5175,73 @@ var data = [{
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Section__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    title: "work",
+    title: "about",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Work__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_About__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_2__["Flex"], {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HomePage_styled__WEBPACK_IMPORTED_MODULE_3__["Fade"], {
+    delay: "1s",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_2__["Flex"], {
     wrap: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 38
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Section__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    title: "work",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Work__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HomePage_styled__WEBPACK_IMPORTED_MODULE_3__["Fade"], {
+    delay: "1s",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_2__["Flex"], {
+    wrap: "true",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Section__WEBPACK_IMPORTED_MODULE_7__["default"], {
     title: "colophon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 45
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Colophon__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 46
     },
     __self: this
-  })));
+  }))));
 });
 
 /***/ }),
@@ -5209,7 +5250,7 @@ var data = [{
 /*!****************************************************!*\
   !*** ./src/components/HomePage/HomePage.styled.js ***!
   \****************************************************/
-/*! exports provided: SidebarWrapper, MainWrapper, HomeWrapper */
+/*! exports provided: SidebarWrapper, MainWrapper, HomeWrapper, FadeAnimation, Fade */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5217,6 +5258,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SidebarWrapper", function() { return SidebarWrapper; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainWrapper", function() { return MainWrapper; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeWrapper", function() { return HomeWrapper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FadeAnimation", function() { return FadeAnimation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Fade", function() { return Fade; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -5232,6 +5275,13 @@ var HomeWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.w
   displayName: "HomePagestyled__HomeWrapper",
   componentId: "hti2r1-2"
 })(["max-width:100%;"]);
+var FadeAnimation = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["keyframes"])(["0%{opacity:0;}100%{opacity:1;}"]);
+var Fade = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "HomePagestyled__Fade",
+  componentId: "hti2r1-3"
+})(["animation:", " ", " linear normal;"], FadeAnimation, function (props) {
+  return props.delay;
+});
 
 /***/ }),
 
@@ -5567,6 +5617,222 @@ var PostDate = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.with
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _PostList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PostList */ "./src/components/PostList/PostList.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _PostList__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/Processing/Processing.js":
+/*!*************************************************!*\
+  !*** ./src/components/Processing/Processing.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/dynamic */ "next/dynamic");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ProcessingSketch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProcessingSketch */ "./src/components/Processing/ProcessingSketch.js");
+var _jsxFileName = "/Users/jasonmandel/Desktop/jm-site/src/components/Processing/Processing.js";
+
+
+
+var P5Wrapper = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(function () {
+  return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! react-p5-wrapper */ "react-p5-wrapper", 7));
+}, {
+  loading: function loading() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: this
+    }, "Loading...");
+  },
+  ssr: false,
+  loadableGenerated: {
+    webpack: function webpack() {
+      return [/*require.resolve*/(/*! react-p5-wrapper */ "react-p5-wrapper")];
+    },
+    modules: ['react-p5-wrapper']
+  }
+});
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "sketch-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(P5Wrapper, {
+    sketch: _ProcessingSketch__WEBPACK_IMPORTED_MODULE_2__["default"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }));
+});
+
+/***/ }),
+
+/***/ "./src/components/Processing/ProcessingSketch.js":
+/*!*******************************************************!*\
+  !*** ./src/components/Processing/ProcessingSketch.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return clock; });
+function clock(p) {
+  if (typeof document !== 'undefined') {
+    var doc = document.getElementsByClassName('sketch-container');
+    console.log(doc);
+    var node = doc[0].clientWidth; // console.log(doc.innerWidth);
+    // Hours
+
+    var t = 0.05;
+
+    var x1 = function x1() {
+      return p.sin(t / 3.14) * node / 10 + p.sin(-t / 42) * 20;
+    };
+
+    var y1 = function y1() {
+      return p.cos(t / 3.14) * node / 5;
+    };
+
+    var x2 = function x2() {
+      return p.sin(t / 3.14) * node / 5 + p.sin(-t) * 2;
+    };
+
+    var y2 = function y2() {
+      return p.cos(t / 3.14) * node / 10 + p.cos(t / 24) + 2;
+    }; // Minutes
+
+
+    var aX = node / 20;
+    var aY = node / 20;
+    var bX = node / 2 - 20;
+    var bY = node / 20;
+    var cX = node / 2 - 20;
+    var cY = node / 2 - 20;
+    var dX = node / 20;
+    var dY = node / 2 - 20;
+    var lineXa = new Array(60);
+    var lineYa = new Array(60);
+    var lineXb = new Array(60);
+    var lineYb = new Array(60); // Seconds
+
+    var cx;
+    var cy;
+    var secondsRadius;
+
+    p.setup = function () {
+      p.createCanvas(node, node);
+      p.stroke(255);
+
+      for (var i = 0; i < 60; i++) {
+        if (i % 4 === 0) {
+          lineXa[i] = p.random(aX, bX);
+          lineYa[i] = p.random(aY, bY);
+          lineXb[i] = p.random(bX, cX);
+          lineYb[i] = p.random(bY, cY);
+        }
+
+        if (i % 4 === 1) {
+          lineXa[i] = p.random(bX, cX);
+          lineYa[i] = p.random(bY, cY);
+          lineXb[i] = p.random(dX, cX);
+          lineYb[i] = p.random(dY, cY);
+        }
+
+        if (i % 4 === 2) {
+          lineXa[i] = p.random(dX, cX);
+          lineYa[i] = p.random(cY, dY);
+          lineXb[i] = p.random(aX, dX);
+          lineYb[i] = p.random(aY, dY);
+        }
+
+        if (i % 4 === 3) {
+          lineXa[i] = p.random(aX, dX);
+          lineYa[i] = p.random(aY, dY);
+          lineXb[i] = p.random(aX, bX);
+          lineYb[i] = p.random(aY, bY);
+        }
+      }
+    };
+
+    p.windowResized = function () {
+      p.resizeCanvas(node, node);
+    };
+
+    p.draw = function () {
+      p.background(0); // hours
+
+      p.stroke(225);
+      p.strokeWeight(2);
+      p.translate(node / 4, node / 4);
+
+      for (var i = 0; i < p.hour(); i++) {
+        p.line(x1(t - i), y1(t - i), x2(t + i), y2(t + i));
+      }
+
+      t += 0.05; // minutes
+      // translate(doc.body.clientWidth/9, doc.body.clientWidth/8);
+
+      p.stroke(225);
+      p.strokeWeight(1);
+
+      for (var _i = 0; _i < p.minute(); _i++) {
+        p.line(lineXa[_i], lineYa[_i], lineXb[_i], lineYb[_i]);
+      } // Seconds
+      // subtract HALF_PI to make them start at the top
+
+
+      var radius = p.min(node, node);
+      secondsRadius = radius * 0.18;
+      cx = node - node / 2;
+      cy = node - node / 2;
+      var s = p.map(p.second(), 0, 60, 0, p.TWO_PI) - p.HALF_PI; // Draw the hands of the clock
+
+      p.stroke(225);
+      p.strokeWeight(2);
+
+      for (var _i2 = 0; _i2 < node / 6; _i2 += 20) {
+        // Seconds all linked to clock in middle of grd
+        p.line(cx, cy, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+        p.line(cx + node / 6, cy, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+        p.line(cx + node / 6, cy - node / 6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+        p.line(cx - node / 6, cy, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+        p.line(cx, cy + node / 6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+        p.line(cx, cy - node / 6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+        p.line(cx - node / 6, cy - node / 6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+        p.line(cx - node / 6, cy + node / 6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+        p.line(cx + node / 6, cy + node / 6, cx + p.cos(s) * secondsRadius, cy + p.sin(s) * secondsRadius);
+      }
+    };
+  }
+}
+
+/***/ }),
+
+/***/ "./src/components/Processing/index.js":
+/*!********************************************!*\
+  !*** ./src/components/Processing/index.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Processing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Processing */ "./src/components/Processing/Processing.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Processing__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
 
 
@@ -6051,8 +6317,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rebass */ "rebass");
 /* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _WorkItems__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./WorkItems */ "./src/components/Work/WorkItems.js");
+/* harmony import */ var _Processing__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Processing */ "./src/components/Processing/index.js");
+/* harmony import */ var _WorkItems__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./WorkItems */ "./src/components/Work/WorkItems.js");
 var _jsxFileName = "/Users/jasonmandel/Desktop/jm-site/src/components/Work/Work.js";
+
 
 
 
@@ -6062,14 +6330,14 @@ var Work = function Work() {
     width: 3 / 4,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 9
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Flex"], {
     wrap: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -6079,17 +6347,17 @@ var Work = function Work() {
     pt: [3, 4],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_WorkItems__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_WorkItems__WEBPACK_IMPORTED_MODULE_3__["default"], {
     href: "/work/foam",
     img: "https://d2w9rnfcy7mm78.cloudfront.net/2111176/large_425ea424d82a29c1ac59d70eb7d4fa00.png",
     title: "FOAM",
     medium: "Product Design & Engineering",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -6099,17 +6367,17 @@ var Work = function Work() {
     pt: [3, 4],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 24
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_WorkItems__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_WorkItems__WEBPACK_IMPORTED_MODULE_3__["default"], {
     href: "/work/urban-systems",
     img: "https://d2w9rnfcy7mm78.cloudfront.net/2138198/large_251a389cfa80552a3b60cbc1c7f7e1f7.png",
     title: "Urban Systems Lab",
     medium: "Strategizing Urban Resiliency",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 30
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -6119,24 +6387,24 @@ var Work = function Work() {
     pt: [3, 4],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 37
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_WorkItems__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_WorkItems__WEBPACK_IMPORTED_MODULE_3__["default"], {
     href: "/work/graphics",
     img: "https://d2w9rnfcy7mm78.cloudfront.net/1219626/large_634b313d842272ccff0523507d676ab8.jpg",
     title: "Graphics",
     medium: "2016 - 2018",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 43
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Flex"], {
     wrap: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 51
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -6146,17 +6414,17 @@ var Work = function Work() {
     pt: [3, 4],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 52
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_WorkItems__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_WorkItems__WEBPACK_IMPORTED_MODULE_3__["default"], {
     href: "/work/the-multi",
     img: "https://d2w9rnfcy7mm78.cloudfront.net/1450245/original_4f1645b374101daf0f70fcb0013b7c2b.png",
     title: "The Multi 18",
     medium: "design conference",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 58
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -6166,17 +6434,33 @@ var Work = function Work() {
     pt: [3, 4],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 65
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_WorkItems__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Processing__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    width: [1, 1 / 2, 1 / 3],
+    p: [2, 3],
+    pl: [2, 3],
+    pt: [3, 4],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_WorkItems__WEBPACK_IMPORTED_MODULE_3__["default"], {
     href: "/work/paper-score-three",
     img: "https://d2w9rnfcy7mm78.cloudfront.net/1156854/original_7ea09cc794c5a2b2c9ec4ab1702d9bc7.jpg",
     title: "Paper Score #3",
     medium: "paper, piezos, & pure data",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 79
     },
     __self: this
   }))));
@@ -6714,6 +6998,17 @@ module.exports = require("next-server/dist/lib/utils");
 
 /***/ }),
 
+/***/ "next/dynamic":
+/*!*******************************!*\
+  !*** external "next/dynamic" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/dynamic");
+
+/***/ }),
+
 /***/ "next/router":
 /*!******************************!*\
   !*** external "next/router" ***!
@@ -6755,6 +7050,17 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-p5-wrapper":
+/*!***********************************!*\
+  !*** external "react-p5-wrapper" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-p5-wrapper");
 
 /***/ }),
 

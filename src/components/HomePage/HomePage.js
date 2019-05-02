@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex } from 'rebass';
 import {
+  Fade,
   MainWrapper,
   HomeWrapper,
 } from './HomePage.styled';
@@ -24,18 +25,26 @@ const data = [
 
 export default ({ posts }) => (
   <HomeWrapper>
-    <Navigation data={data} />
-    <Flex wrap='true'>
-      <Section title='about'/>
-      <About />
-    </Flex>
-    <Flex wrap='true'>
-      <Section title='work'/>
-      <Work />
-    </Flex>
-    <Flex wrap='true'>
-      <Section title='colophon'/>
-      <Colophon />
-    </Flex>
+    <Fade delay="1s">
+      <Navigation data={data} />
+    </Fade>
+    <Fade delay="1s">
+      <Flex wrap='true'>
+        <Section title='about'/>
+        <About />
+      </Flex>
+    </Fade>
+    <Fade delay="1s">
+      <Flex wrap='true'>
+        <Section title='work'/>
+        <Work />
+      </Flex>
+    </Fade>
+    <Fade delay="1s">
+      <Flex wrap='true'>
+        <Section title='colophon'/>
+        <Colophon />
+      </Flex>
+    </Fade>
   </HomeWrapper>
 );
