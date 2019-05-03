@@ -7,7 +7,7 @@ import WorkItems from './WorkItems';
 
 const Work = () => (
   <Box width={3 / 4}>
-    <Flex wrap="true">
+    <Flex flexWrap="wrap">
       <Box
         width={[1, 1 / 2, 1 / 3]}
         p={[2, 3]}
@@ -48,7 +48,7 @@ const Work = () => (
         />
       </Box>
     </Flex>
-    <Flex wrap="true">
+    <Flex flexWrap="wrap">
       <Box
         width={[1, 1 / 2, 1 / 3]}
         p={[2, 3]}

@@ -6,7 +6,7 @@ import { AboutType } from 'components/About/About.styled';
 import Social from 'components/Social';
 
 export default () => (
-  <Box w={3 / 4} p={[2, 3]} pl={[2, 3]} pt={[3, 4]}>
+  <Box w={3 / 4} p={[2, 3]} pl={[3, 4]} pt={[3, 4]}>
     <AboutType>
       set with &nbsp;
       <LinkStyle href="https://rsms.me/inter/">

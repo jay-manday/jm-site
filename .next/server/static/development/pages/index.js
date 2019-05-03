@@ -4951,7 +4951,7 @@ var _jsxFileName = "/Users/jasonmandel/Desktop/jm-site/src/components/Colophon/C
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     w: 3 / 4,
     p: [2, 3],
-    pl: [2, 3],
+    pl: [3, 4],
     pt: [3, 4],
     __source: {
       fileName: _jsxFileName,
@@ -6334,7 +6334,7 @@ var Work = function Work() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Flex"], {
-    wrap: "true",
+    flexWrap: "wrap",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -6401,7 +6401,7 @@ var Work = function Work() {
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rebass__WEBPACK_IMPORTED_MODULE_1__["Flex"], {
-    wrap: "true",
+    flexWrap: "wrap",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51
