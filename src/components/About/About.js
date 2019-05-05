@@ -21,7 +21,7 @@ export default () => (
       School of Art + Design at Purchase College <br />
       B.S. in Visual Arts and Mathematics <br />
       <br />
-      <LinkStyle href="http://s3.amazonaws.com/arena-attachments/1380589/5a621bb1d45b1ef89f7cb20f63d1177d.pdf?1509389154">
+      <LinkStyle href='../../../static/images/JM-Resume.pdf'>
         Resumé
       </LinkStyle>
       <br />

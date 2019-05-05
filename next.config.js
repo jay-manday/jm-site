@@ -52,6 +52,17 @@ module.exports = withPlugins([
             },
           },
         ],
+      },
+      {
+        test: /\.(png|svg|jpg|gif|pdf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+            },
+          },
+        ],
       });
       config.plugins.push(
         new webpack.DefinePlugin({
@@ -64,9 +75,6 @@ module.exports = withPlugins([
       return config;
     },
     webpackDevMiddleware: (config) => {
-      // console.log(config);
-      // Perform customizations to webpack dev middleware config
-      // Important: return the modified config
       return config;
     },
   }],

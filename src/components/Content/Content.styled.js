@@ -2,13 +2,11 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 const Wrapper = styled.main`
-  margin: 0 auto;
-  padding: 20px 20px;
   width: 100%;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.75;
-
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 `;
 

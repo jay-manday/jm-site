@@ -3,9 +3,10 @@ import { Box, Image } from 'rebass';
 
 import {
   WorkLink,
-  WorkTitle,
   WorkSubtitle,
 } from './Work.styled';
+
+import { LinkStyle } from '../Navigation/Navigation.styled';
 
 const WorkItems = ({
   href,
@@ -18,11 +19,9 @@ const WorkItems = ({
       <Image src={img} />
     </WorkLink>
     <Box pt={3}>
-      <WorkLink href={href}>
-        <WorkTitle>
-          {title}
-        </WorkTitle>
-      </WorkLink>
+      <LinkStyle href={href}>
+        {title}
+      </LinkStyle>
     </Box>
     <Box>
       <WorkSubtitle>
