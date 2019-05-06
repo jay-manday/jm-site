@@ -1,6 +1,6 @@
 import React from 'react';
-import components from './Content.styled';
 import { MDXProvider } from '@mdx-js/tag';
+import components from './Content.styled';
 
 export default ({ Doc }) => (
   <MDXProvider components={components}>

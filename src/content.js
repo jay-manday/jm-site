@@ -1,42 +1,31 @@
 import moment from 'moment';
 
-const posts = processPosts(requirePosts());
+const filterPublic = posts => posts.filter(p => p.public === true);
 
-export function getPosts() {
+const sortPosts = (posts) => {
+  posts.sort((a, b) => (a.createdAt.isBefore(b.createdAt) ? 1 : -1));
   return posts;
-}
+};
 
-export function findPost(id) {
-  return posts.find(p => p.id === id);
-}
+const parsePosts = posts => posts.map(p => ({
+  ...p.meta,
+  createdAt: moment(p.meta.createdAt),
+  Doc: p.default,
+}));
 
-function requirePosts() {
-  function requireAll(r) { return r.keys().map(r); }
-  return requireAll(require.context('../content', true, /\.mdx$/));
-}
+const requireAll = r => r.keys().map(r);
 
-function processPosts(posts) {
+const requirePosts = () => requireAll(require.context('../content', true, /\.mdx$/));
+
+const processPosts = (posts) => {
   const parsedPosts = parsePosts(posts);
   const filterPosts = filterPublic(parsedPosts);
   const sortedPosts = sortPosts(filterPosts);
   return sortedPosts;
-}
+};
 
-function parsePosts(posts) {
-  return posts
-    .map(p => ({
-      ...p.meta,
-      createdAt: moment(p.meta.createdAt),
-      Doc: p.default,
-    }));
-}
+const posts = processPosts(requirePosts());
 
-function filterPublic(posts) {
-  return posts
-    .filter(p => p.public);
-}
+export const getPosts = () => posts;
 
-function sortPosts(posts) {
-  posts.sort((a, b) => (a.createdAt.isBefore(b.createdAt) ? 1 : -1));
-  return posts;
-}
+export const findPost = id => posts.find(p => p.id === id.query);

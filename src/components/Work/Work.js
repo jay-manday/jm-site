@@ -16,7 +16,7 @@ const Work = () => (
         pt={[3, 4]}
       >
         <WorkItems
-          href="/work/numina"
+          href="/work?query=numina"
           img="../../../static/images/numina.jpeg"
           title="Numina"
           medium="Product & Engineering"
