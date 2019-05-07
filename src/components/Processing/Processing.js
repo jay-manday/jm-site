@@ -16,7 +16,9 @@ const P5Wrapper = dynamic(import('react-p5-wrapper'), {
 
 export default ({ href, medium, title, sketch }) => (
   <Box className="sketch-container">
-    <P5Wrapper sketch={sketch}/>
+    <LinkStyle href={href}>
+      <P5Wrapper sketch={sketch}/>
+    </LinkStyle>
     <Box pt={1}>
       <LinkStyle href={href}>
         {title}

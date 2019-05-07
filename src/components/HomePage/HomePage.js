@@ -8,11 +8,9 @@ import {
   HomeWrapper,
 } from './HomePage.styled';
 
-import User from 'components/User';
-import PostList from 'components/PostList';
 import Navigation from 'components/Navigation';
 import Section from 'components/Section';
-import Content from 'components/content';
+import Content from 'components/Content';
 import Colophon from 'components/Colophon';
 import About from 'components/About';
 import Work from 'components/Work'

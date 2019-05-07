@@ -1,10 +1,10 @@
 const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
 const nodeExternals = require('webpack-node-externals');
 const withPlugins = require('next-compose-plugins');
-const withMDX = require('@zeit/next-mdx');
+const withImages = require('next-images');
+const withMDX = require('@next/mdx');
 const images = require('remark-images');
 const emoji = require('remark-emoji');
-const webpack = require('webpack');
 
 const exportPathMap = require('./bin/exportPathMap');
 
@@ -13,6 +13,7 @@ module.exports = withPlugins([
     pageExtensions: ['js', 'jsx', 'mdx'],
     exportPathMap,
   }],
+  [withImages, {}],
   [{
     targets: 'node',
     node: {
@@ -54,6 +55,20 @@ module.exports = withPlugins([
         ],
       },
       {
+        test: /\.(txt|jpg|png|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              context: '',
+              outputPath: 'static',
+              publicPath: '_next/static',
+              name: '[path][name].[hash].[ext]',
+            },
+          },
+        ],
+      },
+      {
         test: /\.(png|svg|jpg|gif|pdf)$/,
         use: [
           {
@@ -64,17 +79,7 @@ module.exports = withPlugins([
           },
         ],
       });
-      config.plugins.push(
-        new webpack.DefinePlugin({
-          'process.env.SECRET': JSON.stringify(process.env.SECRET),
-        }),
-        // Same as above
-        // new webpack.EnvironmentPlugin(['SECRET'])
-      );
 
-      return config;
-    },
-    webpackDevMiddleware: (config) => {
       return config;
     },
   }],

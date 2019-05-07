@@ -1,6 +1,6 @@
 
 import Head from 'next/head';
-import { Flex } from 'rebass';
+import { Flex, Box } from 'rebass';
 import React, {
   Fragment,
   Component,
@@ -8,7 +8,7 @@ import React, {
 
 import Navigation from 'components/Navigation';
 import Section from 'components/Section';
-import Content from 'components/content';
+import Content from 'components/Content';
 import Colophon from 'components/Colophon';
 
 import {
@@ -44,7 +44,9 @@ class WorkPageContainer extends Component {
           <Fade delay="1s">
             <Flex wrap="true">
               <Section title="work" />
-              <Content Doc={Doc} />
+              <Box width={3 / 4} p={[2, 3]} pl={[3, 4]}>
+                <Content Doc={Doc} />
+              </Box>
             </Flex>
           </Fade>
           <Fade delay="1s">

@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 
-const contentDir = path.join(__dirname, '..', 'content');
+const contentDir = path.join(__dirname, 'content');
 
 const getContentFiles = () => new Promise((resolve, reject) => {
   fs.readdir(contentDir, (err, res) => {
@@ -26,8 +26,8 @@ const parseFileNames = files => files
 const filterFiles = files => files.filter(f => f.ext === '.mdx');
 
 const generatePathMap = files => files.reduce((acc, f) => {
-  acc[`/post/${f.name}.html`] = {
-    page: '/post',
+  acc[`/work/${f.name}.html`] = {
+    page: '/work',
     query: { id: f.name },
   };
 
