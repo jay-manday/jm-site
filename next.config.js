@@ -44,43 +44,33 @@ module.exports = withPlugins([
     webpack: (config, { defaultLoaders }) => {
       config.module.rules.push({
         test: /\.mdx?$/,
-        use: [
-          defaultLoaders.babel,
-          {
-            loader: '@mdx-js/loader',
-            options: {
-              mdPlugins: [images, emoji],
-            },
-          },
-        ],
-      },
-      {
+        use: [defaultLoaders.babel, {
+          loader: '@mdx-js/loader',
+          options: { mdPlugins: [images, emoji] },
+        }],
+      });
+      config.module.rules.push({
         test: /\.(txt|jpg|png|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              context: '',
-              outputPath: 'static',
-              publicPath: '_next/static',
-              name: '[path][name].[hash].[ext]',
-            },
+        use: [defaultLoaders.babel, {
+          loader: 'file-loader',
+          options: {
+            context: '',
+            outputPath: 'static',
+            publicPath: '_next/static',
+            name: '[path][name].[hash].[ext]',
           },
-        ],
-      },
-      {
+        }],
+      });
+      config.module.rules.push({
         test: /\.(png|svg|jpg|gif|pdf)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-            },
-          },
-        ],
+        use: [defaultLoaders.babel, {
+          loader: 'file-loader',
+          options: { name: '[name].[ext]' },
+        }],
       });
 
       return config;
     },
   }],
+  [{ target: 'serverless' }],
 ]);

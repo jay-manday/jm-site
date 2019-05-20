@@ -9,14 +9,14 @@ export default () => (
       Currently:
       <br />
       <br />
-      Software Engineer working on data driven urbanism with <LinkStyle href="numina.co">Numina</LinkStyle>.<br />
+      Software Engineer working on data driven urbanism with <LinkStyle href="numina.co">Numina</LinkStyle><br />
       <br />
       Previously:
       <br />
       <br />
-      Investigating geospatial blockchain applications with <LinkStyle href="foam.space">FOAM</LinkStyle>.<br />
-      Research Assistant looking into climate resiliency at the <LinkStyle href="urbansystemslab.com">Urban Systems Lab</LinkStyle>.<br />
-      Teaching kids creative coding at the <LinkStyle href="ryeartscenter.org">Rye Arts Center</LinkStyle>.<br />
+      Investigating geospatial blockchain applications with <LinkStyle href="foam.space">FOAM</LinkStyle><br />
+      Research Assistant looking into climate resiliency at the <LinkStyle href="urbansystemslab.com">Urban Systems Lab</LinkStyle><br />
+      Teaching kids creative coding at the <LinkStyle href="ryeartscenter.org">Rye Arts Center</LinkStyle><br />
       <br />
       School of Art + Design at Purchase College <br />
       B.S. in Visual Arts and Mathematics <br />
