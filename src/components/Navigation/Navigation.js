@@ -8,7 +8,7 @@ const Navigation = ({ data }) => (
     <Box width={[1 / 4]} pt={[3, 4]} pb={[3, 4]} pl={[3, 4]}>
       <NavigationTitle />
     </Box>
-    {/* data.map((element, index) => (
+    {/*data.map((element, index) => (
       <Box key={index} width={[1 / 4]}>
         <Section key={index} value={element.name} title={element.name} />
       </Box>
