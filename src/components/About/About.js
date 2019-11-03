@@ -3,32 +3,39 @@ import { Box } from 'rebass';
 import { LinkStyle } from '../Navigation/Navigation.styled';
 import { AboutType } from './About.styled';
 
+import { Fade } from '../../../pages/index'
+
 export default () => (
   <Box width={3 / 4} p={[2, 3]} pl={[3, 4]} pt={[3, 4]}>
+    <Fade delay="1s">
     <AboutType>
       Currently:
       <br />
       <br />
-      Building modular architectural components with industrial robotics at <LinkStyle href="https://toggle.is">Toggle</LinkStyle><br />
+      Assembling architectural forms with industrial robotics at <Fade delay="1s"><LinkStyle href="https://toggle.is">Toggle</LinkStyle></Fade><br />
       <br />
       <br />
       Previously:
       <br />
       <br />
-      Exploring direct to consumer CBD wellness routines with <LinkStyle href="https://kaleidoscopelabs.com/">Kaleidoscope Labs</LinkStyle><br />
-      Software Engineer working on data driven urbanism with <LinkStyle href="numina.co">Numina</LinkStyle><br />
-      Investigating geospatial blockchain applications with <LinkStyle href="foam.space">FOAM</LinkStyle><br />
-      Research Assistant looking into climate resiliency at the <LinkStyle href="urbansystemslab.com">Urban Systems Lab</LinkStyle><br />
-      Teaching kids creative coding at the <LinkStyle href="ryeartscenter.org">Rye Arts Center</LinkStyle><br />
+      Exploring direct to consumer CBD wellness routines with <Fade delay="1s"><LinkStyle href="https://kaleidoscopelabs.com/">Kaleidoscope Labs</LinkStyle></Fade><br />
+      Software Engineer working on data driven urbanism with <Fade delay="1s"><LinkStyle href="numina.co">Numina</LinkStyle></Fade><br />
+      Investigating geospatial blockchain applications with <Fade delay="1s"><LinkStyle href="foam.space">FOAM</LinkStyle></Fade><br />
+      Research Assistant looking into climate resiliency at the <Fade delay="1s"><LinkStyle href="urbansystemslab.com">Urban Systems Lab</LinkStyle></Fade><br />
+      Teaching kids creative coding at the <Fade delay="1s"><LinkStyle href="ryeartscenter.org">Rye Arts Center</LinkStyle></Fade><br />
       <br />
       School of Art + Design at Purchase College <br />
       B.S. in Visual Arts and Mathematics <br />
       <br />
+      <Fade delay="1s">
       <LinkStyle href='../../../static/images/JM-Resume.pdf'>
         Resumé
       </LinkStyle>
+      </Fade>
       <br />
       <br />
     </AboutType>
+    </Fade>
   </Box>
 );
+

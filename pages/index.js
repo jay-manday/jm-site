@@ -58,5 +58,6 @@ export const FadeAnimation = keyframes`
 `;
 
 export const Fade = styled.div`
+  display: inline;
   animation: ${FadeAnimation} ${props => props.delay} linear normal;
 `;
