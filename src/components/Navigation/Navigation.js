@@ -7,7 +7,7 @@ import { Fade } from '../../../pages/index'
 
 const Navigation = ({ data }) => (
   <Flex wrap="true" width={1} align="baseline" justify="space-around">
-    <Box width={[1 / 4]} pt={[3, 4]} pb={[3, 4]} pl={[3, 4]}>
+    <Box width={[1, 1 / 4]} pt={[3, 4]} pb={[3, 4]} pl={[3, 4]}>
       <Fade delay="1s">
       <NavigationTitle />
       </Fade>

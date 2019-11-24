@@ -12,7 +12,7 @@ import {
 import Navigation from '../src/components/Navigation';
 import Section from '../src/components/Section';
 // import Content from 'components/Content';
-// import Colophon from 'components/Colophon';
+import Colophon from '../src/components/Colophon';
 import About from '../src/components/About';
 // import Work from 'components/Work'
 
@@ -31,6 +31,12 @@ export default () => (
       <Flex wrap='true'>
         <Section title='about'/>
         <About />
+      </Flex>
+    </Fade>
+    <Fade delay="1s">
+      <Flex wrap='true'>
+        <Section title='colophon'/>
+        <Colophon />
       </Flex>
     </Fade>
   </HomeWrapper>

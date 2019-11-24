@@ -1,9 +1,9 @@
 import React from 'react';
 import { Box } from 'rebass';
 
-import { LinkStyle } from 'components/Navigation/Navigation.styled';
-import { AboutType } from 'components/About/About.styled';
-import Social from 'components/Social';
+import { LinkStyle } from '../Navigation/Navigation.styled';
+import { AboutType } from '../About/About.styled';
+import Social from '../Social';
 
 export default () => (
   <Box w={3 / 4} p={[2, 3]} pl={[3, 4]} pt={[3, 4]}>
