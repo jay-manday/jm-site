@@ -25,7 +25,7 @@ export default () => (
     <Icon
       width={55}
       height={55}
-      url="https://www.are.na/jason-mandel-1484367816/channels"
+      url="https://www.are.na/jason-mandel/channels"
       image="https://d2w9rnfcy7mm78.cloudfront.net/1222957/original_e951a05eb73d4494cd78c92da928ec71.png"
     />
   </Flex>
