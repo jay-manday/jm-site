@@ -12,12 +12,13 @@ export default () => (
         Currently:
         <br />
         <br />
-        Implementing industrial robotic assembly lines for construction at <Fade delay="1s"><LinkStyle href="https://toggle.is">Toggle</LinkStyle></Fade><br />
+        Indexing the fabric of the built environment at <Fade delay="1s"><LinkStyle href="https://1build.com">1build</LinkStyle></Fade><br />
         <br />
         <br />
         Previously:
         <br />
         <br />
+        Implementing industrial robotic assembly lines for construction at <Fade delay="1s"><LinkStyle href="https://toggle.is">Toggle</LinkStyle></Fade><br />
         Exploring direct to consumer CBD wellness routines with <Fade delay="1s"><LinkStyle href="https://kaleidoscopelabs.com/">Kaleidoscope Labs</LinkStyle></Fade><br />
         Software Engineer working on data driven urbanism with <Fade delay="1s"><LinkStyle href="numina.co">Numina</LinkStyle></Fade><br />
         Investigating geospatial blockchain applications with <Fade delay="1s"><LinkStyle href="foam.space">FOAM</LinkStyle></Fade><br />
