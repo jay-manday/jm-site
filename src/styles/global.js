@@ -1,6 +1,6 @@
+
 /* eslint-disable import/prefer-default-export */
-import { createGlobalStyle } from 'styled-components';
-import './fontawersome';
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   html, body {
@@ -8,12 +8,10 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
   }
 
-  html {
-    font-size: 62.5%;
-  }
+  html { font-size: 62.5%; }
 
   body {
-    color: #fff;
+    color: #fefefe;
     background-color: #000;
     font-family: 'Roboto', 'Lato', sans-serif;
     font-size: 1.6rem;
@@ -21,19 +19,21 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
-  #__next {
-    height: 100%;
+  .root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
   }
 
-  * {
-    box-sizing: border-box;
-  }
+  #__next { height: 100%; }
 
-  a {
-    text-decoration: none;
-  }
+  * { box-sizing: border-box; }
+
+  a { text-decoration: none; }
 
   a:link, a:visited, a:active {
     color: inherit;
   }
-`;
+`

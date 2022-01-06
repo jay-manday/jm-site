@@ -1,0 +1,35 @@
+import { Flex, Box, Image } from 'rebass';
+import { LinkStyle } from 'components/Navigation/Navigation.styled';
+
+import Processing from 'components/Processing';
+import clock from 'components/Processing/ProcessingSketch';
+
+export const meta = { 
+  id: 'contingent-clock',
+  title: 'contingent-clock',
+  description: '',
+  createdAt: '2019-03-20',
+  public: true,
+};
+
+
+# Contingent Clock
+
+<Box
+  width={[1, 1 / 2]}
+  p={[2, 3]}
+  pl={[3, 4]}
+  pt={[3, 4]}
+>
+  <Processing
+    sketch={clock}
+    href="/work?query=contingent-clock"
+  />
+</Box>
+
+## A study inspired by the passing of time.
+
+### Made with P5.js
+
+
+
