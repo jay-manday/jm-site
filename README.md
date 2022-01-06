@@ -1,4 +1,4 @@
-# Hivemapper Challenge
+# jm site
 
 This challenge explores various approaches to creating dynamic point cloud visualizations with WebGL and a modern react stack supported by Next.js, AWS Lambda and Serverless framework.
 
@@ -29,6 +29,7 @@ For Production
   yarn build
   yarn start
 ```
+
 
 ## Solutions
 
