@@ -16,22 +16,33 @@ import Colophon from '../src/components/Colophon';
 import About from '../src/components/About';
 // import Work from 'components/Work'
 
+import {useWindowDimensions } from '../src/utils';
+
 const data = [
   { id: 1, name: 'about' },
   { id: 2, name: 'work' },
   { id: 3, name: 'colophon' },
 ];
 
-export default () => (
+export default () => {
+  const { width, height } = useWindowDimensions();
+  return  (
   <HomeWrapper>
     <Fade delay="1s">
       <Navigation data={data} />
     </Fade>
     <Fade delay="1s">
-      <Flex wrap='true'>
-        <Section title='about'/>
-        <About />
-      </Flex>
+      {width > 440 || height > 980 ? (
+        <Flex wrap='true'>
+          <Section title='about'/>
+          <About />
+        </Flex>
+      ) : (
+        <>
+          <Section title='about'/>
+          <About />
+        </>
+      )}
     </Fade>
     <Fade delay="1s">
       <Flex wrap='true'>
@@ -42,6 +53,7 @@ export default () => (
   </HomeWrapper>
 );
 
+}
 
 
 export const SidebarWrapper = styled.section`

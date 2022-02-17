@@ -6,7 +6,7 @@ import { AboutType } from '../About/About.styled';
 import Social from '../Social';
 
 export default () => (
-  <Box w={3 / 4} p={[2, 3]} pl={[3, 4]} pt={[3, 4]}>
+  <Box w={1, 3 / 4} p={[2, 3]} pl={[1, 2]} pt={[3, 4]}>
     <AboutType>
       set with &nbsp;
       <LinkStyle href="https://rsms.me/inter/">
@@ -19,8 +19,8 @@ export default () => (
       </LinkStyle>
       <br />
       hosted with &nbsp;
-      <LinkStyle href="https://zeit.co/now">
-        Now
+      <LinkStyle href="https://vercel.com">
+        Vercel
       </LinkStyle>
       <br />
       part of a &nbsp;
