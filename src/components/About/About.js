@@ -12,7 +12,7 @@ export default () => (
         Currently:
         <br />
         <br />
-        Building the next generation of payment infrastructure at <Fade delay="1s"><LinkStyle href="https://block.xyz">Block</LinkStyle></Fade><br />
+        Building the next generation of payment infrastructure at <Fade delay="1s"><LinkStyle href="https://block.xyz">Block</LinkStyle></Fade>&nbsp;/&nbsp;<Fade delay="1s"><LinkStyle href="https://cash.app">Cash App</LinkStyle></Fade><br />
         <br />
         <br />
         Previously:
