@@ -36,6 +36,8 @@
     "loaders.gl": "^0.3.5",
     "next-compose-plugins": "^2.2.0",
     "next-images": "^1.2.0",
+    "p5": "^1.4.1",
+    "react-p5-wrapper": "^3.1.0",
     "rebass": "^3.1.0",
     "remark-emoji": "^2.0.2",
     "remark-images": "^1.0.0",

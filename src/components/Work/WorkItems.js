@@ -6,7 +6,7 @@ import {
   WorkSubtitle,
 } from './Work.styled';
 
-import { LinkStyle } from '../../../../src/components/Navigation/Navigation.styled';
+import { LinkStyle } from '../Navigation/Navigation.styled';
 
 const WorkItems = ({
   href,

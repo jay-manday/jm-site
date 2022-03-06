@@ -8,16 +8,15 @@ import {
 
 import { LinkStyle } from '../Navigation/Navigation.styled';
 
-
-const P5Wrapper = dynamic(import('react-p5-wrapper'), {
+const P5Wrapper = dynamic(() => import('react-p5-wrapper'), {
   loading: () => <p>Loading...</p>,
   ssr: false,
 });
 
-export default ({ href, medium, title, sketch }) => (
+const Processing = ({ href, medium, title, sketch }) => (
   <Box className="sketch-container">
     <LinkStyle href={href}>
-      <P5Wrapper sketch={sketch}/>
+     <P5Wrapper sketch={sketch}/>
     </LinkStyle>
     <Box pt={1}>
       <LinkStyle href={href}>
@@ -31,3 +30,5 @@ export default ({ href, medium, title, sketch }) => (
     </Box>
   </Box>
 );
+
+export default Processing;

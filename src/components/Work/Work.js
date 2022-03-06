@@ -1,13 +1,13 @@
 import React from 'react';
 import { Flex, Box } from 'rebass';
 
-import Processing from 'components/Processing';
-import clock from 'components/Processing/ProcessingSketch';
+import Processing from '../Processing';
+import clock from '../Processing/ProcessingSketch';
 
 import WorkItems from './WorkItems';
 
 const Work = () => (
-  <Box width={3 / 4}>
+  <Box width={1}>
     <Flex flexWrap="wrap">
       <Box
         width={[1, 1 / 2, 1 / 3]}
@@ -63,7 +63,8 @@ const Work = () => (
           medium="design conference"
         />
       </Box>
-      <Box
+      
+      {/*<Box
         width={[1, 1 / 2, 1 / 3]}
         p={[2, 3]}
         pl={[3, 4]}
@@ -75,7 +76,7 @@ const Work = () => (
           title="Contingent Clock"
           medium="chance and code"
         />
-      </Box>
+      </Box>*/}
       <Box
         width={[1, 1 / 2, 1 / 3]}
         p={[2, 3]}

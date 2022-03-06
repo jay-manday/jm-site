@@ -1,3 +1,4 @@
+
 export default function clock(p) {
   const doc = document.getElementsByClassName('sketch-container');
   const node = doc[0].clientWidth;
@@ -52,6 +53,7 @@ export default function clock(p) {
         lineYb[i] = p.random(aY, bY);
       }
     }
+
   };
 
 
@@ -117,4 +119,5 @@ export default function clock(p) {
     updateMinutes();
     renderSeconds();
   };
+
 }
