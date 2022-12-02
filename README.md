@@ -1,44 +1,34 @@
-# jm site
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This challenge explores various approaches to creating dynamic point cloud visualizations with WebGL and a modern react stack supported by Next.js, AWS Lambda and Serverless framework.
+## Getting Started
 
-## Stack:
+First, run the development server:
 
-- [Three.js](https://threejs.org/)
-- [React](https://reactjs.org/)
-- [Next.js](https://github.com/zeit/next.js)
-
-Bonus Round:
-
-- [DeckGL](https://deck.gl/)
-
-## Getting started
-
-Install [Node.js](https://nodejs.org/en/download/) and add its `bin/` directory to `$PATH`.
-
-Make sure `node` and `npm or yarn` are available from the command line:
-
-For Development
 ```bash
-  yarn
-  yarn dev
+npm run dev
 ```
 
-For Production
-```bash
-  yarn build
-  yarn start
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
 
 ## Solutions
 
-My first instinct was move to tried and true tools like Deck.GL, as I'm more comfortable with them. I went with this partly because of  the flexibility of the rendering api. It lends itself well to the decalarative and functional styles come part and parcel with modern React. It was quite straightforward to compose an environment to render 3D Pointclouds, though I hit a stumbling block with the ECEF geometries encoded into the PLY file.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-I utilized [Loaders.gl](https://loaders.gl/) to parse the PLY, which was successfull though I needed to find a clever way to find min and max for x, y, z and construct the bounds for the scene. I didn't want to spend to much time on that so I decided to move on to a solution with Three.js
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-I did get some interesting results experimenting with the `ECEFToLonLatAlt` method. I had experimented with translating the point cloud ontop of Map with [react-map-gl](https://uber.github.io/react-map-gl/). I had however let things stand with an interactive point cloud vis that can be found at `localhost:3000/deck`
+## Deploy on Vercel
 
-Moving from the experiments with deck.gl, I went on to bring over the environment for three.js, and broke down the rendering context and the logic to support the scene, geometries et all.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-From there I established the scene and webGL frame buffer that the ply model and other logic are bound. A key method, `initScene` is where the the main model geometries and scene enviornment are referenced. I did come upon some issues with transforming the model geometries and colors after they were bound to the scene, but there probably is a clever and simple way to do so that im missing. That said, I had a lot of fun with this challenge!
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
