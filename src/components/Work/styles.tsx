@@ -11,8 +11,7 @@ export const LinkHover = keyframes`
 
 export const WorkTitle = styled.p`
   display:inline-block;
-  text-decoration: underline;
-  text-decoration-color: #0000ee;
+
   background-color: black;
   font-family: 'Inter'
   font-style:  normal;
@@ -25,14 +24,22 @@ export const WorkTitle = styled.p`
     display:inline-block;
     line-height: 24px;
     font-size: 20px;
-    text-decoration: underline;
-    text-decoration-color: #0000ee;
-  }
-
-  :hover {
-    animation: ${LinkHover} 0.5s forwards;
+ 
   }
 `;
+
+/**
+ * 
+ *   text-decoration: underline;
+  text-decoration-color: #0000ee;
+ * 
+ *    text-decoration: underline;
+    text-decoration-color: #0000ee;
+
+ *   :hover {
+    animation: ${LinkHover} 0.5s forwards;
+  }
+ */
 
 export const WorkLink = styled.a`
   color: white;

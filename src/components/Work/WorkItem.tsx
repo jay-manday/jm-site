@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import {
   WorkLink,
   WorkSubtitle,
+  WorkTitle,
 } from './styles';
 
 import { windowResized } from './ClockSketch';
@@ -35,17 +36,17 @@ const WorkItems = ({
   draw,
 }: WorkItemProps) => (
   <Box className="sketch-container">
-    <WorkLink href={href}>
+    {/*<WorkLink href={href}>*/}
       {processing ? (
         <Processing setup={setup} draw={draw} />
       ) : (
         <Image src={img} />
       )}
-    </WorkLink>
+    {/*</WorkLink>*/}
     <Box pt={3}>
-      <LinkStyle href={href}>
+      <WorkTitle>
         {title}
-      </LinkStyle>
+      </WorkTitle>
     </Box>
     <Box>
       <WorkSubtitle>
